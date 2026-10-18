@@ -72,6 +72,7 @@ if (!upload) {
     const kept = (manifest[loc.id] ?? []).filter((e) => e.media_path); // never forget uploaded ones
     manifest[loc.id] = [...kept, ...picks.filter((p) => !kept.some((k) => k.source_url === p.source_url))];
     console.log(`${picks.length ? '✓' : '·'} ${loc.name}: ${picks.map((p) => `${p.title} (${p.score})`).join(' | ') || 'no freely licensed match'}`);
+    save(); // progress survives an interrupted run
   }
   save();
   const n = Object.values(manifest).flat().filter((e) => !e.media_path).length;
