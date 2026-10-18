@@ -3,6 +3,7 @@ import { LOCAL_ONLY } from '../config';
 import { api } from '../data/api';
 import { useMediaUrl } from '../data/hooks';
 import type { Location, Theme } from '../shared/types';
+import { luminance } from '../shared/themes';
 import { themeStyle } from './textures';
 
 type GooglePhoto = { photoUri: string; attributions: { name: string; uri: string | null }[] };
@@ -32,43 +33,57 @@ function useGooglePhoto(loc: Location): GooglePhoto | null {
   return photo;
 }
 
-export function Hero({ location, theme }: { location: Location; theme: Theme }) {
+export function Hero({ location, theme, children }: { location: Location; theme: Theme; children?: React.ReactNode }) {
   const own = useMediaUrl(location.hero_path);
   const google = useGooglePhoto(location);
   const src = own ?? google?.photoUri ?? null;
+  const t = theme.tokens;
+  // Paper-coloured themes would read as grey under the night fade, so their
+  // artwork is painted in the theme's accent instead of its background.
+  const light = luminance(t.bg) > 0.45;
+  const base = light ? t.accent : t.bg;
+  const glow = light ? t.bg : t.accent;
 
-  if (src) {
-    return (
-      <figure className="hero">
-        <img src={src} alt={`${location.name} storefront`} loading="lazy" referrerPolicy="no-referrer" />
-        {!own && google && (
-          <figcaption className="hero-credit">
-            Photo:{' '}
-            {google.attributions.map((a, i) => (
-              <span key={i}>
-                {i > 0 && ', '}
-                {a.uri ? (
-                  <a href={a.uri} target="_blank" rel="noopener noreferrer">
-                    {a.name}
-                  </a>
-                ) : (
-                  a.name
-                )}
-              </span>
-            ))}{' '}
-            via Google
-          </figcaption>
-        )}
-        {own && location.hero_attribution && <figcaption className="hero-credit">{location.hero_attribution}</figcaption>}
-      </figure>
-    );
-  }
-
-  // Themed placeholder until a trip photo is added.
   return (
-    <figure className={`hero hero--placeholder menu--${theme.tokens.layout}`} style={themeStyle(theme.tokens)} aria-hidden="true">
-      <span className="hero-name">{location.short_name ?? location.name}</span>
-      <span className="hero-area">{location.area_label}</span>
+    <figure className={`hero${src ? '' : ' hero--placeholder'}`} style={src ? undefined : { ...themeStyle(t), backgroundColor: base }}>
+      {src ? (
+        <img src={src} alt={`${location.name} storefront`} loading="lazy" referrerPolicy="no-referrer" />
+      ) : (
+        // Themed artwork until a trip photo is added.
+        <span
+          className="hero-art"
+          aria-hidden="true"
+          style={{
+            backgroundColor: base,
+            backgroundImage: `radial-gradient(110% 80% at 22% 12%, ${glow}${light ? '66' : '88'} 0%, transparent 55%), radial-gradient(90% 70% at 95% 100%, ${t.rule}55 0%, transparent 60%), var(--m-texture)`,
+          }}
+        >
+          <span className="hero-watermark" style={{ fontFamily: t.displayFont }}>
+            {location.short_name ?? location.name}
+          </span>
+        </span>
+      )}
+      <span className="hero-fade" aria-hidden="true" />
+      {children}
+      {src && !own && google && (
+        <figcaption className="hero-credit">
+          Photo:{' '}
+          {google.attributions.map((a, i) => (
+            <span key={i}>
+              {i > 0 && ', '}
+              {a.uri ? (
+                <a href={a.uri} target="_blank" rel="noopener noreferrer">
+                  {a.name}
+                </a>
+              ) : (
+                a.name
+              )}
+            </span>
+          ))}{' '}
+          via Google
+        </figcaption>
+      )}
+      {own && location.hero_attribution && <figcaption className="hero-credit">{location.hero_attribution}</figcaption>}
     </figure>
   );
 }

@@ -4,6 +4,7 @@ import { useRefills } from '../data/hooks';
 import { useSession } from '../data/session';
 import { formatWalk, haversine } from '../logic/distance';
 import { useUi } from '../store';
+import { Back, Drop } from '../ui/icons';
 import { formatDate } from './Menu';
 
 const KIND = { bottle_filler: 'Bottle filler', fountain: 'Drinking fountain', qs_counter_cup: 'QS counter cup' } as const;
@@ -19,9 +20,12 @@ export function RefillDetail({ id }: { id: string }) {
     <div className="detail refill-detail" data-testid="refill-detail">
       <div className="detail-head">
         <button type="button" className="icon-btn" aria-label="Back to list" onClick={() => selectRefill(null)}>
-          ←
+          <Back size={20} />
         </button>
-        <h2 className="detail-title">💧 {KIND[r.kind]}</h2>
+        <span className="refill-badge">
+          <Drop size={18} />
+        </span>
+        <h2 className="detail-title">{KIND[r.kind]}</h2>
       </div>
       <dl className="facts">
         <div>

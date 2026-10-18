@@ -14,12 +14,15 @@ export function Sheet({
   header,
   children,
   label,
+  flush = false,
 }: {
   snap: SheetSnap;
   onSnap: (s: SheetSnap) => void;
   header?: ReactNode;
   children: ReactNode;
   label: string;
+  /** Content runs edge to edge under a floating grabber (the restaurant hero). */
+  flush?: boolean;
 }) {
   const [drag, setDrag] = useState<number | null>(null);
   const start = useRef<{ y: number; h: number; moved: boolean } | null>(null);
@@ -62,7 +65,7 @@ export function Sheet({
 
   return (
     <section
-      className={`sheet sheet--${snap}${drag != null ? ' is-dragging' : ''}`}
+      className={`sheet sheet--${snap}${drag != null ? ' is-dragging' : ''}${flush ? ' is-flush' : ''}`}
       style={{ height }}
       aria-label={label}
       data-snap={snap}

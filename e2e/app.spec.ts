@@ -35,14 +35,14 @@ test('page is noindex', async ({ page }) => {
 
 test('US1/US2: QS filter, tap Pecos Bill, themed menu with QS and kids badges', async ({ page }) => {
   await signIn(page);
-  await page.getByRole('button', { name: 'QS credit' }).click();
+  await page.getByRole('button', { name: 'Quick-Service credit', exact: true }).click();
   await expect(page.locator('.pin:not(.pin--quick_service)')).toHaveCount(0);
 
   await page.locator('[data-id="pecos-bill-tall-tale-inn-and-cafe"]').click();
   const detail = page.getByTestId('detail');
   await expect(detail.getByText('Quick-Service credit', { exact: true })).toBeVisible();
   await expect(detail.locator('.hero')).toBeVisible();
-  await expect(detail.locator('.menu-logo')).toBeVisible();
+  await expect(detail.locator('.hero .menu-logo')).toBeVisible();
   const menu = detail.locator('.menu');
   await expect(menu).toHaveAttribute('data-theme', 'wanted-poster');
   await expect(menu.getByText(/Menu as of 16 Oct 2026/)).toBeVisible();
@@ -59,7 +59,7 @@ test('US1/US2: QS filter, tap Pecos Bill, themed menu with QS and kids badges', 
 
 test('US3: snack filter shows snack-only places and snack badges; unknowns say check', async ({ page }) => {
   await signIn(page);
-  await page.getByRole('button', { name: 'EPCOT' }).click();
+  await page.getByRole('button', { name: 'EPCOT', exact: true }).click();
   await page.getByRole('button', { name: 'Snack credit' }).click();
   await expect(sheet(page).locator('.row', { hasText: 'Tangierine' })).toBeVisible();
   await sheet(page).locator('.row', { hasText: 'Tangierine' }).click();
@@ -71,13 +71,13 @@ test('US3: snack filter shows snack-only places and snack badges; unknowns say c
 test('step 8: search "pizza" finds names and menu items', async ({ page }) => {
   await signIn(page);
   const search = page.getByPlaceholder(/Search places or dishes/);
-  for (const [park, name] of [['AK', 'Pizzafari'], ['EPCOT', 'Pizza al Taglio'], ['DS', 'Blaze'], ['DS', 'Pizza Ponte']] as const) {
+  for (const [park, name] of [['Animal Kingdom', 'Pizzafari'], ['EPCOT', 'Pizza al Taglio'], ['Disney Springs', 'Blaze'], ['Disney Springs', 'Pizza Ponte']] as const) {
     await page.getByRole('button', { name: park, exact: true }).click();
     await search.fill('pizza');
     await expect(sheet(page).locator('.row', { hasText: name })).toBeVisible();
   }
   // Menu-item matches are shown under the row.
-  await page.getByRole('button', { name: 'MK', exact: true }).click();
+  await page.getByRole('button', { name: 'Magic Kingdom', exact: true }).click();
   await search.fill('flatbread');
   await expect(sheet(page).locator('.row-match').first()).toContainText(/flatbread/i);
 });
@@ -117,11 +117,11 @@ test('location denied shows an inline message, never a dialog', async ({ page })
 test('US5: starring syncs to the server and family stars show up', async ({ page }) => {
   api.familyStar('sam@example.com', 'satu-li-canteen');
   await signIn(page);
-  await page.getByRole('button', { name: 'AK', exact: true }).click();
+  await page.getByRole('button', { name: 'Animal Kingdom', exact: true }).click();
   await sheet(page).locator('.row', { hasText: 'Satu' }).click();
-  await expect(page.getByText('★ Starred by Sam')).toBeVisible();
-  await page.getByRole('button', { name: '☆ Star' }).click();
-  await expect(page.getByRole('button', { name: '★ Starred' })).toBeVisible();
+  await expect(page.getByText(/Starred by Sam/)).toBeVisible();
+  await page.getByRole('button', { name: 'Star', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Starred', exact: true })).toBeVisible();
   await expect.poll(() => api.ops.some((o) => o.kind === 'favourite' && o.location_id === 'satu-li-canteen' && o.starred)).toBe(true);
 });
 

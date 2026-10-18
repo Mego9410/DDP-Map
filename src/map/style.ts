@@ -5,6 +5,34 @@ import { WDW_BBOX } from '../shared/parks';
 
 export const PMTILES_PATH = '/tiles/wdw.pmtiles';
 
+/** Map ground colour, also the app's map placeholder (styles/app.css --map). */
+export const PAPER = '#EEE8DA';
+
+/** Protomaps "light", re-inked in the app's palette: paper land, soft lagoon water, sage parks. */
+const TWILIGHT = {
+  ...namedFlavor('light'),
+  background: PAPER,
+  earth: PAPER,
+  park_a: '#D8E5CC',
+  park_b: '#CFE0C3',
+  wood_a: '#D3E1C6',
+  wood_b: '#C9DABB',
+  scrub_a: '#DCE6CF',
+  scrub_b: '#D3DFC4',
+  zoo: '#D8E5CC',
+  water: '#BFD6E4',
+  pedestrian: '#F7F2E8',
+  buildings: '#E2D9C6',
+  minor_a: '#FFFFFF',
+  minor_b: '#FFFFFF',
+  minor_service: '#FBF8F1',
+  other: '#FBF8F1',
+  major: '#FFFFFF',
+  highway: '#F3E3BF',
+  railway: '#C9BEA8',
+  boundaries: '#C9BEA8',
+};
+
 const OSM_ATTRIBUTION = '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors';
 
 /**
@@ -24,7 +52,7 @@ export function buildStyle(hasPmtiles: boolean): StyleSpecification {
             attribution: `<a href="https://protomaps.com" target="_blank" rel="noopener">Protomaps</a> ${OSM_ATTRIBUTION}`,
           },
         },
-        layers: (layers('protomaps', namedFlavor('light'), { lang: 'en' }) as LayerSpecification[]).filter((l) => l.type !== 'symbol'),
+        layers: (layers('protomaps', TWILIGHT, { lang: 'en' }) as LayerSpecification[]).filter((l) => l.type !== 'symbol'),
       }
     : {
         version: 8,
@@ -38,8 +66,14 @@ export function buildStyle(hasPmtiles: boolean): StyleSpecification {
           },
         },
         layers: [
-          { id: 'bg', type: 'background', paint: { 'background-color': '#eef0e6' } },
-          { id: 'osm', type: 'raster', source: 'osm' },
+          { id: 'bg', type: 'background', paint: { 'background-color': PAPER } },
+          // Warm, quieter OSM raster so the gold-and-navy pins lead.
+          {
+            id: 'osm',
+            type: 'raster',
+            source: 'osm',
+            paint: { 'raster-saturation': -0.45, 'raster-contrast': -0.08, 'raster-brightness-min': 0.08, 'raster-hue-rotate': 8 },
+          },
         ],
       };
 

@@ -9,7 +9,7 @@ import { FilterBar } from '../filters/FilterBar';
 import { ListHeader, ListView } from '../list/ListView';
 import { MapView } from '../map/MapView';
 import { useGeolocation } from '../near/useGeolocation';
-import { DetailHeader, DetailSheet } from '../sheet/DetailSheet';
+import { DetailSheet } from '../sheet/DetailSheet';
 import { RefillDetail } from '../sheet/RefillDetail';
 import { Sheet } from '../sheet/Sheet';
 import { useUi } from '../store';
@@ -28,7 +28,7 @@ function Main() {
   }, [authError, expire]);
 
   return (
-    <div className="app">
+    <div className={`app sheet-${snap}`}>
       <MapView />
       <FilterBar />
       <Banner />
@@ -37,7 +37,8 @@ function Main() {
         snap={snap}
         onSnap={(s) => set({ snap: s })}
         label={selectedId ? 'Restaurant details' : selectedRefillId ? 'Refill point' : 'Places list'}
-        header={selectedId ? <DetailHeader id={selectedId} /> : selectedRefillId ? null : <ListHeader onLocate={locate} />}
+        header={selectedId || selectedRefillId ? null : <ListHeader />}
+        flush={!!selectedId}
       >
         {selectedId ? <DetailSheet id={selectedId} /> : selectedRefillId ? <RefillDetail id={selectedRefillId} /> : <ListView onLocate={locate} />}
       </Sheet>

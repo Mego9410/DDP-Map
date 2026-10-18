@@ -26,13 +26,19 @@ export function AppMenu() {
           {LOCAL_ONLY && ' · local-only mode, changes stay on this device'}
         </p>
         <label className="switch">
-          <input type="checkbox" checked={satellite} onChange={(e) => set({ satellite: e.target.checked })} />
-          Satellite view <span className="hint">(needs signal)</span>
+          <span className="switch-text">
+            Satellite view
+            <span className="hint">Needs signal</span>
+          </span>
+          <input type="checkbox" role="switch" checked={satellite} onChange={(e) => set({ satellite: e.target.checked })} />
         </label>
         {user?.role === 'admin' && (
           <label className="switch">
-            <input type="checkbox" checked={editMode} onChange={(e) => set({ editMode: e.target.checked, moving: null })} />
-            Edit mode <span className="hint">(edit menus, move pins, long-press map to add a refill)</span>
+            <span className="switch-text">
+              Edit mode
+              <span className="hint">Edit menus, move pins, long-press the map to add a refill</span>
+            </span>
+            <input type="checkbox" role="switch" checked={editMode} onChange={(e) => set({ editMode: e.target.checked, moving: null })} />
           </label>
         )}
         {!LOCAL_ONLY && (
@@ -45,7 +51,10 @@ export function AppMenu() {
             Edit history
           </button>
         )}
-        <p className="hint">Last synced {lastSync ? new Date(lastSync).toLocaleString('en-GB') : 'never'}.</p>
+        <p className="hint">
+          Last synced{' '}
+          {lastSync ? new Date(lastSync).toLocaleString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : 'never'}
+        </p>
         <p className="hint">
           Pin colours: <span className="dot dot--quick_service" /> QS credit · <span className="dot dot--snack" /> Snack credit ·{' '}
           <span className="dot dot--none" /> Not on plan. Map data © OpenStreetMap contributors.

@@ -1,4 +1,5 @@
 import { useEffect, useRef, type ReactNode } from 'react';
+import { Close } from './icons';
 
 export function Modal({ title, onClose, children }: { title: string; onClose: () => void; children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -17,8 +18,8 @@ export function Modal({ title, onClose, children }: { title: string; onClose: ()
       <div ref={ref} className="modal" role="dialog" aria-modal="true" aria-label={title} onClick={(e) => e.stopPropagation()}>
         <header className="modal-head">
           <h2>{title}</h2>
-          <button type="button" className="icon-btn" aria-label="Close" onClick={onClose}>
-            ✕
+          <button type="button" className="icon-btn icon-btn--sand" aria-label="Close" onClick={onClose}>
+            <Close size={18} />
           </button>
         </header>
         <div className="modal-body">{children}</div>

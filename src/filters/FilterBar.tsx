@@ -1,38 +1,45 @@
 import { CREDIT_LABEL, type CreditFilter } from '../logic/credits';
 import { PARKS } from '../shared/parks';
 import { useUi } from '../store';
+import { Drop, ParkIcon, Star } from '../ui/icons';
 
-const CHIPS: { id: CreditFilter; label: string; short: string }[] = [
-  { id: 'quick_service', label: CREDIT_LABEL.quick_service, short: 'QS credit' },
-  { id: 'snack', label: CREDIT_LABEL.snack, short: 'Snack credit' },
-  { id: 'none', label: CREDIT_LABEL.none, short: 'Not on plan' },
+const TAB: Record<string, string> = {
+  'magic-kingdom': 'Kingdom',
+  epcot: 'EPCOT',
+  'hollywood-studios': 'Studios',
+  'animal-kingdom': 'Animal',
+  'disney-springs': 'Springs',
+};
+
+const CHIPS: { id: CreditFilter; label: string; mark: string }[] = [
+  { id: 'quick_service', label: 'Quick-Service', mark: 'QS' },
+  { id: 'snack', label: 'Snack', mark: 'S' },
+  { id: 'none', label: 'Not on plan', mark: '$' },
 ];
 
 export function FilterBar() {
   const { parkId, setPark, filters, toggleFilter, showRefills, starredOnly, set } = useUi();
   return (
     <header className="topbar">
-      <div className="topbar-row">
-        <nav className="parks" aria-label="Park">
-          {PARKS.map((p) => (
+      <nav className="parks" aria-label="Park">
+        {PARKS.map((p) => {
+          const Icon = ParkIcon[p.id];
+          const on = p.id === parkId;
+          return (
             <button
               key={p.id}
               type="button"
-              className={`park-chip${p.id === parkId ? ' is-on' : ''}`}
-              aria-pressed={p.id === parkId}
+              className={`park-tab${on ? ' is-on' : ''}`}
+              aria-pressed={on}
+              aria-label={p.name}
               onClick={() => setPark(p.id)}
-              title={p.name}
             >
-              {p.short_name}
+              <Icon size={19} />
+              <span>{TAB[p.id]}</span>
             </button>
-          ))}
-        </nav>
-        <button type="button" className="icon-btn" aria-label="Menu" onClick={() => set({ menuOpen: true })}>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
-        </button>
-      </div>
+          );
+        })}
+      </nav>
       <div className="chips" role="group" aria-label="Filter by credit">
         {CHIPS.map((c) => (
           <button
@@ -40,11 +47,13 @@ export function FilterBar() {
             type="button"
             className={`chip chip--${c.id}${filters.has(c.id) ? ' is-on' : ''}`}
             aria-pressed={filters.has(c.id)}
+            aria-label={CREDIT_LABEL[c.id]}
             onClick={() => toggleFilter(c.id)}
-            title={c.label}
           >
-            <span className={`dot dot--${c.id}`} aria-hidden="true" />
-            {c.short}
+            <span className={`chip-mark mark--${c.id}`} aria-hidden="true">
+              {c.mark}
+            </span>
+            {c.label}
           </button>
         ))}
         <button
@@ -53,7 +62,10 @@ export function FilterBar() {
           aria-pressed={showRefills}
           onClick={() => set({ showRefills: !showRefills })}
         >
-          <span aria-hidden="true">💧</span> Refills
+          <span className="chip-icon chip-icon--water">
+            <Drop size={14} />
+          </span>
+          Refills
         </button>
         <button
           type="button"
@@ -61,7 +73,10 @@ export function FilterBar() {
           aria-pressed={starredOnly}
           onClick={() => set({ starredOnly: !starredOnly })}
         >
-          <span aria-hidden="true">★</span> Shortlist
+          <span className="chip-icon chip-icon--star">
+            <Star size={14} filled />
+          </span>
+          Shortlist
         </button>
       </div>
     </header>

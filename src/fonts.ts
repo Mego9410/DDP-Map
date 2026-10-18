@@ -1,7 +1,8 @@
 // Self-hosted so menus render in their themes with no signal (TRD §7).
-import '@fontsource/inter/400.css';
-import '@fontsource/inter/600.css';
-import '@fontsource/inter/700.css';
+// App chrome: native SF Pro on Apple devices, Figtree elsewhere; Fraunces for titles.
+import '@fontsource-variable/figtree';
+import '@fontsource-variable/fraunces/opsz.css';
+import '@fontsource-variable/fraunces/opsz-italic.css';
 import '@fontsource/space-grotesk/400.css';
 import '@fontsource/space-grotesk/700.css';
 import '@fontsource/orbitron/700.css';

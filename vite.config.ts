@@ -31,7 +31,7 @@ export default defineConfig({
       },
       workbox: {
         // App shell, plus only the latin subsets of the self-hosted fonts.
-        globPatterns: ['**/*.{js,mjs,css,html,svg,png,webmanifest}', 'assets/*-latin-[0-9]*-normal-*.woff2'],
+        globPatterns: ['**/*.{js,mjs,css,html,svg,png,webmanifest}', 'assets/*-latin-[0-9]*-normal-*.woff2', 'assets/*-latin-{opsz,wght}-{normal,italic}-*.woff2'],
         globIgnores: ['**/tiles/**'],
         navigateFallback: '/index.html',
         navigateFallbackDenylist: [/^\/api\//],
