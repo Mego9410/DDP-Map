@@ -11,7 +11,7 @@ const SECTIONS = new Set(['entree', 'kids', 'snack', 'drink']);
 const CREDITS = new Set(['quick_service', 'snack', 'none']);
 const KINDS = new Set(['bottle_filler', 'fountain', 'qs_counter_cup']);
 const MEALS = new Set(['breakfast', 'lunch', 'dinner']);
-const COORD = new Set(['approx', 'places', 'manual']);
+const COORD = new Set(['approx', 'places', 'osm', 'manual']);
 
 const isStr = (v: unknown, max = 500): v is string => typeof v === 'string' && v.length <= max;
 const optStr = (v: unknown, max = 500) => v === null || isStr(v, max);

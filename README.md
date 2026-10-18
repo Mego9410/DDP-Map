@@ -107,14 +107,21 @@ three sources, in this order:
    npm run photos -- --upload    # download the listed photos into Postgres and attach them
    ```
 
-3. **Google Places.** Up to five photos per place, shown live with the
-   photographer's name. Google doesn't allow storing them, so they only
-   appear online. This step also replaces the hand-placed pin estimates
-   with Google's positions:
+3. **Google Places (optional).** If you ever have a `GOOGLE_PLACES_API_KEY`,
+   run `npm run geocode -- --db` to link places. The app then also shows up
+   to five live Google photos per place with the photographer's name. These
+   are online only; Google doesn't allow storing them.
 
-   ```bash
-   npm run geocode -- --db       # needs GOOGLE_PLACES_API_KEY; leaves manually moved pins alone
-   ```
+**Pin positions, no key needed.** Pins start from hand-placed estimates.
+Snap them to the real buildings from OpenStreetMap:
+
+```bash
+npm run pins            # updates seed/coordinates.json (source "osm")
+npm run pins -- --db    # also updates the database; pins you moved by hand are kept
+```
+
+Any restaurant OSM doesn't have keeps its estimate. Fix those with **Move
+pin**.
 
 Disney's own photos and logos, and food-blog photos, are copyrighted. They
 are deliberately not scraped. Add your own logo shots with **Upload logo**.
@@ -211,5 +218,5 @@ The Playwright suite covers the PRD user stories:
 | Realtime for favourites | Polling `/api/changes` every 5 s while open | Meets "within a few seconds" without a websocket service |
 | Private storage bucket | `media` table in Postgres, served by `/api/media/:id` behind the session | Keeps photos private with no extra service |
 | Symbol layer pins + labels | HTML marker pins (44px buttons) with supercluster clustering. Base-map label layers dropped | Avoids glyph/sprite downloads, so the map works fully offline |
-| Coordinates from Places before first build | Hand-placed estimates (`approx`), then `npm run geocode` + Move pin | The build environment had no Places key. Pins are flagged until fixed |
+| Coordinates from Places before first build | Hand-placed estimates (`approx`), then `npm run pins` (OpenStreetMap, no key) + Move pin. `npm run geocode` (Places) stays optional | No Places key available. Pins are flagged until fixed |
 | `badgeFor` as written | Same, plus: an entrée explicitly marked `qs_eligible = unknown` shows "Check DDP symbol" | Two "party size" items had unconfirmed eligibility |

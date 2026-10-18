@@ -1,6 +1,10 @@
 // Pure helpers for picking freely licensed Wikimedia Commons photos of a
 // restaurant. Network code lives in scripts/photos.ts; this file is tested.
 
+import { matchScore } from './_match.js';
+
+export { matchScore, nameTokens } from './_match.js';
+
 export interface CommonsPage {
   title: string;
   imageinfo?: {
@@ -28,8 +32,6 @@ export interface Candidate {
 /** Licences that allow storing and showing the image with a credit line. */
 const FREE_LICENSE = /^(cc-by(-sa)?-\d(\.\d)?(-[a-z]+)?|cc0|pd|public domain)$/i;
 
-const STOP = new Set(['the', 'and', 'of', 'a', 'at', 'by', 'de', 'la', 'le', 'les', 'cafe', 'café', 'co', 'inn', 'starbucks']);
-
 export function stripHtml(s: string): string {
   return s
     .replace(/<[^>]*>/g, ' ')
@@ -39,26 +41,6 @@ export function stripHtml(s: string): string {
     .replace(/&nbsp;/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
-}
-
-function fold(s: string): string {
-  return s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase();
-}
-
-export function nameTokens(name: string): string[] {
-  return fold(name)
-    .replace(/['’]s\b/g, '')
-    .split(/[^a-z0-9]+/)
-    .filter((t) => t.length > 1 && !STOP.has(t));
-}
-
-/** 0..1: share of the restaurant's distinctive words found in the file title/description. */
-export function matchScore(name: string, haystack: string): number {
-  const tokens = nameTokens(name);
-  if (!tokens.length) return 0;
-  const hay = fold(haystack);
-  const hits = tokens.filter((t) => hay.includes(t)).length;
-  return hits / tokens.length;
 }
 
 export function licenseOf(meta: Record<string, { value: string } | undefined>): { code: string; label: string } | null {

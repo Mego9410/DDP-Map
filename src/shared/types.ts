@@ -6,7 +6,7 @@ export type Tri = 'yes' | 'no' | 'unknown';
 export type ItemSection = 'entree' | 'kids' | 'snack' | 'drink';
 export type RefillKind = 'bottle_filler' | 'fountain' | 'qs_counter_cup';
 export type Meal = 'breakfast' | 'lunch' | 'dinner';
-export type CoordSource = 'approx' | 'places' | 'manual';
+export type CoordSource = 'approx' | 'places' | 'osm' | 'manual';
 export type Role = 'admin' | 'member';
 
 export interface Park {

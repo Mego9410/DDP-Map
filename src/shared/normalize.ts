@@ -39,7 +39,7 @@ export interface SeedFile {
   locations: SeedLocation[];
 }
 
-export type CoordFile = Record<string, { lat: number; lng: number; source: CoordSource; place_id?: string } | string>;
+export type CoordFile = Record<string, { lat: number; lng: number; source: CoordSource; place_id?: string; osm_id?: string } | string>;
 
 export interface NormalizedSeed {
   parks: Park[];
