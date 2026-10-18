@@ -39,6 +39,9 @@ export interface SeedFile {
   locations: SeedLocation[];
 }
 
+/** seed/photos.json: per location, the chosen photos and where each was stored. */
+export type PhotoManifest = Record<string, { attribution: string; license: string; source_url: string; media_path?: string }[]>;
+
 export type CoordFile = Record<string, { lat: number; lng: number; source: CoordSource; place_id?: string; osm_id?: string } | string>;
 
 export interface NormalizedSeed {
@@ -103,7 +106,7 @@ function isSeasonalNote(note: string | null): boolean {
 
 const QS_UNCONFIRMED = /(eligibility not confirmed|party size)/i;
 
-export function normalizeSeed(seed: SeedFile, coords: CoordFile, refills: RefillStation[] = []): NormalizedSeed {
+export function normalizeSeed(seed: SeedFile, coords: CoordFile, refills: RefillStation[] = [], photoManifest: PhotoManifest = {}): NormalizedSeed {
   const stamp = `${seed.generated}T00:00:00.000Z`;
   const lands = new Map<string, Land>();
   const locations: Location[] = [];
@@ -117,6 +120,11 @@ export function normalizeSeed(seed: SeedFile, coords: CoordFile, refills: Refill
 
     const c = coords[s.id];
     const coord = typeof c === 'object' ? c : null;
+    // Only photos shipped with the app (/photos/...) belong in seed data;
+    // database uploads are attached by scripts/photos.ts --upload instead.
+    const photos = (photoManifest[s.id] ?? [])
+      .filter((p) => p.media_path?.startsWith('/photos/'))
+      .map((p) => ({ path: p.media_path!, attribution: p.attribution, license: p.license, source_url: p.source_url }));
 
     locations.push({
       id: s.id,
@@ -136,9 +144,9 @@ export function normalizeSeed(seed: SeedFile, coords: CoordFile, refills: Refill
       coord_source: s.lat != null ? 'manual' : coord?.source ?? null,
       google_place_id: coord?.place_id ?? null,
       logo_path: null,
-      hero_path: null,
-      hero_attribution: null,
-      photos: [],
+      hero_path: photos[0]?.path ?? null,
+      hero_attribution: photos[0]?.attribution ?? null,
+      photos,
       theme_id: defaultThemeId({ id: s.id, park_id, area_label: s.area }),
       menu_as_of: s.menu_as_of || null,
       sources: s.sources ?? [],

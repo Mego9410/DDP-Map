@@ -154,21 +154,29 @@ export function startSyncLoop(): () => void {
 /** Local-only mode: load the bundled seed into Dexie once. */
 export async function loadLocalSeed(): Promise<void> {
   if (!LOCAL_ONLY) return;
-  const [{ default: seed }, { default: coords }, { default: refills }, { normalizeSeed }] = await Promise.all([
+  const [{ default: seed }, { default: coords }, { default: refills }, { default: photos }, { normalizeSeed }] = await Promise.all([
     import('../../seed/locations.json'),
     import('../../seed/coordinates.json'),
     import('../../seed/refills.json'),
+    import('../../seed/photos.json'),
     import('../shared/normalize'),
   ]);
-  const version = (seed as { generated: string }).generated;
+  const version = `${(seed as { generated: string }).generated}+${Object.keys(photos).length}p`;
   if ((await getMeta<string>(META.seeded)) === version) return;
-  const n = normalizeSeed(seed as never, coords as never, refills as never);
+  const n = normalizeSeed(seed as never, coords as never, refills as never, photos as never);
   await db.transaction('rw', db.tables, async () => {
     await db.parks.bulkPut(n.parks);
     await db.lands.bulkPut(n.lands);
     // Keep anything already edited on this device.
-    const have = new Set(await db.locations.toCollection().primaryKeys());
+    const have = new Map((await db.locations.toArray()).map((l) => [l.id, l]));
     await db.locations.bulkPut(n.locations.filter((l) => !have.has(l.id)));
+    // Newly shipped photos reach places that have none yet.
+    for (const l of n.locations) {
+      const cur = have.get(l.id);
+      if (cur && l.photos.length && !cur.hero_path && !(cur.photos ?? []).length) {
+        await db.locations.update(l.id, { hero_path: l.hero_path, hero_attribution: l.hero_attribution, photos: l.photos });
+      }
+    }
     const haveItems = new Set(await db.menu_items.toCollection().primaryKeys());
     await db.menu_items.bulkPut(n.menu_items.filter((i) => !haveItems.has(i.id)));
     await db.refill_stations.bulkPut(n.refill_stations);

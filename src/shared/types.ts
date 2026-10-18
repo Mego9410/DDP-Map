@@ -25,7 +25,7 @@ export interface Land {
 }
 
 export interface LocationPhoto {
-  /** /api/media/<uuid> */
+  /** /api/media/<uuid> (uploads) or /photos/<file> (shipped with the app) */
   path: string;
   /** Credit line shown on the photo, e.g. "Photo: Jane Doe, CC BY-SA 4.0, via Wikimedia Commons". */
   attribution: string | null;

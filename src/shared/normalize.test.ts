@@ -1,6 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import { seedData } from '../test/seedData';
-import { counterCupRefills } from './normalize';
+import { counterCupRefills, normalizeSeed, type CoordFile, type SeedFile } from './normalize';
+import { validateLocationPatch } from './validate.js';
+import seed from '../../seed/locations.json';
+import coords from '../../seed/coordinates.json';
 import { parkForPoint } from './parks.js';
 
 describe('normalizeSeed', () => {
@@ -53,5 +56,27 @@ describe('normalizeSeed', () => {
     const cups = counterCupRefills(d.locations);
     expect(cups.length).toBe(d.locations.filter((l) => l.credit === 'quick_service').length);
     expect(cups.every((c) => c.kind === 'qs_counter_cup')).toBe(true);
+  });
+
+  it('attaches photos shipped in /photos (cover first) and ignores database-only ones', () => {
+    const d2 = normalizeSeed(seed as SeedFile, coords as CoordFile, [], {
+      pizzafari: [
+        { attribution: 'Photo: A, CC BY 2.0, via Wikimedia Commons', license: 'CC BY 2.0', source_url: 'https://commons.wikimedia.org/wiki/File:A.jpg', media_path: '/photos/pizzafari-1.jpg' },
+        { attribution: 'Photo: B, CC0, via Wikimedia Commons', license: 'CC0', source_url: 'https://commons.wikimedia.org/wiki/File:B.jpg', media_path: '/api/media/00000000-0000-4000-8000-000000000001' },
+        { attribution: 'Photo: C', license: 'CC0', source_url: 'https://commons.wikimedia.org/wiki/File:C.jpg' },
+      ],
+    });
+    const p = d2.locations.find((l) => l.id === 'pizzafari')!;
+    expect(p.hero_path).toBe('/photos/pizzafari-1.jpg');
+    expect(p.hero_attribution).toBe('Photo: A, CC BY 2.0, via Wikimedia Commons');
+    expect(p.photos.map((x) => x.path)).toEqual(['/photos/pizzafari-1.jpg']);
+    expect(d2.locations.find((l) => l.id === 'casey-s-corner')!.photos).toEqual([]);
+  });
+
+  it('accepts shipped and uploaded image paths, nothing else', () => {
+    expect(validateLocationPatch({ hero_path: '/photos/pizzafari-1.jpg' })).toBeNull();
+    expect(validateLocationPatch({ hero_path: '/api/media/00000000-0000-4000-8000-000000000001' })).toBeNull();
+    expect(validateLocationPatch({ hero_path: '/photos/../secret.jpg' })).not.toBeNull();
+    expect(validateLocationPatch({ hero_path: 'https://example.com/x.jpg' })).not.toBeNull();
   });
 });

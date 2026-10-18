@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import { useLocations } from '../data/hooks';
+import { warmImages } from '../data/warm';
 import { RefillForm } from '../admin/AddRefill';
 import { MovePinBar } from '../admin/MovePin';
 import { Login } from '../auth/Login';
@@ -23,6 +25,12 @@ function Main() {
   const expire = useSession((s) => s.expire);
 
   useEffect(() => startSyncLoop(), []);
+  const locations = useLocations();
+  useEffect(() => {
+    if (!locations.length) return;
+    const t = setTimeout(() => void warmImages(locations), 4000);
+    return () => clearTimeout(t);
+  }, [locations]);
   useEffect(() => {
     if (authError) void expire(authError.status === 403 ? authError.message : 'Your session ended. Sign in again.', authError.status === 403);
   }, [authError, expire]);

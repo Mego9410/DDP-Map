@@ -60,6 +60,17 @@ export default defineConfig({
             },
           },
           {
+            // Freely licensed photos shipped with the app; src/data/warm.ts fills this
+            // cache in the background so every place has its photos offline.
+            urlPattern: ({ url }) => url.pathname.startsWith('/photos/'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'photos',
+              expiration: { maxEntries: 600, maxAgeSeconds: 90 * DAY },
+              cacheableResponse: { statuses: [200] },
+            },
+          },
+          {
             urlPattern: ({ url }) => url.pathname.startsWith('/api/media/'),
             handler: 'CacheFirst',
             options: {

@@ -105,7 +105,13 @@ three sources, in this order:
    npm run photos                # search Commons, write seed/photos.json (links and credits only)
    # open seed/photos.json and delete any wrong matches
    npm run photos -- --upload    # download the listed photos into Postgres and attach them
+   npm run photos -- --to-repo   # or: save them in public/photos/ to ship with the app (no database needed)
    ```
+
+   Photos shipped in `public/photos/` are attached from `seed/photos.json` by
+   `db:seed` and in local mode. The app downloads every stored photo in the
+   background after launch, so they all work offline, not just the ones
+   you've opened.
 
 3. **Google Places (optional).** If you ever have a `GOOGLE_PLACES_API_KEY`,
    run `npm run geocode -- --db` to link places. The app then also shows up

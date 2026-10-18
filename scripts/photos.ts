@@ -6,11 +6,15 @@
 //   npm run photos                    search Commons, write seed/photos.json for review
 //   (open seed/photos.json, delete any wrong matches)
 //   npm run photos -- --upload        download what's listed and attach it in the database
+//   npm run photos -- --to-repo       or: save them under public/photos/ so they ship with
+//                                     the app (no database needed); then commit them
 //
 // Options: --only=id1,id2   --per-place=3   --min-score=0.67
-// Images never go in the repo: seed/photos.json holds links and credits only.
+// With --upload, images stay out of the repo (seed/photos.json holds links and
+// credits only). --to-repo is for freely licensed images only, which is all
+// this script ever selects; their credit lines travel with them.
 import './_env.js';
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { need } from './_env.js';
 import { pickCandidates, type Candidate, type CommonsPage } from './_commons.js';
 import type { SeedFile } from '../src/shared/normalize.js';
@@ -19,7 +23,8 @@ import type { LocationPhoto } from '../src/shared/types.js';
 const MANIFEST = 'seed/photos.json';
 const UA = 'ParkPlate/0.1 (private family trip planner; https://github.com/Mego9410/DDP-Map)';
 const arg = (k: string) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('=')[1];
-const upload = process.argv.includes('--upload');
+const toRepo = process.argv.includes('--to-repo');
+const upload = process.argv.includes('--upload') || toRepo;
 const only = arg('only')?.split(',');
 const perPlace = Number(arg('per-place') ?? 3);
 const minScore = Number(arg('min-score') ?? 0.67);
@@ -38,9 +43,19 @@ async function commonsSearch(q: string): Promise<CommonsPage[]> {
     action: 'query', format: 'json', formatversion: '2', generator: 'search', gsrnamespace: '6', gsrlimit: '25',
     gsrsearch: q, prop: 'imageinfo', iiprop: 'url|size|mime|extmetadata', iiurlwidth: '1280',
   })) u.searchParams.set(k, v);
-  const res = await fetch(u, { headers: { 'User-Agent': UA } });
-  if (!res.ok) throw new Error(`Commons ${res.status}`);
-  return ((await res.json()) as { query?: { pages?: CommonsPage[] } }).query?.pages ?? [];
+  return ((await politeFetch(u)).json() as Promise<{ query?: { pages?: CommonsPage[] } }>).then((d) => d.query?.pages ?? []);
+}
+
+/** Wikimedia rate-limits shared addresses: back off on 429/5xx and retry. */
+async function politeFetch(u: string | URL, tries = 6): Promise<Response> {
+  for (let i = 0; ; i++) {
+    const res = await fetch(u, { headers: { 'User-Agent': UA, 'Api-User-Agent': UA } });
+    if (res.ok) return res;
+    if (i >= tries || !(res.status === 429 || res.status >= 500)) throw new Error(`${new URL(String(u)).host} ${res.status}`);
+    const wait = Number(res.headers.get('retry-after')) || Math.min(60, 3 * 2 ** i);
+    console.warn(`  (rate limited, waiting ${wait}s)`);
+    await sleep(wait * 1000);
+  }
 }
 
 const targets = seed.locations.filter((l) => !only || only.includes(l.id));
@@ -64,6 +79,34 @@ if (!upload) {
   process.exit(0);
 }
 
+if (toRepo) {
+  mkdirSync('public/photos', { recursive: true });
+  let saved = 0;
+  for (const loc of targets) {
+    const entries = manifest[loc.id] ?? [];
+    let n = entries.filter((e) => e.media_path?.startsWith('/photos/')).length;
+    for (const e of entries) {
+      if (e.media_path) continue;
+      const res = await politeFetch(e.image_url).catch(() => new Response(null, { status: 599 }));
+      const type = (res.headers.get('content-type') ?? '').split(';')[0];
+      const ext = type === 'image/png' ? 'png' : type === 'image/webp' ? 'webp' : type === 'image/jpeg' ? 'jpg' : null;
+      if (!res.ok || !ext) {
+        console.warn(`  ! ${loc.name}: could not download ${e.title} (${res.status} ${type})`);
+        continue;
+      }
+      const file = `${loc.id}-${++n}.${ext}`;
+      writeFileSync(`public/photos/${file}`, Buffer.from(await res.arrayBuffer()));
+      e.media_path = `/photos/${file}`;
+      saved++;
+      save();
+      await sleep(400);
+    }
+    if (entries.some((e) => e.media_path)) console.log(`✓ ${loc.name}: ${entries.filter((e) => e.media_path).length} photo(s)`);
+  }
+  console.log(`\nSaved ${saved} photos to public/photos/. Commit them with seed/photos.json; db:seed and local mode pick them up.`);
+  process.exit(0);
+}
+
 // --upload
 need('DATABASE_URL');
 const { getDb } = await import('../api/_lib/db.js');
@@ -73,7 +116,7 @@ for (const loc of targets) {
   const entries = manifest[loc.id] ?? [];
   for (const e of entries) {
     if (e.media_path) continue;
-    const res = await fetch(e.image_url, { headers: { 'User-Agent': UA } });
+    const res = await politeFetch(e.image_url).catch(() => new Response(null, { status: 599 }));
     const type = (res.headers.get('content-type') ?? '').split(';')[0];
     if (!res.ok || !/^image\/(jpeg|png|webp)$/.test(type)) {
       console.warn(`  ! ${loc.name}: could not download ${e.title} (${res.status} ${type})`);
