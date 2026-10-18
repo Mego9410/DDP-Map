@@ -1,0 +1,6807 @@
+{
+  "generated": "2026-10-18",
+  "count": 66,
+  "locations": [
+    {
+      "id": "casey-s-corner",
+      "name": "Casey's Corner",
+      "short_name": "Casey's Corner",
+      "park": "Magic Kingdom",
+      "area": "Main Street, U.S.A.",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "All-Beef Hot Dog",
+          "price": 11.79,
+          "note": ""
+        },
+        {
+          "item": "All-Beef Foot-long Hot Dog",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Chili-Cheese All-Beef Hot Dog",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Chili-Cheese All-Beef Foot-long Hot Dog",
+          "price": 15.49,
+          "note": ""
+        },
+        {
+          "item": "Chipotle Barbecue All-Beef Hot Dog",
+          "price": 15.49,
+          "note": "featured item"
+        },
+        {
+          "item": "Chipotle Barbecue All-Beef Foot-long Hot Dog",
+          "price": 16.49,
+          "note": "featured item"
+        },
+        {
+          "item": "Mini Corn Dogs",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Plant-based Dog",
+          "price": 11.79,
+          "note": ""
+        },
+        {
+          "item": "Plant-based Chicago-style Dog",
+          "price": 13.49,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Baseball Brownie",
+          "price": 5.99,
+          "snackCredit": null,
+          "note": "dessert"
+        },
+        {
+          "item": "Chipotle Barbecue Loaded Fries",
+          "price": 8.29,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "Chili-Cheese French Fries",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Chili",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "French Fries",
+          "price": 4.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Cuties Mandarin (3-pack)",
+          "price": 4.19,
+          "snackCredit": null
+        },
+        {
+          "item": "Cheese Sauce",
+          "price": 1.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-18",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/caseys-corner",
+        "https://www.wdwmagic.com/dining/caseys-corner/menus.htm",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "No kids' menu listed. Drinks: fountain $5.59, Frozen Mint Julep Lemonade $7.29. Last price changes 6 Oct 2026. Halloween party nights add Chipotle BBQ Pork & Street Corn hot dog $14.99 / mini corn dogs $13.49 / fries $8.29 and Headless Horseman Treat $6.99. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "main-street-bakery-starbucks",
+      "name": "Main Street Bakery (Starbucks)",
+      "short_name": "Main Street Bakery",
+      "park": "Magic Kingdom",
+      "area": "Main Street, U.S.A.",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Bacon, Gouda & Egg Sandwich",
+          "price": 5.99,
+          "note": ""
+        },
+        {
+          "item": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "price": 6.59,
+          "note": ""
+        },
+        {
+          "item": "Sausage, Cheddar & Egg Sandwich",
+          "price": 5.59,
+          "note": ""
+        },
+        {
+          "item": "Spinach, Feta & Cage-Free Egg White Breakfast Wrap",
+          "price": 5.99,
+          "note": ""
+        },
+        {
+          "item": "Ham & Swiss Croissant",
+          "price": 5.29,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Mickey-shaped Cinnamon Roll",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Brownie",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Chocolate Chip Cookie",
+          "price": 4.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Hedgehog Cake Pop",
+          "price": 3.45,
+          "snackCredit": null
+        },
+        {
+          "item": "Pumpkin Cream Cheese Muffin",
+          "price": 4.99,
+          "snackCredit": null,
+          "note": "seasonal"
+        },
+        {
+          "item": "Assorted Pastries",
+          "price": null,
+          "snackCredit": null,
+          "note": "price range $1.79-$7.49"
+        },
+        {
+          "item": "Mickey Cheesecake (pumpkin)",
+          "price": 6.49,
+          "snackCredit": null,
+          "note": "Halloween party nights only"
+        },
+        {
+          "item": "Mickey Cinnamon Roll with Halloween sprinkles",
+          "price": 7.99,
+          "snackCredit": null,
+          "note": "Halloween party nights only"
+        }
+      ],
+      "menu_as_of": "2026-10-18",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/main-street-bakery",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Single all-day 'Coffee - Bakery' menu (no separate breakfast/lunch/dinner). No true entrees or kids' menu; food is sandwiches/pastries. Starbucks Grande drinks $4.85-$8.05 (e.g. Caffe Latte $5.75, Frappuccinos $6.45-$6.95, Pumpkin Spice Latte $6.75). what exactly one QS credit buys here was not confirmed. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "tortuga-tavern",
+      "name": "Tortuga Tavern",
+      "short_name": "Tortuga Tavern",
+      "park": "Magic Kingdom",
+      "area": "Adventureland",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "All-Beef Hot Dog",
+          "price": 10.99,
+          "note": "with house-made chips"
+        },
+        {
+          "item": "Barbecued Pork Sandwich",
+          "price": 12.49,
+          "note": "with house-made chips"
+        },
+        {
+          "item": "Barbecued Slaw Dog",
+          "price": 12.99,
+          "note": "with house-made chips"
+        },
+        {
+          "item": "Orange Chicken Strips",
+          "price": 11.29,
+          "note": ""
+        },
+        {
+          "item": "Peanut Butter, Chocolate-Hazelnut Spread, and Banana Sandwich",
+          "price": 10.99,
+          "note": "with house-made chips"
+        }
+      ],
+      "kids": [],
+      "snacks": [],
+      "menu_as_of": "2026-09-29",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/tortuga-tavern",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "No kids or dessert section. Drinks: Coca-Cola fountain $4.79, Desert Pear Lemonade Pirate Slushy $6.49. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "pecos-bill-tall-tale-inn-and-cafe",
+      "name": "Pecos Bill Tall Tale Inn and Cafe",
+      "short_name": "Pecos Bill",
+      "park": "Magic Kingdom",
+      "area": "Frontierland",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Barbecue Bacon Jam Cheeseburger",
+          "price": 14.79,
+          "note": "added July 2026"
+        },
+        {
+          "item": "Smoked Pork Sandwich",
+          "price": 14.49,
+          "note": ""
+        },
+        {
+          "item": "Nacho Bowl",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Rice Bowl",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Southwest Caesar Salad",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Southwest Black Bean Burger",
+          "price": 12.99,
+          "note": "plant-based"
+        },
+        {
+          "item": "Queso Fries",
+          "price": 6.99,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheese Quesadilla",
+          "price": 7.79
+        },
+        {
+          "item": "Cheeseburger",
+          "price": 9.49
+        },
+        {
+          "item": "Citrus-Chipotle Chicken Nacho Bowl",
+          "price": 9.29
+        },
+        {
+          "item": "Citrus-Chipotle Chicken Rice Bowl",
+          "price": 9.29
+        },
+        {
+          "item": "Green Chile Beef Nacho Bowl",
+          "price": 9.29
+        },
+        {
+          "item": "PB&J Uncrustables",
+          "price": 7.29
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Churro Loops",
+          "price": 7.49,
+          "snackCredit": null,
+          "note": "dessert"
+        },
+        {
+          "item": "Chips con Queso",
+          "price": 6.49,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "Chips and Salsa",
+          "price": 5.99,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "Charro Beans",
+          "price": 5.49,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "Cilantro-Lime Rice",
+          "price": 5.49,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "Allergy-friendly Brownie",
+          "price": 4.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Allergy-friendly Cookies",
+          "price": 3.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/pecos-bill-tall-tale-inn-and-cafe",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Toppings bar location. Add-ons: Guacamole $2.50, Queso Dip $1.00. Drinks: fountain $4.99, Strawberry Limeade Slush $6.59. Kids' Hamburger $8.49 appears only in the allergy-friendly list. Halloween party nights add Buzzard Wings $12.49, Cursed Cowboy Fries $10.49, Frightful Black Bean Burger $12.99, Pumpkin Patch Mini Churros $7.49, Skull-icious Cake $6.29 (Smoked Pork Sandwich and Black Bean Burger not on party menu). Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "golden-oak-outpost",
+      "name": "Golden Oak Outpost",
+      "short_name": "Golden Oak Outpost",
+      "park": "Magic Kingdom",
+      "area": "Frontierland",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Mama Odie's Hot Honey Chicken Strips",
+          "price": 14.29,
+          "note": ""
+        },
+        {
+          "item": "Candied Bacon Skewer with Chips",
+          "price": 9.99,
+          "note": "moved here after Westward Ho closed June 2026"
+        },
+        {
+          "item": "Biscuit Breakfast Sandwich",
+          "price": 7.79,
+          "note": "breakfast only"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Tiana's Famous Beignets",
+          "price": 7.29,
+          "snackCredit": null,
+          "note": "dessert"
+        },
+        {
+          "item": "Banana-Caramel Beignets",
+          "price": 8.79,
+          "snackCredit": null,
+          "note": "dessert"
+        },
+        {
+          "item": "Sweet Potato Waffle Fries",
+          "price": 5.49,
+          "snackCredit": null,
+          "note": "side"
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/golden-oak-outpost",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "No kids' menu. Drinks: fountain $4.99, Bayou Lavender Lemonade $6.59, Honey-Lavender Cold Brew $6.79. Halloween party nights: Beignets from Beyond $8.79, Cajun Crawfish and Sausage BOOtine $13.99, Hot Honey Lemonade $6.29. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "columbia-harbour-house",
+      "name": "Columbia Harbour House",
+      "short_name": "Columbia Harbour House",
+      "park": "Magic Kingdom",
+      "area": "Liberty Square",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Lobster Roll",
+          "price": 19.99,
+          "note": ""
+        },
+        {
+          "item": "Trio Platter",
+          "price": 15.79,
+          "note": ""
+        },
+        {
+          "item": "Maple-Mustard Glazed Salmon",
+          "price": 15.79,
+          "note": ""
+        },
+        {
+          "item": "Beer-battered Fish Platter",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Beer-battered Shrimp Platter",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Shrimp Skewer Platter",
+          "price": 14.49,
+          "note": ""
+        },
+        {
+          "item": "Hearts of Palm and Artichoke Roll",
+          "price": 13.99,
+          "note": "plant-based"
+        },
+        {
+          "item": "Maple-Mustard Chicken Strips",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Shrimp Salad",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Chicken Platter",
+          "price": 11.99,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Chicken Strips (2 Strips)",
+          "price": 9.49
+        },
+        {
+          "item": "Grilled Salmon",
+          "price": 8.99
+        },
+        {
+          "item": "Grilled Shrimp Skewer",
+          "price": 8.99
+        },
+        {
+          "item": "PB&J Uncrustables",
+          "price": 7.29
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Boston Cream Pie",
+          "price": 5.99,
+          "snackCredit": null,
+          "note": "dessert"
+        },
+        {
+          "item": "S'mores Cup",
+          "price": 5.99,
+          "snackCredit": null,
+          "note": "dessert"
+        },
+        {
+          "item": "Nonfat Strawberry Greek Yogurt",
+          "price": 3.49,
+          "snackCredit": null
+        },
+        {
+          "item": "New England Clam Chowder",
+          "price": 6.79,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "Black Garlic, Truffle, and Parmesan Fries",
+          "price": 6.99,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "Hushpuppies",
+          "price": 5.49,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "A Cuties Mandarin",
+          "price": 1.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-17",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/columbia-harbour-house",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Drinks: fountain $4.99, Minute Maid Lemonade Slushy $6.29. Turkey Sandwich Kid's Pack $8.29 appears only in the allergy-friendly list. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "sleepy-hollow",
+      "name": "Sleepy Hollow",
+      "short_name": "Sleepy Hollow",
+      "park": "Magic Kingdom",
+      "area": "Liberty Square",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Waffle with Sweet-and-Spicy Maple Chicken",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Hand-dipped Corn Dog",
+          "price": 11.99,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Waffle with Chocolate-Hazelnut Spread, Bananas, Berries, and Whipped Cream",
+          "price": 9.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Waffle with Berries, Powdered Sugar, and Whipped Cream",
+          "price": 8.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Waffle",
+          "price": 7.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Funnel Cake with Berries, Powdered Sugar, and Whipped Cream",
+          "price": 8.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Funnel Cake with Chocolate-Hazelnut Spread, Bananas, and Whipped Cream",
+          "price": 8.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Funnel Cake with Powdered Sugar",
+          "price": 7.29,
+          "snackCredit": null
+        },
+        {
+          "item": "House-made Chips",
+          "price": 3.29,
+          "snackCredit": null,
+          "note": "side"
+        }
+      ],
+      "menu_as_of": "2026-10-14",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/sleepy-hollow",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Single 'All Day' menu; Mostly snack-style counter. Drinks: fountain $4.99, cold brew with sweet cream $5.99. Halloween party nights: Doom Buggy Dumplings $8.99, Graveyard Hot Chicken and Waffle $13.29, Hatbox Ghost Pop $6.29, Pumpkin-spiced Funnel Cake Sundae $8.99. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "liberty-square-market",
+      "name": "Liberty Square Market",
+      "short_name": "Liberty Sq Market",
+      "park": "Magic Kingdom",
+      "area": "Liberty Square",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Turkey Leg",
+          "price": 14.99,
+          "note": "after 11am"
+        },
+        {
+          "item": "All-Beef Hot Dog",
+          "price": 9.79,
+          "note": "after 11am"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Mickey-shaped Pretzel with Cheese Sauce",
+          "price": 8.49,
+          "snackCredit": null,
+          "note": "after 11am"
+        },
+        {
+          "item": "Chocolate Chip Cookie",
+          "price": 4.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Cuties Mandarin 3-pack",
+          "price": 4.19,
+          "snackCredit": null
+        },
+        {
+          "item": "Mini Babybel Snack Cheese",
+          "price": 3.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Chips",
+          "price": 3.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Pickle",
+          "price": 2.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Whole Fruit",
+          "price": 2.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-01",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/liberty-square-market",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Outdoor market stand; Hot items only after 11am. Bottled drinks: assorted $5.50, Magic Potion Slushy $6.59. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "pinocchio-village-haus",
+      "name": "Pinocchio Village Haus",
+      "short_name": "Pinocchio Village Haus",
+      "park": "Magic Kingdom",
+      "area": "Fantasyland",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Chicken Parmesan Sandwich",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Buffalo Chicken Flatbread",
+          "price": 14.29,
+          "note": ""
+        },
+        {
+          "item": "Lemon Pepper-Parmesan Chicken Strips",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Pepperoni Flatbread",
+          "price": 13.79,
+          "note": ""
+        },
+        {
+          "item": "All-Meat Flatbread",
+          "price": 13.29,
+          "note": ""
+        },
+        {
+          "item": "Gourmet Cheese Flatbread",
+          "price": 13.29,
+          "note": ""
+        },
+        {
+          "item": "Plant-based \"Cheese\" Pizza",
+          "price": 13.29,
+          "note": ""
+        },
+        {
+          "item": "Chicken Strips (4 Strips)",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Caesar Salad with Chicken",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Caesar Salad",
+          "price": 9.99,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Chicken Strips (2 Strips)",
+          "price": 9.49
+        },
+        {
+          "item": "Grilled Chicken Salad with Ranch Dressing",
+          "price": 8.29
+        },
+        {
+          "item": "Kids' Cheese Pizza",
+          "price": 8.29
+        },
+        {
+          "item": "Kids' Pepperoni Pizza",
+          "price": 8.29
+        },
+        {
+          "item": "Macaroni & Cheese",
+          "price": 7.49
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Pinocchio Cookie Tart",
+          "price": 6.29,
+          "snackCredit": null,
+          "note": "dessert"
+        },
+        {
+          "item": "Nonfat Greek Yogurt",
+          "price": 3.19,
+          "snackCredit": null
+        },
+        {
+          "item": "A Cuties Mandarin",
+          "price": 1.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Black Garlic, Truffle, and Parmesan Fries",
+          "price": 6.99,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "Side Caesar Salad",
+          "price": 4.59,
+          "snackCredit": null,
+          "note": "side"
+        }
+      ],
+      "menu_as_of": "2026-10-14",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/pinocchio-village-haus",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Drinks: fountain $4.99, Key Lime Dream $6.99. Halloween party nights add Cruella Cookie Sandwich $6.29, Fra Diavolo Chicken Sandwich $13.99, Phantasmal Fried Pumpkin Ravioli $11.49, Undead Garlic-Parmesan Chicken Strips $12.99 (Chicken Parm and Buffalo flatbread not on party menu). Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "gaston-s-tavern",
+      "name": "Gaston's Tavern",
+      "short_name": "Gaston's Tavern",
+      "park": "Magic Kingdom",
+      "area": "Fantasyland",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Ham and Gruyere Sandwich",
+          "price": 11.29,
+          "note": "only entree"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Warm Cinnamon Roll",
+          "price": 7.99,
+          "snackCredit": null
+        },
+        {
+          "item": "The Grey Stuff Cupcake",
+          "price": 6.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Creme Brulee Croissant",
+          "price": 6.49,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-15",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/gastons-tavern",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/",
+        "https://disneytouristblog.com/maximizing-snack-credit-value-on-the-dining-plan/"
+      ],
+      "notes": "Single all-day snack menu (meal periods inferred from park hours). LeFou's Brew $6.99 (souvenir stein $14.79), fountain $4.99. Prices rose 6 Oct 2026. Disney Tourist Blog (Jan 2026) names the cinnamon roll and Grey Stuff cupcake as snack-credit uses but doesn't explicitly confirm eligibility. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "the-friar-s-nook",
+      "name": "The Friar's Nook",
+      "short_name": "Friar's Nook",
+      "park": "Magic Kingdom",
+      "area": "Fantasyland",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Jumbo Pretzel",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Barbecue Pork Tot Bowl",
+          "price": 12.49,
+          "note": ""
+        },
+        {
+          "item": "All-Beef Hot Dog",
+          "price": 11.79,
+          "note": ""
+        },
+        {
+          "item": "Cheddar, Bacon, and Ranch Tots",
+          "price": 11.49,
+          "note": ""
+        },
+        {
+          "item": "Breakfast Tot Bowl",
+          "price": 11.49,
+          "note": "breakfast only"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Caramel Apple Doughnuts",
+          "price": 6.49,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-17",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/the-friars-nook",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "No kids' menu. Drinks: fountain $4.99, Peaches and Cream $6.99. Halloween party nights: Bowl of Bones $13.99, Buffalo Chicken Hand Pie $9.99, Haunting Jalapeno Tots $11.49, Not-So-Poison Apple Doughnuts $6.49. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "cosmic-ray-s-starlight-cafe",
+      "name": "Cosmic Ray's Starlight Cafe",
+      "short_name": "Cosmic Ray's",
+      "park": "Magic Kingdom",
+      "area": "Tomorrowland",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Truffle-French Onion Burger",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "1/3 lb Bacon Cheeseburger",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Buffalo-Ranch Chicken Strips",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Fried Chicken Sandwich",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Grilled Chicken Sandwich",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Patty Melt",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Chicken Strips (4 Strips)",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Classic Ranch Salad with Chicken Strips",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Classic Ranch Salad with Grilled Chicken",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Classic Ranch Salad",
+          "price": 9.99,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheeseburger",
+          "price": 9.49
+        },
+        {
+          "item": "Kids' Chicken Strips (2 Strips)",
+          "price": 9.49
+        },
+        {
+          "item": "Kids' Grilled Chicken Sandwich",
+          "price": 8.29
+        },
+        {
+          "item": "Kids' Macaroni & Cheese",
+          "price": 7.49
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Peanut Butter and Jelly Brownie",
+          "price": 5.99,
+          "snackCredit": null,
+          "note": "dessert"
+        },
+        {
+          "item": "Allergy-friendly Brownie",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Allergy-friendly Chocolate Chip Cookie",
+          "price": 4.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Black Garlic, Truffle, and Parmesan Fries",
+          "price": 6.99,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null,
+          "note": "side"
+        },
+        {
+          "item": "A Cuties Mandarin",
+          "price": 1.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-17",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/cosmic-rays-starlight-cafe",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Toppings bar location. Drinks: fountain $4.99, Lunar Lemonade $6.79, Green Apple-Lemonade Slush $6.99. Halloween party nights: Fang-tastic Garlic Butter Burger $14.99, Sweet-and-Spicy Chicken Strips $12.99, Minnie Witch Hat $7.99, Oogie Boogie Slushy $6.99. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "the-lunching-pad",
+      "name": "The Lunching Pad",
+      "short_name": "Lunching Pad",
+      "park": "Magic Kingdom",
+      "area": "Tomorrowland",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Cuban Hot Dog",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Queso Fundido Hot Dog",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "All-Beef Hot Dog",
+          "price": 11.79,
+          "note": ""
+        },
+        {
+          "item": "Breakfast Sandwich",
+          "price": 7.79,
+          "note": "breakfast only"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Mickey Pretzel",
+          "price": 8.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Cream Cheese Pretzel",
+          "price": 8.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Sticky Bubble Bread",
+          "price": 6.49,
+          "snackCredit": null,
+          "note": "dessert"
+        },
+        {
+          "item": "Cheese Sauce",
+          "price": 1.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/the-lunching-pad",
+        "https://www.disneyfoodblog.com/2027-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "No kids' menu. Drinks: fountain $4.99, Frozen Blue Raspberry / Coca-Cola Slushy $6.49, Ghoulish Blue Raspberry Slushy $6.79 (seasonal). Halloween party nights swap the specialty dogs for Creepy Kimchi Hot Dog $13.99 and Jalapeno Popper Hot Dog $14.99, plus Hades Cake Pop $6.29. Disney marks eligible items with a DDP symbol on its own menus/app; check there."
+    },
+    {
+      "id": "connections-eatery",
+      "name": "Connections Eatery",
+      "short_name": "Connections Eatery",
+      "park": "EPCOT",
+      "area": "World Celebration",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "American Classic Cheeseburger",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Fried Chicken Sandwich",
+          "price": 13.99,
+          "note": "soy-allergy-friendly version $13.19"
+        },
+        {
+          "item": "House-made Pepperoni Pizza",
+          "price": 12.49,
+          "note": ""
+        },
+        {
+          "item": "House-made Cheese Pizza",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "BBQ Braai Chicken Pizza",
+          "price": 12.29,
+          "note": "may be a seasonal/festival-tie-in item"
+        },
+        {
+          "item": "General Tso Chicken Salad",
+          "price": 12.49,
+          "note": ""
+        },
+        {
+          "item": "General Tso Tofu Salad",
+          "price": 12.49,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheeseburger",
+          "price": 9.49
+        },
+        {
+          "item": "Chicken Strips",
+          "price": 9.49
+        },
+        {
+          "item": "Cheese Pizza",
+          "price": 8.29
+        },
+        {
+          "item": "PB&J Uncrustables",
+          "price": 7.29
+        },
+        {
+          "item": "Hamburger (milk-allergy-friendly listing)",
+          "price": 8.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Chocolate Baumkuchen",
+          "price": 6.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Caramel-Apple Cheesecake Baumkuchen",
+          "price": 6.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Liege Waffle",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Black Garlic, Truffle & Parmesan Fries",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Applesauce",
+          "price": 1.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Cuties Mandarin",
+          "price": 1.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Belgian Chocolate Gelato Shake",
+          "price": 7.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Madagascar Vanilla Gelato Shake",
+          "price": 7.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Mango-Coconut Milkshake",
+          "price": 7.99,
+          "snackCredit": null
+        },
+        {
+          "item": "S'mores Gelato Milkshake",
+          "price": 8.49,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-17",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/connections-eatery",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Fountain drink $4.99."
+    },
+    {
+      "id": "connections-caf-starbucks",
+      "name": "Connections Café (Starbucks)",
+      "short_name": "Connections Café",
+      "park": "EPCOT",
+      "area": "World Celebration",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Bacon, Gouda & Egg Sandwich",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "price": 6.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Sausage, Cheddar & Egg Sandwich",
+          "price": 5.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Ham & Swiss Croissant",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Pastries (range $4.29-$7.49)",
+          "price": 4.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Chocolate Chip Cookie",
+          "price": 4.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Sugar Cookie",
+          "price": 3.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Hedgehog Cake Pop",
+          "price": 3.45,
+          "snackCredit": null
+        },
+        {
+          "item": "Liege Waffle",
+          "price": 4.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Pistachio-Chocolate Mochi Doughnut",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Pumpkin Cream Cheese Muffin",
+          "price": 4.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-15",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/connections-cafe",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "No entree/kids sections; food is breakfast sandwiches and bakery. Grande drinks roughly $4.85 (brewed coffee) to $8.05; seasonal fall/holiday drinks present."
+    },
+    {
+      "id": "sunshine-seasons",
+      "name": "Sunshine Seasons",
+      "short_name": "Sunshine Seasons",
+      "park": "EPCOT",
+      "area": "World Nature (The Land)",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Breakfast Sandwich",
+          "price": 11.29,
+          "note": "breakfast only"
+        },
+        {
+          "item": "Beef Barbacoa",
+          "price": 14.49,
+          "note": ""
+        },
+        {
+          "item": "Pork Carnitas",
+          "price": 13.49,
+          "note": "allergy-friendly listing $12.49"
+        },
+        {
+          "item": "Plant-based Sofritas",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Wood-fired Chicken",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Wood-fired Salmon",
+          "price": 14.79,
+          "note": ""
+        },
+        {
+          "item": "Rotisserie Chicken",
+          "price": 12.99,
+          "note": "allergy-friendly listing"
+        },
+        {
+          "item": "Caesar Salad with Chicken",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Power Greens Salad",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Power Greens Salad with Chicken",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Caprese Sandwich",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "Roast Beef Sandwich",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Roasted Turkey BLT Wrap",
+          "price": 10.99,
+          "note": ""
+        },
+        {
+          "item": "Cheese Flatbread",
+          "price": 13.29,
+          "note": ""
+        },
+        {
+          "item": "Pepperoni Flatbread",
+          "price": 13.79,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheese Flatbread",
+          "price": 7.99
+        },
+        {
+          "item": "Pepperoni Flatbread",
+          "price": 8.29
+        },
+        {
+          "item": "Grilled Chicken Breast",
+          "price": 8.29
+        },
+        {
+          "item": "Macaroni & Cheese",
+          "price": 7.49
+        },
+        {
+          "item": "PB&J Uncrustables",
+          "price": 7.29
+        },
+        {
+          "item": "Yogurt Dipper Kid's Pack",
+          "price": 6.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Mickey Cinnamon Roll",
+          "price": 7.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Chocolate Croissant",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Croissant",
+          "price": 4.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Turtle Brownie",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Gluten/Wheat-Friendly Brownie",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Artisanal Cookies",
+          "price": 4.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Allergy-Friendly Cookie",
+          "price": 3.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Cookies 'n Cream Chocolate Mousse Cup",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Churro Strawberry Shortcake Sundae",
+          "price": 8.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Mickey-shaped Celebration Macaron",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Mickey-shaped Strawberry Lemonade Macaron (breakfast)",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Remy Milk Shake",
+          "price": 11.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Seasonal Milkshake",
+          "price": 10.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Roasted Red Pepper Hummus",
+          "price": 4.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Fruit Cups",
+          "price": 4.19,
+          "snackCredit": null
+        },
+        {
+          "item": "Apple Pack",
+          "price": 4.69,
+          "snackCredit": null
+        },
+        {
+          "item": "Apple Slices",
+          "price": 2.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Applesauce",
+          "price": 1.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Carrots",
+          "price": 2.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Cuties Mandarin 3-pack",
+          "price": 4.19,
+          "snackCredit": null
+        },
+        {
+          "item": "Mini Babybel 3-pack",
+          "price": 3.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Strawberry Greek Yogurt",
+          "price": 3.19,
+          "snackCredit": null
+        },
+        {
+          "item": "Vanilla Greek Yogurt",
+          "price": 3.19,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Chips",
+          "price": 3.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Granola Bars",
+          "price": 3.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Candy",
+          "price": 2.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Pickle-in-a-Pouch",
+          "price": 2.79,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/sunshine-seasons",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "lunch menu likely runs through the evening). Fountain $4.99."
+    },
+    {
+      "id": "la-cantina-de-san-angel",
+      "name": "La Cantina de San Angel",
+      "short_name": "La Cantina",
+      "park": "EPCOT",
+      "area": "Mexico",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Taco Trio",
+          "price": 16.25,
+          "note": ""
+        },
+        {
+          "item": "Tacos de Barbacoa",
+          "price": 16.5,
+          "note": ""
+        },
+        {
+          "item": "Tacos de Camaron",
+          "price": 16.0,
+          "note": ""
+        },
+        {
+          "item": "Tacos de Pollo",
+          "price": 15.95,
+          "note": ""
+        },
+        {
+          "item": "Arroz Bowl with Barbacoa Beef or Shrimp",
+          "price": 15.95,
+          "note": ""
+        },
+        {
+          "item": "Arroz Bowl with Marinated Grilled Chicken",
+          "price": 15.5,
+          "note": ""
+        },
+        {
+          "item": "Empanadas con Queso",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Nachos",
+          "price": 15.75,
+          "note": "add guacamole +$3.00"
+        },
+        {
+          "item": "Guacamole with Totopos",
+          "price": 12.5,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Chicken Tacos",
+          "price": 9.5
+        },
+        {
+          "item": "Chicken Tenders",
+          "price": 9.5
+        },
+        {
+          "item": "Empanadas con Queso",
+          "price": 9.5
+        },
+        {
+          "item": "Macaroni & Cheese",
+          "price": 9.5
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Churros",
+          "price": 6.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Churro Sundae",
+          "price": 7.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Mickey Ice Cream Sandwich",
+          "price": 6.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Fried Plantains",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Guacamole (side)",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "La Cantina Slushy",
+          "price": 6.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-17",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/la-cantina-de-san-angel",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Kids meals include choice of drink and fruit side. Fountain $4.75."
+    },
+    {
+      "id": "kringla-bakeri-og-kafe",
+      "name": "Kringla Bakeri Og Kafe",
+      "short_name": "Kringla Bakeri",
+      "park": "EPCOT",
+      "area": "Norway",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Cinnamon Roll with Orange Cream Cheese Icing",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Norwegian Kringla",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Eplekake",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Lefse",
+          "price": 3.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Rice Cream",
+          "price": 4.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Skolebrød",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Triple Chocolate Chip Cookie",
+          "price": 6.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Verden's Beste Kake",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Kristoff Kaffe",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Cold Crumb",
+          "price": 6.79,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/kringla-bakeri-og-kafe",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Fountain $5.59."
+    },
+    {
+      "id": "lotus-blossom-caf",
+      "name": "Lotus Blossom Café",
+      "short_name": "Lotus Blossom",
+      "park": "EPCOT",
+      "area": "China",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Orange Chicken Combo",
+          "price": 14.95,
+          "note": "steamed rice, pork egg roll, fortune cookie"
+        },
+        {
+          "item": "Chicken Fried Rice Combo",
+          "price": 14.95,
+          "note": "pork egg roll, fortune cookie"
+        },
+        {
+          "item": "Mongolian Beef Noodle Combo",
+          "price": 15.75,
+          "note": "pork egg roll, fortune cookie"
+        },
+        {
+          "item": "Stir-Fried Vegetable Noodle Combo",
+          "price": 14.75,
+          "note": "vegetable spring roll, fortune cookie"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Pot Stickers and Egg Roll",
+          "price": 11.5
+        },
+        {
+          "item": "Sweet-and-Sour Chicken",
+          "price": 11.5
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Chicken Pot Stickers",
+          "price": 7.35,
+          "snackCredit": null
+        },
+        {
+          "item": "Pork Egg Rolls",
+          "price": 5.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Caramel-Ginger Ice Cream",
+          "price": 5.35,
+          "snackCredit": null
+        },
+        {
+          "item": "Lychee Ice Cream",
+          "price": 5.35,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-18",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/lotus-blossom-cafe",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Kids meals include carrots, applesauce and milk/water/apple juice. Fountain $4.79."
+    },
+    {
+      "id": "refreshment-outpost",
+      "name": "Refreshment Outpost",
+      "short_name": "Refreshment Outpost",
+      "park": "EPCOT",
+      "area": "Outpost (between China and Germany)",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Berbere-spiced Beef Stew",
+          "price": 6.79,
+          "note": "snack-size; likely a Food & Wine-season item"
+        },
+        {
+          "item": "Sweet Potato Mealie Pap",
+          "price": 5.79,
+          "note": "plant-based; snack-size; likely seasonal"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "DOLE Whip in a Cone",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "South African Cream Liqueur Chocolate Mousse",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Frozen Slushy",
+          "price": 6.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-17",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/refreshment-outpost",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Meal periods not stated (assumed). Menu appears festival-influenced (African-themed small plates during Food & Wine); no hot dogs/kids meals listed currently. Items are snack-priced; Fountain $4.99."
+    },
+    {
+      "id": "sommerfest",
+      "name": "Sommerfest",
+      "short_name": "Sommerfest",
+      "park": "EPCOT",
+      "area": "Germany",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Bratwurst",
+          "price": 12.69,
+          "note": "pretzel roll, sauerkraut, paprika chips"
+        },
+        {
+          "item": "Zwiebelkuchen",
+          "price": 9.79,
+          "note": "plant-based onion cake"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Jumbo Pretzel",
+          "price": 12.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Pretzel Bread Pudding",
+          "price": 4.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Obatzda Cheese Dip (side)",
+          "price": 1.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Cinnamon Pretzel Cold Brew",
+          "price": 6.49,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-14",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/sommerfest",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "No kids menu. Fountain drinks listed without price."
+    },
+    {
+      "id": "pizza-al-taglio",
+      "name": "Pizza al Taglio",
+      "short_name": "Pizza al Taglio",
+      "park": "EPCOT",
+      "area": "Italy",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Pizza Margherita",
+          "price": 9.0,
+          "note": ""
+        },
+        {
+          "item": "Pizza Pepperoni",
+          "price": 9.25,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Seasonal Tiramisu",
+          "price": 8.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Frozen Wild Blueberry (non-alcoholic)",
+          "price": 8.5,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/pizza-al-taglio",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "No kids menu. Fountain $5.50."
+    },
+    {
+      "id": "regal-eagle-smokehouse",
+      "name": "Regal Eagle Smokehouse",
+      "short_name": "Regal Eagle",
+      "park": "EPCOT",
+      "area": "The American Adventure",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "BBQ Platter",
+          "price": 18.49,
+          "note": ""
+        },
+        {
+          "item": "BBQ Burger",
+          "price": 16.49,
+          "note": "cut from $16.99 on 16 Oct 2026"
+        },
+        {
+          "item": "Kansas City Smoked Half Chicken",
+          "price": 16.49,
+          "note": ""
+        },
+        {
+          "item": "Sliced Texas Beef Brisket Sandwich",
+          "price": 15.99,
+          "note": ""
+        },
+        {
+          "item": "North Carolina Chopped Smoked Pork Butt Platter",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Plant-based Chili Baked Potato",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "House Wedge Salad with Pulled BBQ Pork",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "House Wedge Salad with Smoked Chicken",
+          "price": 12.99,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheeseburger",
+          "price": 9.49
+        },
+        {
+          "item": "Chicken Strips",
+          "price": 9.49
+        },
+        {
+          "item": "Hamburger (allergy-friendly listing)",
+          "price": 8.99
+        },
+        {
+          "item": "Macaroni & Cheese",
+          "price": 7.49
+        },
+        {
+          "item": "PB&J Uncrustables",
+          "price": 7.29
+        },
+        {
+          "item": "Salad with Chicken",
+          "price": 8.29
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Banana Pudding",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "S'mores Bar",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Blackberry Buckle",
+          "price": 4.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Sam Eagle Star-Spangled Shortcake",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Seasonal Fruit",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Seasoned French Fries",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Brewmaster's Fries",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Cornbread",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Apple Pie Gelato Shake",
+          "price": 6.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Pumpkin Pie Milk Shake",
+          "price": 6.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Berry Punch",
+          "price": 5.79,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-18",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/regal-eagle-smokehouse-craft-drafts-barbecue",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Fountain $4.99."
+    },
+    {
+      "id": "fife-drum-tavern",
+      "name": "Fife & Drum Tavern",
+      "short_name": "Fife & Drum",
+      "park": "EPCOT",
+      "area": "The American Adventure",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Jumbo Turkey Leg",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Hot Dog",
+          "price": 11.29,
+          "note": "with chips"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Mickey-shaped Pretzel",
+          "price": 8.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Popcorn",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Soft-serve in a Waffle Cone",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Frozen Slushy",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Barq's Root Beer Float",
+          "price": 6.79,
+          "snackCredit": null
+        },
+        {
+          "item": "The American Dream",
+          "price": 6.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-18",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/fife-drum-tavern",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Meal periods not stated (assumed). turkey leg and hot dog treated as entrees. No kids menu. Popcorn souvenir bucket $14.29. Fountain $4.99."
+    },
+    {
+      "id": "katsura-grill",
+      "name": "Katsura Grill",
+      "short_name": "Katsura Grill",
+      "park": "EPCOT",
+      "area": "Japan",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Chicken Teriyaki",
+          "price": 14.99,
+          "note": "rice, broccoli"
+        },
+        {
+          "item": "Chicken and Beef Teriyaki",
+          "price": 15.99,
+          "note": ""
+        },
+        {
+          "item": "Chicken Cutlet Curry",
+          "price": 16.99,
+          "note": ""
+        },
+        {
+          "item": "Tonkotsu (Pork) Ramen",
+          "price": 15.99,
+          "note": ""
+        },
+        {
+          "item": "Beef Udon",
+          "price": 15.99,
+          "note": ""
+        },
+        {
+          "item": "Curry Udon",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Shrimp Tempura Udon",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Yasai (Vegetable) Udon",
+          "price": 13.99,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Chicken Teriyaki",
+          "price": 8.5
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Edamame",
+          "price": 5.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Miso Soup",
+          "price": 4.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Garden Salad",
+          "price": 6.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/katsura-grill",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Kids meal includes cookie and juice/milk/soda. No desserts listed. Fountain $4.99."
+    },
+    {
+      "id": "tangierine-caf-flavors-of-the-medina",
+      "name": "Tangierine Café: Flavors of the Medina",
+      "short_name": "Tangierine Café",
+      "park": "EPCOT",
+      "area": "Morocco",
+      "credit": "snack",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Spiced Flank Steak Hummus Bowl",
+          "price": 7.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Chermoula Chicken Hummus Bowl",
+          "price": 6.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Ras el Hanout Cauliflower Bowl",
+          "price": 6.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Plant-based Falafel Wrap",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Chocolate-Pistachio Cookie",
+          "price": 4.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/tangierine-cafe-flavors-of-the-medina",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "All items are snack-sized."
+    },
+    {
+      "id": "les-halles-boulangerie-p-tisserie",
+      "name": "Les Halles Boulangerie-Pâtisserie",
+      "short_name": "Les Halles",
+      "park": "EPCOT",
+      "area": "France",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Croque Monsieur",
+          "price": 10.75,
+          "note": ""
+        },
+        {
+          "item": "Poulet au Pistou",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "Jambon Beurre",
+          "price": 11.25,
+          "note": ""
+        },
+        {
+          "item": "Dinde B.L.T.",
+          "price": 10.95,
+          "note": ""
+        },
+        {
+          "item": "Brie aux Pommes",
+          "price": 10.25,
+          "note": ""
+        },
+        {
+          "item": "Florentine Quiche",
+          "price": 9.95,
+          "note": ""
+        },
+        {
+          "item": "Quiche Lorraine",
+          "price": 7.5,
+          "note": ""
+        },
+        {
+          "item": "Croissant Sale",
+          "price": 9.75,
+          "note": ""
+        },
+        {
+          "item": "Croissant Jambon Fromage",
+          "price": 7.95,
+          "note": ""
+        },
+        {
+          "item": "Fromages",
+          "price": 12.95,
+          "note": "cheese plate"
+        },
+        {
+          "item": "Soupe du Jour",
+          "price": 7.95,
+          "note": ""
+        },
+        {
+          "item": "Pissaladiere",
+          "price": 6.95,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Croissant",
+          "price": 3.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Pain au Chocolat",
+          "price": 4.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Beignet",
+          "price": 5.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Éclair Chocolat",
+          "price": 5.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Éclair Vanille",
+          "price": 5.75,
+          "snackCredit": null
+        },
+        {
+          "item": "Crème Brûlée",
+          "price": 5.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Mousse au Chocolat",
+          "price": 7.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Tarte au Citron",
+          "price": 7.25,
+          "snackCredit": null
+        },
+        {
+          "item": "Frangipane",
+          "price": 6.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Pistachio",
+          "price": 6.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Ourson",
+          "price": 5.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Biscuit Chocolat",
+          "price": 5.25,
+          "snackCredit": null
+        },
+        {
+          "item": "Viennoiserie Pomme",
+          "price": 5.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Citron Blueberry",
+          "price": 7.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Framboise",
+          "price": 7.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Duo au Chocolat",
+          "price": 7.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Macaron Chocolat",
+          "price": 7.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Macaron Framboise et Citron Vert",
+          "price": 7.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Macaron Plant Based",
+          "price": 8.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Macarons Collection",
+          "price": 13.75,
+          "snackCredit": null
+        },
+        {
+          "item": "Le Big Cookie",
+          "price": 13.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Parfait aux Fruits",
+          "price": 7.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Baguette, Half",
+          "price": 2.95,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/les-halles-boulangerie-patisserie",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "the bakery opens with park opening (breakfast assumed). No kids menu. Tarte aux Fraises listed without price. Fountain $4.79."
+    },
+    {
+      "id": "cr-pes-emporter",
+      "name": "Crêpes à Emporter",
+      "short_name": "Crêpes à Emporter",
+      "park": "EPCOT",
+      "area": "France",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "La Bête de Crêpe",
+          "price": 15.95,
+          "note": "prosciutto, Swiss, mushrooms, arugula"
+        },
+        {
+          "item": "Bechamel, Cheese & Ham Galette",
+          "price": 12.95,
+          "note": ""
+        },
+        {
+          "item": "Cream of Brie Cheese Galette",
+          "price": 12.95,
+          "note": ""
+        },
+        {
+          "item": "Ratatouille Galette",
+          "price": 11.25,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Butter & Sugar Crêpe",
+          "price": 7.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Housemade Hazelnut & Chocolate Spread Crêpe",
+          "price": 9.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Red Berries Crêpe",
+          "price": 9.75,
+          "snackCredit": null
+        },
+        {
+          "item": "Vanilla or Chocolate Ice Cream Crêpe",
+          "price": 9.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Single Scoop Ice Cream",
+          "price": 7.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Milkshake",
+          "price": 9.95,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-15",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/crepes-a-emporter-by-la-creperie-de-paris",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Full name: Crêpes À Emporter by La Crêperie de Paris. No kids menu. Fountain $4.75."
+    },
+    {
+      "id": "yorkshire-county-fish-shop",
+      "name": "Yorkshire County Fish Shop",
+      "short_name": "Yorkshire Fish",
+      "park": "EPCOT",
+      "area": "United Kingdom",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Beer-battered Fish and Chips",
+          "price": 15.49,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Chips",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Cuties Mandarin 3-pack",
+          "price": 4.49,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/yorkshire-county-fish-shop",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Single entree, no kids menu. Fountain $4.99."
+    },
+    {
+      "id": "la-poutinerie",
+      "name": "La Poutinerie",
+      "short_name": "La Poutinerie",
+      "park": "EPCOT",
+      "area": "Canada",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Québec: L'Authentique",
+          "price": 10.99,
+          "note": "fries, cheese curds, brown gravy"
+        },
+        {
+          "item": "Montréal: Viande Fumée",
+          "price": 12.49,
+          "note": "adds smoked meat, pickles, mustard gravy"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Spiced Apple Slushy",
+          "price": 6.25,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-18",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/la-poutinerienew",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/",
+        "https://www.wdwmagic.com/dining/refreshment-port/news/08jun2026-la-poutinerie-opens-july-1-at-epcot-with-full-menu-and-pricing-revealed.htm",
+        "https://www.disneyfoodblog.com/la-poutinerie-epcot/"
+      ],
+      "notes": "Opened 1 July 2026 replacing Refreshment Port. No kids menu. Fountain $4.99 (was $4.79 at opening per WDWMagic)."
+    },
+    {
+      "id": "the-trolley-car-cafe-starbucks",
+      "name": "The Trolley Car Cafe (Starbucks)",
+      "short_name": "Trolley Car Cafe",
+      "park": "Hollywood Studios",
+      "area": "Hollywood Boulevard",
+      "credit": "snack",
+      "meals": [
+        "breakfast",
+        "snack"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Sausage, Cheddar & Egg Sandwich",
+          "price": 5.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Bacon, Gouda & Egg Sandwich",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "price": 6.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Spinach, Feta & Cage-Free Egg White Breakfast Wrap",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Ham & Swiss Croissant",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Carrot Cake Whoopie Pie",
+          "price": 6.29,
+          "snackCredit": true
+        },
+        {
+          "item": "Mickey Mouse-shaped Chocolate Chip Cookie",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Mickey-shaped Cinnamon Roll",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Pastries (range $1.79-$7.49)",
+          "price": 1.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Grande Starbucks drinks (e.g. Caffe Latte $5.75, Brewed Coffee $4.85, Pink Drink $5.95, Frappuccinos $6.45-$6.95, Pumpkin Spice Latte $6.75)",
+          "price": 4.85,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-15",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/trolley-car-cafe/menus/snack",
+        "https://touringplans.com/hollywood-studios/dining/trolley-car-cafe",
+        "https://mickeyblog.com/2026/01/05/starbucks-and-landry-restaurants-have-been-restored-to-the-2026-disney-dining-plan/"
+      ],
+      "notes": "No full meals/entrees and no kids menu - breakfast sandwiches and bakery only. Credit type conflict: MickeyBlog (5 Jan 2026) says Starbucks locations incl. Trolley Car Cafe were restored to the 2026 Dining Plan accepting SNACK credits for drinks and select baked goods; Touring Plans header says '1 QS credit'. Treat as snack-credit location and confirm on arrival. Only the Carrot Cake Whoopie Pie carries the dining-plan icon on Touring Plans; Opens with park, runs to close."
+    },
+    {
+      "id": "backlot-express",
+      "name": "Backlot Express",
+      "short_name": "Backlot Express",
+      "park": "Hollywood Studios",
+      "area": "Echo Lake",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Smoked BBQ Pulled Pork Burger",
+          "price": 15.99,
+          "note": ""
+        },
+        {
+          "item": "1/3 lb Angus Bacon Cheeseburger",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Teriyaki Chicken Bowl",
+          "price": 13.29,
+          "note": ""
+        },
+        {
+          "item": "1/3 lb Angus Cheeseburger",
+          "price": 13.29,
+          "note": ""
+        },
+        {
+          "item": "Teriyaki Tofu Bowl",
+          "price": 13.29,
+          "note": "plant-based"
+        },
+        {
+          "item": "Honey Buffalo Chicken Strips with Ranch",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "Southwest Salad with Chicken",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "Chicken Strips (4 pieces)",
+          "price": 10.99,
+          "note": ""
+        },
+        {
+          "item": "Southwest Salad",
+          "price": 10.99,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Chicken Strips",
+          "price": 8.99
+        },
+        {
+          "item": "Teriyaki Tofu Bowl (Kids' Disney Check Meal)",
+          "price": 8.99
+        },
+        {
+          "item": "Southwest Salad with Chicken (Kids' Disney Check Meal)",
+          "price": 8.29
+        },
+        {
+          "item": "Macaroni & Cheese",
+          "price": 7.49
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Wookiee Cookie (limited time)",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Buffalo Fries",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Blue Raspberry Slushy",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Watermelon Lemonade Slushy",
+          "price": 7.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-09-28",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/backlot-express/menus/lunch-dinner",
+        "https://www.themouseforless.com/walt-disney-world/dining/menus/backlot-express-menu/",
+        "https://www.disneyfoodblog.com/backlot-express/"
+      ],
+      "notes": "Touring Plans menu dated 28 Sep 2026 (overview page 12 Oct 2026). Cuban Sandwich ($12.99) was on The Mouse For Less April 2026 menu but no longer appears on Touring Plans; Honey Buffalo Chicken Strips appear new."
+    },
+    {
+      "id": "dockside-diner",
+      "name": "Dockside Diner",
+      "short_name": "Dockside Diner",
+      "park": "Hollywood Studios",
+      "area": "Echo Lake",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Bacon Macaroni & Cheese Hot Dog",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "California BLTA Dog",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Cheesy Garlic Pretzel Dog",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Pretzel Hot Dog",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "All-Beef Quarter-pound Hot Dog",
+          "price": 11.79,
+          "note": ""
+        },
+        {
+          "item": "Bacon Macaroni & Cheese",
+          "price": 10.99,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "House-made Potato Chips",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Dirt Cup Shake",
+          "price": 10.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Seashore Lemonade",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Chocolate Shake (limited seasonal)",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Vanilla Shake (limited seasonal)",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Minute Maid Premium Frozen Lemonade",
+          "price": 6.29,
+          "snackCredit": true
+        },
+        {
+          "item": "Frozen Blue Raspberry Lemonade",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "DASANI Bottled Water (20 oz)",
+          "price": 4.25,
+          "snackCredit": true
+        },
+        {
+          "item": "Hot Cocoa",
+          "price": 4.29,
+          "snackCredit": true
+        },
+        {
+          "item": "Twinings Hot Tea",
+          "price": 4.29,
+          "snackCredit": true
+        }
+      ],
+      "menu_as_of": "2026-10-14",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/min-and-bills-dockside-diner/menus/lunch-dinner",
+        "https://touringplans.com/hollywood-studios/dining/min-and-bills-dockside-diner",
+        "https://www.thrill-data.com/disney-menus/wdw/dockside-diner"
+      ],
+      "notes": "Walk-up stand (formerly Min and Bill's), limited picnic-table seating, no mobile order. NO kids' menu listed. Touring Plans: 1 QS credit and snacks eligible; Opens 10:30am to park close."
+    },
+    {
+      "id": "abc-commissary",
+      "name": "ABC Commissary",
+      "short_name": "ABC Commissary",
+      "park": "Hollywood Studios",
+      "area": "Commissary Lane",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Chicken Club Sandwich",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "California Burger",
+          "price": 13.99,
+          "note": "plant-based"
+        },
+        {
+          "item": "Shrimp Tacos",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "Mediterranean Salad with Chicken",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "Buffalo Chicken Grilled Cheese Sandwich",
+          "price": 12.79,
+          "note": ""
+        },
+        {
+          "item": "Pork Carnitas Tacos",
+          "price": 11.49,
+          "note": ""
+        },
+        {
+          "item": "Mediterranean Salad",
+          "price": 10.99,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Shrimp Bowl (Kids' Disney Check Meal)",
+          "price": 8.99
+        },
+        {
+          "item": "Pork Taco",
+          "price": 8.29
+        },
+        {
+          "item": "Chicken Arugula-Farro Salad (Kids' Disney Check Meal)",
+          "price": 8.29
+        },
+        {
+          "item": "Grilled Ham and Cheese Sandwich",
+          "price": 7.79
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Raspberry-Pistachio Cheesecake",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Ghost Cream Puff (Halloween exclusive)",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Mini Babybel Snack Cheese",
+          "price": 3.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Black Garlic, Truffle and Parmesan Fries",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Strawberry Lemonade Slushy",
+          "price": 6.59,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-14",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/abc-commissary/menus/lunch",
+        "https://touringplans.com/hollywood-studios/dining/abc-commissary"
+      ],
+      "notes": "Touring Plans hours list lunch only, 10:30am-4:30pm, so it may close before dinner - check hours on the day. Ghost Cream Puff is a seasonal Halloween item. 1 QS credit per Touring Plans."
+    },
+    {
+      "id": "rosie-s-all-american-cafe",
+      "name": "Rosie's All-American Cafe",
+      "short_name": "Rosie's",
+      "park": "Hollywood Studios",
+      "area": "Sunset Boulevard",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Chili-Cheese All-Beef Foot-long Hot Dog",
+          "price": 15.49,
+          "note": ""
+        },
+        {
+          "item": "1/3 lb Angus Bacon Cheeseburger",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Spicy Aioli Chicken Strips",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Hot Honey Buffalo Chicken Chef Salad",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Chicken Strips",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Plant-based Dog",
+          "price": 11.79,
+          "note": "plant-based"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheeseburger (Kids' Disney Check Meal)",
+          "price": 9.49
+        },
+        {
+          "item": "Chicken Strips",
+          "price": 9.49
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Red Velvet Riveter",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Chili-Cheese Fries",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Buffalo Fries",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Cherry Lemonade Slushy",
+          "price": 6.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Minute Maid Apple Juice",
+          "price": 4.59,
+          "snackCredit": true
+        },
+        {
+          "item": "Hot Cocoa",
+          "price": 4.99,
+          "snackCredit": true
+        }
+      ],
+      "menu_as_of": "2026-10-07",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/rosies-all-american-cafe/menus/lunch-and-dinner-menu",
+        "https://touringplans.com/hollywood-studios/dining/rosies-all-american-cafe"
+      ],
+      "notes": "Menu updated 7 Oct 2026 (overview page dated 19 Aug 2026). Open 10:30am to park close. Apple juice and hot cocoa carry the dining-plan icon; other items unmarked."
+    },
+    {
+      "id": "catalina-eddie-s",
+      "name": "Catalina Eddie's",
+      "short_name": "Catalina Eddie's",
+      "park": "Hollywood Studios",
+      "area": "Sunset Boulevard",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Chicken Parmesan with Marinara Pasta",
+          "price": 14.29,
+          "note": ""
+        },
+        {
+          "item": "Meatball Sub",
+          "price": 14.19,
+          "note": ""
+        },
+        {
+          "item": "Pepperoni and Sausage Pizza",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Pepperoni Pizza",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "Cheese Pizza",
+          "price": 12.49,
+          "note": ""
+        },
+        {
+          "item": "Caesar Salad with Chicken",
+          "price": 11.99,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Pepperoni Pizza",
+          "price": 8.49
+        },
+        {
+          "item": "Cheese Pizza",
+          "price": 7.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Cannoli",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Garlic Bread",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Strawberry Lemonade Slushy",
+          "price": 6.59,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-08",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/catalina-eddies/menus/lunch-dinner",
+        "https://touringplans.com/hollywood-studios/dining/catalina-eddies"
+      ],
+      "notes": "Open 10:30am to park close. 1 QS credit per Touring Plans."
+    },
+    {
+      "id": "fairfax-fare",
+      "name": "Fairfax Fare",
+      "short_name": "Fairfax Fare",
+      "park": "Hollywood Studios",
+      "area": "Sunset Boulevard",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Barbecued Beef Brisket Bowl",
+          "price": 16.29,
+          "note": "lunch/dinner"
+        },
+        {
+          "item": "Korean Barbecued Pork Belly Bowl",
+          "price": 16.29,
+          "note": "lunch/dinner"
+        },
+        {
+          "item": "Plant-based Soba Noodle Salad Bowl with Chik'n",
+          "price": 15.49,
+          "note": "lunch/dinner, plant-based"
+        },
+        {
+          "item": "Buffalo Chicken Bowl",
+          "price": 14.99,
+          "note": "lunch/dinner"
+        },
+        {
+          "item": "Plant-based Soba Noodle Salad Bowl",
+          "price": 14.49,
+          "note": "lunch/dinner, plant-based"
+        },
+        {
+          "item": "Waffle Platter",
+          "price": 11.29,
+          "note": "breakfast only (park open to 11am)"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Enchanted Rose",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Belle Cup of Enchantment",
+          "price": 7.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Orange Grove Cold Brew",
+          "price": 6.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/fairfax-fare/menus/lunch-and-dinner",
+        "https://touringplans.com/hollywood-studios/dining/fairfax-fare/menus/breakfast",
+        "https://touringplans.com/hollywood-studios/dining/fairfax-fare"
+      ],
+      "notes": "NO kids' menu listed on Touring Plans for any meal - a poor pick for young kids. Breakfast park open-11am, lunch 11am-3pm, dinner 3pm-close. Orange Grove Cold Brew also shown at $6.79 in a featured section."
+    },
+    {
+      "id": "docking-bay-7-food-and-cargo",
+      "name": "Docking Bay 7 Food and Cargo",
+      "short_name": "Docking Bay 7",
+      "park": "Hollywood Studios",
+      "area": "Star Wars: Galaxy's Edge",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Shaak Pot Roast with Kublag Mash",
+          "price": 19.99,
+          "note": ""
+        },
+        {
+          "item": "Sweet Puffer Pig Ribs with Portion Bread",
+          "price": 16.99,
+          "note": ""
+        },
+        {
+          "item": "Endorian Fried Chicken Tip Yip",
+          "price": 16.99,
+          "note": ""
+        },
+        {
+          "item": "Pirjanad Hot Chicken Tip Yip",
+          "price": 16.99,
+          "note": ""
+        },
+        {
+          "item": "Ronto Wrap",
+          "price": 16.99,
+          "note": "dinner only, after 3pm"
+        },
+        {
+          "item": "Endorian Chicken Tip-Yip Salad",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Felucian Falafel and Hummus Garden Spread",
+          "price": 13.29,
+          "note": "plant-based"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Fried Chicken Tip Yip Youngling Meal",
+          "price": 11.29
+        },
+        {
+          "item": "Ithorian Pasta Rings (Kids' Disney Check Meal)",
+          "price": 9.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Black Spire Mousse",
+          "price": 6.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Mashed Potatoes",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "White Rice",
+          "price": 5.49,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-12",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/docking-bay-7-food-cargo/menus/lunch",
+        "https://touringplans.com/hollywood-studios/dining/docking-bay-7-food-cargo/menus/dinner",
+        "https://touringplans.com/hollywood-studios/dining/docking-bay-7-food-cargo"
+      ],
+      "notes": "Touring Plans breakfast menu page shows drinks only (no food), so breakfast service is unconfirmed - excluded from meals. Most expensive QS option in the park (best value for a credit: Shaak Pot Roast $19.99). Kids' Youngling Meal at $11.29 is the priciest kids' meal on this list."
+    },
+    {
+      "id": "ronto-roasters",
+      "name": "Ronto Roasters",
+      "short_name": "Ronto Roasters",
+      "park": "Hollywood Studios",
+      "area": "Star Wars: Galaxy's Edge",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Ronto Wrap",
+          "price": 14.99,
+          "note": "listed on both breakfast and lunch/dinner menus"
+        },
+        {
+          "item": "Zuchii Wrap",
+          "price": 13.99,
+          "note": "plant-based; lunch/dinner"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Andoan Fruit with Muja Sauce",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Keshian Spiced Chips",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Tatooine Sunset",
+          "price": 6.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-13",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/ronto-roasters/menus/lunch-and-dinner",
+        "https://touringplans.com/hollywood-studios/dining/ronto-roasters/menus/breakfast",
+        "https://touringplans.com/hollywood-studios/dining/ronto-roasters"
+      ],
+      "notes": "No kids' meals listed on either menu. Touring Plans lists Andoan Fruit and Keshian Spiced Chips under Entrees, but these are snack-sized sides (recorded as snacks here). Breakfast menu shows only Ronto Wrap and chips (no dedicated breakfast wrap) - treat breakfast offering as uncertain. Touring Plans also shows an odd flat '$10 adult / $6 child' price line that does not match itemised prices; itemised prices used. 1 QS credit."
+    },
+    {
+      "id": "woody-s-lunch-box",
+      "name": "Woody's Lunch Box",
+      "short_name": "Woody's Lunch Box",
+      "park": "Hollywood Studios",
+      "area": "Toy Story Land",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "BBQ Brisket Melt",
+          "price": 13.99,
+          "note": "lunch/dinner; breakfast menu lists $14.99"
+        },
+        {
+          "item": "Smoked Turkey Sandwich",
+          "price": 11.49,
+          "note": ""
+        },
+        {
+          "item": "Grilled Three-Cheese Sandwich",
+          "price": 10.99,
+          "note": "breakfast menu lists $11.99"
+        },
+        {
+          "item": "Totcho Bowl",
+          "price": 10.99,
+          "note": ""
+        },
+        {
+          "item": "Plant-based Totchos",
+          "price": 10.99,
+          "note": "plant-based"
+        },
+        {
+          "item": "Plant-based Toasted Cheddar Sandwich",
+          "price": 10.99,
+          "note": "plant-based; breakfast menu lists $11.99"
+        },
+        {
+          "item": "Breakfast Bowl",
+          "price": 8.99,
+          "note": "breakfast only"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Turkey Sandwich (Kids' Disney Check Meal)",
+          "price": 8.29
+        },
+        {
+          "item": "Grilled Cheese",
+          "price": 7.49
+        },
+        {
+          "item": "Kids' Breakfast Bowl (breakfast only)",
+          "price": 6.49
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Pumpkin Lunch Box Tart",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Raspberry Lunch Box Tart",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Potato Barrels",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Tomato-basil Soup",
+          "price": 4.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Mini Babybel Snack Cheese",
+          "price": 3.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Cuties Mandarin",
+          "price": 1.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Frozen Mystic Portal Punch",
+          "price": 6.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Ice Cream Float with Barq's Root Beer",
+          "price": 6.79,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-06",
+      "sources": [
+        "https://touringplans.com/hollywood-studios/dining/woodys-lunch-box/menus/lunch-and-dinner",
+        "https://touringplans.com/hollywood-studios/dining/woodys-lunch-box/menus/breakfast",
+        "https://touringplans.com/hollywood-studios/dining/woodys-lunch-box"
+      ],
+      "notes": "Lunch/dinner menu dated 29 Sep 2026, breakfast 6 Oct 2026; Pumpkin Lunch Box Tart is likely seasonal. 1 QS credit."
+    },
+    {
+      "id": "creature-comforts-starbucks",
+      "name": "Creature Comforts (Starbucks)",
+      "short_name": "Creature Comforts",
+      "park": "Animal Kingdom",
+      "area": "Discovery Island",
+      "credit": "snack",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner",
+        "snacks"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Mickey Cinnamon Roll",
+          "price": 7.99,
+          "snackCredit": true
+        },
+        {
+          "item": "Pumpkin Cream Cheese Muffin (seasonal)",
+          "price": 4.99,
+          "snackCredit": true
+        },
+        {
+          "item": "Hedgehog Cake Pop",
+          "price": 3.45,
+          "snackCredit": true
+        },
+        {
+          "item": "Assorted Pastries",
+          "price": null,
+          "snackCredit": true
+        },
+        {
+          "item": "Ham & Swiss Croissant",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Bacon, Gouda & Egg Sandwich",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "price": 6.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Sausage, Cheddar & Egg Sandwich",
+          "price": 5.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Spinach, Feta & Cage-Free Egg White Breakfast Wrap",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Freshly Brewed Coffee - Grande",
+          "price": 4.85,
+          "snackCredit": true
+        },
+        {
+          "item": "Caffe Latte - Grande",
+          "price": 5.75,
+          "snackCredit": true
+        },
+        {
+          "item": "Caramel Macchiato - Grande",
+          "price": 6.45,
+          "snackCredit": true
+        },
+        {
+          "item": "Pumpkin Spice Latte - Grande (seasonal)",
+          "price": 6.75,
+          "snackCredit": true
+        },
+        {
+          "item": "Caramel Frappuccino - Grande",
+          "price": 6.75,
+          "snackCredit": true
+        },
+        {
+          "item": "Mocha Frappuccino - Grande",
+          "price": 6.95,
+          "snackCredit": true
+        },
+        {
+          "item": "Strawberry Creme Frappuccino - Grande",
+          "price": 6.75,
+          "snackCredit": true
+        },
+        {
+          "item": "Vanilla Bean Creme Frappuccino - Grande",
+          "price": 6.95,
+          "snackCredit": true
+        },
+        {
+          "item": "Double Chocolaty Chip Creme Frappuccino - Grande",
+          "price": 6.45,
+          "snackCredit": true
+        },
+        {
+          "item": "Starbucks Cold Brew - Grande",
+          "price": 5.45,
+          "snackCredit": true
+        },
+        {
+          "item": "Pink Drink - Grande",
+          "price": 5.95,
+          "snackCredit": true
+        },
+        {
+          "item": "Starbucks Refreshers",
+          "price": 5.45,
+          "snackCredit": true
+        },
+        {
+          "item": "Lemonade - Grande",
+          "price": 4.95,
+          "snackCredit": true
+        },
+        {
+          "item": "Teavana Chai Tea Latte - Grande",
+          "price": 5.95,
+          "snackCredit": true
+        }
+      ],
+      "menu_as_of": "2026-10-08",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/creature-comforts",
+        "https://mickeyblog.com/2026/01/05/starbucks-and-landry-restaurants-have-been-restored-to-the-2026-disney-dining-plan/",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Starbucks: no entrees/kids meals. MickeyBlog (5 Jan 2026) says Starbucks locations incl. Creature Comforts were restored to the 2026 plan for SNACK credits on 'drinks and select baked goods'; breakfast sandwiches left null (unknown). Snack list is a selection of the ~53-item drinks menu (all Grande prices, $4.85-$8.05); 9 seasonal/holiday drinks also listed at $5.75-$6.95. Assorted Pastries price shown as TBD."
+    },
+    {
+      "id": "flame-tree-barbecue",
+      "name": "Flame Tree Barbecue",
+      "short_name": "Flame Tree BBQ",
+      "park": "Animal Kingdom",
+      "area": "Discovery Island",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "1/2 Chicken",
+          "price": 14.79,
+          "note": ""
+        },
+        {
+          "item": "Baked Macaroni & Cheese with Pulled Pork",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Korean Barbecue Sandwich",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Ribs and Chicken Combo",
+          "price": 16.99,
+          "note": ""
+        },
+        {
+          "item": "Ribs, Chicken, and Pulled Pork Sampler",
+          "price": 19.99,
+          "note": ""
+        },
+        {
+          "item": "Smoked Pulled Pork Sandwich",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "Smokehouse Chicken Salad",
+          "price": 12.49,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "All-Beef Hot Dog",
+          "price": 7.99
+        },
+        {
+          "item": "Baked Chicken Drumstick",
+          "price": 8.29
+        },
+        {
+          "item": "PB&J Uncrustables",
+          "price": 7.29
+        },
+        {
+          "item": "Pulled Pork Platter",
+          "price": 7.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "French Fries with Pulled Pork and Cheese",
+          "price": 8.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Black Garlic, Truffle, and Parmesan Fries",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Cornbread",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Broccoli Salad",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Bug-shaped Graham Crackers",
+          "price": 2.29,
+          "snackCredit": null
+        },
+        {
+          "item": "A Cuties Mandarin",
+          "price": 1.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Candy Corn Pop (seasonal)",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Spiced Cheesecake (seasonal)",
+          "price": null,
+          "snackCredit": null
+        },
+        {
+          "item": "Allergy-friendly Brownie",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Allergy-friendly Cookie",
+          "price": 4.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Bubbling Pink Lagoon (non-alcoholic)",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Peaches and Cream (drink)",
+          "price": 6.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-09",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/flame-tree-barbecue",
+        "https://www.disneyfoodblog.com/flame-tree-barbecue/",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Spiced Cheesecake and Candy Corn Pop look like seasonal (fall) desserts; cheesecake listed with no price. Non-alcoholic drinks: fountain $4.99/$5.59, DASANI $4.25, coffee $4.99."
+    },
+    {
+      "id": "pizzafari",
+      "name": "Pizzafari",
+      "short_name": "Pizzafari",
+      "park": "Animal Kingdom",
+      "area": "Discovery Island",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Baked Chicken Tenders",
+          "price": 12.99,
+          "note": "new from 6 Sep 2026"
+        },
+        {
+          "item": "Caesar Salad",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Caesar Salad with Chicken",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Cheese Pizza",
+          "price": 11.29,
+          "note": ""
+        },
+        {
+          "item": "Chicken Caprese Baguette Sandwich",
+          "price": 13.29,
+          "note": ""
+        },
+        {
+          "item": "Creamy Pesto Chicken Pasta",
+          "price": 13.29,
+          "note": ""
+        },
+        {
+          "item": "Greens and Grains Salad",
+          "price": 10.99,
+          "note": ""
+        },
+        {
+          "item": "Pepperoni Pizza",
+          "price": 11.79,
+          "note": ""
+        },
+        {
+          "item": "Sausage & Pepperoni Pizza",
+          "price": 12.29,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheese Pizza",
+          "price": 7.99
+        },
+        {
+          "item": "Macaroni & Cheese",
+          "price": 7.49
+        },
+        {
+          "item": "Pasta with Turkey Marinara Sauce",
+          "price": 7.79
+        },
+        {
+          "item": "PB&J Uncrustable",
+          "price": 7.29
+        },
+        {
+          "item": "Pepperoni Pizza",
+          "price": 7.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Fairy Bread Cake",
+          "price": 5.19,
+          "snackCredit": null
+        },
+        {
+          "item": "Marbled Swirled Cheesecake",
+          "price": 6.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Wackadoo Fruit Freeze",
+          "price": 6.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Bluey's Berry Lemonade",
+          "price": 6.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Garlic Bread (3 pieces)",
+          "price": 6.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Cheese Garlic Bread (3 pieces)",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Allergy-friendly Brownie",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Allergy-friendly Cookies",
+          "price": 4.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Blue Lagoon Lemonade (non-alcoholic)",
+          "price": 6.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-09-26",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/pizzafari",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Bluey-themed items (Fairy Bread Cake, Wackadoo Fruit Freeze, Bluey's Berry Lemonade, Bluey Sipper $22.79) may be limited-time. Non-alcoholic drinks: fountain $4.79/$5.59, DASANI $4.25."
+    },
+    {
+      "id": "harambe-market",
+      "name": "Harambe Market",
+      "short_name": "Harambe Market",
+      "park": "Animal Kingdom",
+      "area": "Africa",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "1/3 lb Angus Bacon Cheeseburger",
+          "price": 13.99,
+          "note": "served with fries"
+        },
+        {
+          "item": "1/3 lb Angus Cheeseburger",
+          "price": 13.29,
+          "note": "served with fries"
+        },
+        {
+          "item": "Chicken Strips",
+          "price": 11.99,
+          "note": "served with fries; was $10.99 until 6 Oct 2026"
+        },
+        {
+          "item": "Harissa Chicken Wrap",
+          "price": 12.29,
+          "note": "was $10.99 at Feb reopening, $11.99 until 8 Oct 2026"
+        },
+        {
+          "item": "Savanna Salad",
+          "price": 11.49,
+          "note": "added after Feb 2026 reopening"
+        },
+        {
+          "item": "Tanzanian Meat Pie",
+          "price": 13.49,
+          "note": "added after Feb 2026 reopening"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheeseburger",
+          "price": 9.49
+        },
+        {
+          "item": "Chicken Strips",
+          "price": 9.49
+        },
+        {
+          "item": "PB&J Uncrustables",
+          "price": 7.29
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Kubwa Cookie",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "French Fries",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Seasoned Kettle Chips",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Fruit Cup",
+          "price": 3.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Allergy-Friendly Brownie",
+          "price": 5.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Allergy-Friendly Cookie",
+          "price": 4.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Frozen Flamingo (non-alcoholic)",
+          "price": 6.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Golden Frozen Flame (non-alcoholic)",
+          "price": 6.59,
+          "snackCredit": null
+        },
+        {
+          "item": "Watermelon Lemonade",
+          "price": 6.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-09",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/harambe-market",
+        "https://www.wdwmagic.com/dining/harambe-market/news/27jan2026-disney-moves-up-harambe-market-reopening-to-february-complete-menu-with-prices-now-available.htm",
+        "https://www.disneyfoodblog.com/harambe-market/",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Reopened 5 Feb 2026 as burger/chicken strip location (WDWMagic 27 Jan 2026 menu). Savanna Salad and Tanzanian Meat Pie were added later (WDWMagic 30 Jun 2026 'African-inspired flavors return' - article itself could not be fetched). several increases on 6-9 Oct 2026). Hours are short: ~10:30am-4:30pm, may close as early as 3:15pm - not a reliable dinner option. No item-level snack-credit marks found."
+    },
+    {
+      "id": "yak-yeti-local-food-cafes",
+      "name": "Yak & Yeti Local Food Cafes",
+      "short_name": "Yak & Yeti Cafes",
+      "park": "Animal Kingdom",
+      "area": "Asia",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Firecracker Shrimp",
+          "price": 17.99,
+          "note": ""
+        },
+        {
+          "item": "Honey Sesame Chicken",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Korean Barbecue Rib Tips",
+          "price": 17.99,
+          "note": ""
+        },
+        {
+          "item": "Korean Fried Chicken Sandwich",
+          "price": 15.99,
+          "note": ""
+        },
+        {
+          "item": "Teriyaki Chicken Salad",
+          "price": 14.49,
+          "note": ""
+        },
+        {
+          "item": "Vegetable Tikka Masala",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Yeti Cheeseburger",
+          "price": 19.49,
+          "note": ""
+        },
+        {
+          "item": "Breakfast Bowl",
+          "price": 11.99,
+          "note": "breakfast"
+        },
+        {
+          "item": "Breakfast Bowl with Bacon or Sausage",
+          "price": 13.99,
+          "note": "breakfast"
+        },
+        {
+          "item": "Egg White English Muffin",
+          "price": 11.99,
+          "note": "breakfast"
+        },
+        {
+          "item": "Sausage and Egg English Muffin",
+          "price": 13.99,
+          "note": "breakfast"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheeseburger",
+          "price": 9.99
+        },
+        {
+          "item": "Chicken Strips",
+          "price": 9.99
+        },
+        {
+          "item": "PB&J Uncrustable",
+          "price": 8.99
+        },
+        {
+          "item": "French Toast (breakfast)",
+          "price": 9.99
+        },
+        {
+          "item": "Pancake Sausage Stick (breakfast)",
+          "price": 9.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Banana Pudding Parfait",
+          "price": 8.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Cookies & Cream Parfait",
+          "price": 8.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Mini Mango Pie",
+          "price": 8.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Pork Egg Rolls - 1 Roll",
+          "price": 5.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Pork Egg Rolls - 2 Rolls",
+          "price": 8.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Crispy Pork Pot Stickers",
+          "price": 8.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Snack Chicken Fried Rice",
+          "price": 6.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Chicken Fried Rice",
+          "price": 7.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Basket of French Fries",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Hash Brown Bites (breakfast)",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Fruit Salad (breakfast)",
+          "price": 9.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Yogurt Parfait (breakfast)",
+          "price": 9.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Flavored Coconut Water",
+          "price": 6.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-15",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/yak-yeti-local-food-cafes",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Landry's-operated (not Disney), so prices run higher. WDWNT reported a near-menu-wide price rise in May 2026. MickeyBlog's Jan 2026 'Landry's restored' article named only the table-service Yak & Yeti Restaurant, so confirm with Disney when booking. Breakfast menu may be seasonal/limited days. Fountain drinks $5.59 (single size). No item-level snack-credit marks found."
+    },
+    {
+      "id": "satu-li-canteen",
+      "name": "Satu'li Canteen",
+      "short_name": "Satu'li Canteen",
+      "park": "Animal Kingdom",
+      "area": "Pandora",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Chimichurri Beef Bowl",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Chopped Wood-Grilled Chicken Bowl",
+          "price": 14.49,
+          "note": "was $13.49 until 6 Oct 2026"
+        },
+        {
+          "item": "Chili-Spiced Crispy Fried Tofu Bowl",
+          "price": 14.49,
+          "note": "was $13.49 until 6 Oct 2026"
+        },
+        {
+          "item": "Chili-Garlic Shrimp Bowl",
+          "price": 16.99,
+          "note": "was $15.79 until 6 Oct 2026"
+        },
+        {
+          "item": "Chimichurri Beef and Chopped Wood-grilled Chicken",
+          "price": 17.99,
+          "note": "combination bowl"
+        },
+        {
+          "item": "Chopped Wood-grilled Chicken and Chili-Garlic Shrimp",
+          "price": 17.99,
+          "note": "combination bowl"
+        },
+        {
+          "item": "Chimichurri Beef and Chili-Garlic Shrimp",
+          "price": 18.99,
+          "note": "combination bowl"
+        },
+        {
+          "item": "Ocean Moon Bowl",
+          "price": 18.99,
+          "note": ""
+        },
+        {
+          "item": "Cheeseburger Steamed Pods (Bao Buns)",
+          "price": 13.99,
+          "note": ""
+        },
+        {
+          "item": "Spicy Pork Steamed Pods",
+          "price": 14.29,
+          "note": ""
+        },
+        {
+          "item": "Cinnamon French Toast",
+          "price": 12.99,
+          "note": "breakfast"
+        },
+        {
+          "item": "Frittata and Beef",
+          "price": 14.29,
+          "note": "breakfast"
+        },
+        {
+          "item": "Slow-roasted Pork Shoulder Potato Hash",
+          "price": 13.29,
+          "note": "breakfast"
+        },
+        {
+          "item": "Tropical Pandoran Forest Fruits",
+          "price": 11.99,
+          "note": "breakfast"
+        }
+      ],
+      "kids": [
+        {
+          "item": "'Teylu' All-Beef Hot Dog Wrapped in Dough",
+          "price": 7.99
+        },
+        {
+          "item": "Cheese Quesadilla",
+          "price": 7.79
+        },
+        {
+          "item": "Cheeseburger Steamed Pod",
+          "price": 9.49
+        },
+        {
+          "item": "Chili-Spiced Crispy Fried Tofu Bowl",
+          "price": 9.29
+        },
+        {
+          "item": "Chopped Wood-Grilled Chicken Bowl",
+          "price": 9.29
+        },
+        {
+          "item": "Cereal with Milk (breakfast)",
+          "price": 5.49
+        },
+        {
+          "item": "Cinnamon French Toast (breakfast)",
+          "price": 7.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Blueberry Cream Cheese Mousse",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Mangkwan Mousse",
+          "price": 6.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Specialty Chai Cold Brew (non-alcoholic)",
+          "price": 6.79,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-07",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/satuli-canteen",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "price rises 6-7 Oct 2026). Coffee $4.99, DASANI $4.25. No item-level snack-credit marks found."
+    },
+    {
+      "id": "earl-of-sandwich",
+      "name": "Earl of Sandwich",
+      "short_name": "Earl of Sandwich",
+      "park": "Disney Springs",
+      "area": "Marketplace",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Egg & Cheddar (breakfast)",
+          "price": 7.49,
+          "note": ""
+        },
+        {
+          "item": "Ham, Egg & Cheddar (breakfast)",
+          "price": 8.99,
+          "note": ""
+        },
+        {
+          "item": "Ham & Swiss (breakfast)",
+          "price": 8.99,
+          "note": ""
+        },
+        {
+          "item": "Bacon, Egg & Cheddar (breakfast)",
+          "price": 8.99,
+          "note": ""
+        },
+        {
+          "item": "Breakfast BLT (breakfast)",
+          "price": 8.99,
+          "note": ""
+        },
+        {
+          "item": "Sausage, Egg & Cheddar (breakfast)",
+          "price": 8.99,
+          "note": ""
+        },
+        {
+          "item": "Ham/Bacon/Sausage Breakfast Bowl or Burrito (breakfast)",
+          "price": 8.99,
+          "note": "Listed under Snack on breakfast menu"
+        },
+        {
+          "item": "The Original 1762",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "The Full Montagu",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "The Earl's Club",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Italian",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Cuban",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Caprese",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Chipotle Chicken Avocado",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Ham & Swiss",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Tuna Melt",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Holiday Turkey",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Cannonballs!",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Veggie",
+          "price": 8.49,
+          "note": ""
+        },
+        {
+          "item": "Buffalo Chicken Wrap",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Chicken Bacon Avocado Wrap",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Chicken Caesar Wrap",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Earl's Cobb Wrap",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Spicy Tuna Wrap",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Caprese Salad",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Chicken Caesar Salad",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Earl's Cobb Salad",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Greek Salad",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "House Salad",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Cheese Pizza",
+          "price": 8.99,
+          "note": ""
+        },
+        {
+          "item": "Pepperoni Pizza",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "Tomato Soup",
+          "price": 5.49,
+          "note": ""
+        },
+        {
+          "item": "Featured Soup",
+          "price": 5.49,
+          "note": ""
+        },
+        {
+          "item": "Datil Pepper Cuban Sandwich",
+          "price": null,
+          "note": "Price TBD on menu"
+        },
+        {
+          "item": "Earl's Big Flounder Sandwich",
+          "price": null,
+          "note": "Price TBD on menu"
+        },
+        {
+          "item": "Make It A Combo! (add-on)",
+          "price": 5.99,
+          "note": "Combo upcharge; QS credit eligibility of combo side not confirmed"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Grilled Cheese",
+          "price": 6.49
+        },
+        {
+          "item": "Pizza Bread",
+          "price": 6.49
+        },
+        {
+          "item": "Turkey and Swiss",
+          "price": 6.49
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Brookie",
+          "price": 3.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Brownies",
+          "price": 3.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Cookies",
+          "price": 3.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Brownie Bites",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Cookie Bites",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Key Lime Cheesecake Danish",
+          "price": null,
+          "snackCredit": null
+        },
+        {
+          "item": "Breakfast Tots",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Oatmeal",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Potato Chips",
+          "price": 2.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Tater Tots",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Mac 'n' Cheese (side)",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Bacon Mac 'n' Cheese (side)",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Pasta Salad",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Potato Salad",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Coleslaw",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Side Salad",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Wedges",
+          "price": 3.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-17",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/earl-of-sandwich",
+        "https://www.wdwmagic.com/dining/earl-of-sandwich/menus.htm",
+        "https://wdwnt.com/?p=1350303",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/",
+        "https://www.disneyfoodblog.com/downtown-disney-restaurants/"
+      ],
+      "notes": "On 2026 QS plan (WDWNT, 2 Jan 2026; Drinks: fountain $3.99, frozen lemonade $5.49."
+    },
+    {
+      "id": "eet-by-maneet-chauhan",
+      "name": "eet by Maneet Chauhan",
+      "short_name": "eet",
+      "park": "Disney Springs",
+      "area": "Marketplace",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "BYOB (build-your-own bowl: pick base, kabab, sauce)",
+          "price": 19.95,
+          "note": ""
+        },
+        {
+          "item": "Beer Cheese Flatbread",
+          "price": 16.95,
+          "note": ""
+        },
+        {
+          "item": "Bhunna Paneer Flatbread",
+          "price": 16.95,
+          "note": ""
+        },
+        {
+          "item": "Chicken Tikka Naan Pizza",
+          "price": 16.95,
+          "note": ""
+        },
+        {
+          "item": "Samosa Chopped Salad",
+          "price": 15.95,
+          "note": ""
+        },
+        {
+          "item": "Street Style Puffed Rice Salad",
+          "price": 12.95,
+          "note": ""
+        },
+        {
+          "item": "Tandoori Chicken Poutine",
+          "price": 15.95,
+          "note": "Listed as Appetizer"
+        },
+        {
+          "item": "Harmonious Quessadilla",
+          "price": 14.95,
+          "note": "Listed as Appetizer"
+        },
+        {
+          "item": "D.I.Y. Pani Puri",
+          "price": 12.95,
+          "note": "Listed as Appetizer"
+        },
+        {
+          "item": "Walking Taco",
+          "price": 12.95,
+          "note": "Listed as Appetizer"
+        },
+        {
+          "item": "Samosas",
+          "price": 11.95,
+          "note": "Listed as Appetizer"
+        },
+        {
+          "item": "eet Bread Service with Pimento Whipped Paneer",
+          "price": 19.95,
+          "note": "Listed as Appetizer"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Build Your Own PB&J",
+          "price": 9.95
+        },
+        {
+          "item": "Crispy Chicken Fingers",
+          "price": 9.95
+        },
+        {
+          "item": "Grilled Cheese Naan",
+          "price": 9.95
+        },
+        {
+          "item": "Lil' Naan Pizza",
+          "price": 9.95
+        },
+        {
+          "item": "Lil' Sliders",
+          "price": 9.95
+        },
+        {
+          "item": "Mac and Cheese",
+          "price": 9.95
+        },
+        {
+          "item": "Seasonal Vegetable Skewers",
+          "price": 9.95
+        },
+        {
+          "item": "Shrimp Skewer",
+          "price": 9.95
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Gulab Jamun Cheesecake",
+          "price": 11.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Seasonal Dessert",
+          "price": 11.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Masala Fries",
+          "price": 6.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Garlic Naan",
+          "price": 5.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Spicy Green Chili Naan",
+          "price": 6.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Buttered Naan",
+          "price": 4.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Desi Sides",
+          "price": 5.95,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-03",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/eet-by-maneet-chauhan",
+        "https://wdwnt.com/?p=1350303",
+        "https://www.resortsgal.com/blog/disney-dining-plan-restaurant-list-2026/",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Lunch and dinner menus identical. ResortsGal lists eet as both table and quick service. Drinks: fountain $4.95, lemonade $8.95."
+    },
+    {
+      "id": "marketplace-snacks",
+      "name": "Marketplace Snacks",
+      "short_name": "Marketplace Snacks",
+      "park": "Disney Springs",
+      "area": "Marketplace",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Bacon Cheeseburger Waffle",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "BBQ Brisket Mac & Cheese Waffle",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "Hot Honey Chicken Waffle",
+          "price": 12.29,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Mickey Cookie Waffle Sundae",
+          "price": 9.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Minnie Sweet Strawberry Waffle Sundae",
+          "price": 9.79,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-09-26",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/marketplace-snacks",
+        "https://touringplans.com/disney-springs/dining/marketplace-snacks",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "TouringPlans (updated 10 Jan 2026) lists 1 QS credit; its item description (hot dogs/popcorn) is stale vs the current waffle menu. Meal periods not stated on menu; assumed lunch/dinner. No kids' menu. Drinks: bottled $5.50, water $4.25."
+    },
+    {
+      "id": "swirls-on-the-water",
+      "name": "Swirls on the Water",
+      "short_name": "Swirls",
+      "park": "Disney Springs",
+      "area": "Marketplace",
+      "credit": "snack",
+      "meals": [
+        "snack"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "DOLE Whip Pineapple",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "DOLE Whip Raspberry",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "DOLE Whip Peach",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Vanilla Soft-serve",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Chocolate Soft-serve",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Pumpkin Soft-serve",
+          "price": 5.79,
+          "snackCredit": null
+        },
+        {
+          "item": "DOLE Whip Float",
+          "price": 6.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Waffle Bowl Sundae",
+          "price": 6.79,
+          "snackCredit": null
+        },
+        {
+          "item": "Peach-Raspberry Sundae",
+          "price": 7.29,
+          "snackCredit": null
+        },
+        {
+          "item": "Vampire Mickey Cone",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "DOLE Whip Sampler",
+          "price": 8.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-04",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/swirls-on-the-water",
+        "https://www.disneyfoodblog.com/swirls-on-the-water/",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Pumpkin/Vampire items are seasonal (Halloween)."
+    },
+    {
+      "id": "chicken-guy",
+      "name": "Chicken Guy!",
+      "short_name": "Chicken Guy!",
+      "park": "Disney Springs",
+      "area": "Town Center",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Bacon, Egg & Cheese Sandwich (breakfast)",
+          "price": 6.99,
+          "note": ""
+        },
+        {
+          "item": "Chicken, Egg & Cheese Sandwich (breakfast)",
+          "price": 7.49,
+          "note": ""
+        },
+        {
+          "item": "Sausage Biscuit (breakfast)",
+          "price": 5.49,
+          "note": ""
+        },
+        {
+          "item": "Sausage, Egg & Cheese Biscuit (breakfast)",
+          "price": 6.49,
+          "note": ""
+        },
+        {
+          "item": "Sausage, Egg & Cheese Sandwich (breakfast)",
+          "price": 6.99,
+          "note": ""
+        },
+        {
+          "item": "Breakfast Bowl (breakfast)",
+          "price": 7.49,
+          "note": ""
+        },
+        {
+          "item": "Breakfast Wrap (breakfast)",
+          "price": 6.99,
+          "note": ""
+        },
+        {
+          "item": "Chicken & Waffles (breakfast)",
+          "price": 7.49,
+          "note": ""
+        },
+        {
+          "item": "French Toast Sticks (breakfast)",
+          "price": 7.49,
+          "note": ""
+        },
+        {
+          "item": "Three Tenders",
+          "price": 7.49,
+          "note": ""
+        },
+        {
+          "item": "Five Tenders",
+          "price": 9.49,
+          "note": ""
+        },
+        {
+          "item": "The O.G.",
+          "price": 7.99,
+          "note": ""
+        },
+        {
+          "item": "B.L.A.T.",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Bacon Jalapeno Burger",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Bourbon Brown Sugar BBQ",
+          "price": 9.99,
+          "note": ""
+        },
+        {
+          "item": "Buffalo Mac 'n' Cheese",
+          "price": 10.49,
+          "note": ""
+        },
+        {
+          "item": "Chopped Chicken Caesar",
+          "price": 10.99,
+          "note": ""
+        },
+        {
+          "item": "Guy's Chopped Salad",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "25 Tenders",
+          "price": 45.99,
+          "note": "Party size — plan eligibility not confirmed"
+        },
+        {
+          "item": "50 Tenders",
+          "price": 87.99,
+          "note": "Party size — plan eligibility not confirmed"
+        },
+        {
+          "item": "Make It A Combo (add-on)",
+          "price": 5.0,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Two Tenders",
+          "price": 7.49
+        },
+        {
+          "item": "Grilled Cheese",
+          "price": 6.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Vanilla shake",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Chocolate shake",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Strawberry shake",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Oreo shake",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Apple Cinnamon Cereal shake",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Triple Double Mint shake",
+          "price": 6.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Chicken Guy! Fries",
+          "price": 3.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Fried Pickle Chips",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Mac 'n' Cheese (side)",
+          "price": 4.99,
+          "snackCredit": null
+        },
+        {
+          "item": "American Slaw",
+          "price": 3.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Breakfast Tots",
+          "price": 2.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-16",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/chicken-guy",
+        "https://www.disneysprings.com/dining/chicken-guy/",
+        "https://www.disneyfoodblog.com/2024/04/22/dont-let-this-weird-dining-plan-rule-catch-you-off-guard-at-disney-world/",
+        "https://wdwnt.com/?p=1350303"
+      ],
+      "notes": "Breakfast 9-11am (new Aug 2026), lunch/dinner 11am-11pm (disneysprings.com). Dessert section items are shakes (names shortened). Fountain $3.99."
+    },
+    {
+      "id": "d-luxe-burger",
+      "name": "D-Luxe Burger",
+      "short_name": "D-Luxe Burger",
+      "park": "Disney Springs",
+      "area": "Town Center",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Classic Bacon Cheeseburger",
+          "price": 14.19,
+          "note": ""
+        },
+        {
+          "item": "Barbecued Burger",
+          "price": 14.49,
+          "note": ""
+        },
+        {
+          "item": "Bacon and Blue Burger",
+          "price": 15.49,
+          "note": ""
+        },
+        {
+          "item": "Beef Wellington Burger",
+          "price": 14.99,
+          "note": "Added 3 Sep 2026"
+        },
+        {
+          "item": "Buffalo Chicken Sandwich",
+          "price": 14.99,
+          "note": ""
+        },
+        {
+          "item": "Plant-based Burger",
+          "price": 14.49,
+          "note": ""
+        },
+        {
+          "item": "Adult Chicken Nuggets",
+          "price": 10.99,
+          "note": ""
+        },
+        {
+          "item": "Classic Cheeseburger",
+          "price": null,
+          "note": "Shown in recent changes without price"
+        },
+        {
+          "item": "Cheddar Biscuit Burger",
+          "price": null,
+          "note": "Shown in recent changes without price"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Cheeseburger",
+          "price": 9.49
+        },
+        {
+          "item": "Chicken Breast Nuggets",
+          "price": 9.49
+        },
+        {
+          "item": "Grilled Chicken Sandwich",
+          "price": 8.99
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Fresh-cut Fries - Half",
+          "price": 5.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Fresh-cut Fries - Full",
+          "price": 8.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Beer-battered Onion Rings",
+          "price": 8.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Gelato Shakes (vanilla/chocolate/strawberry/cookies 'n cream/salted caramel/black cherry/pumpkin)",
+          "price": 8.25,
+          "snackCredit": null
+        },
+        {
+          "item": "S'mores Gelato Shake",
+          "price": 8.5,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-17",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/d-luxe-burger",
+        "https://www.resortsgal.com/blog/disney-dining-plan-restaurant-list-2026/",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Burgers do not appear to include fries (fries listed as sides). Prices rose $0.25-$1.00 on 6 Oct 2026. Many allergy-friendly variants at same prices. Fountain $4.99."
+    },
+    {
+      "id": "blaze-fast-fire-d-pizza",
+      "name": "Blaze Fast-Fire'd Pizza",
+      "short_name": "Blaze Pizza",
+      "park": "Disney Springs",
+      "area": "Town Center",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Build Your Own Pizza",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "Build Your Own 1 Top Pizza",
+          "price": 9.95,
+          "note": ""
+        },
+        {
+          "item": "Build Your Own 2 Top Pizza",
+          "price": 10.95,
+          "note": ""
+        },
+        {
+          "item": "Build Your Own Simple Pie",
+          "price": 7.95,
+          "note": ""
+        },
+        {
+          "item": "Art Lover",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "BBQ Chkn",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "Green Stripe",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "Hot Link",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "Meat Eater",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "Red Vine",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "Veg Out",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "White Top",
+          "price": 11.95,
+          "note": ""
+        },
+        {
+          "item": "Simple Salad - Entree",
+          "price": 9.95,
+          "note": ""
+        },
+        {
+          "item": "Citrus Berry Salad",
+          "price": null,
+          "note": "Price TBD"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Desserts",
+          "price": 3.25,
+          "snackCredit": null
+        },
+        {
+          "item": "Cheesy Bread",
+          "price": 8.25,
+          "snackCredit": null
+        },
+        {
+          "item": "Pesto Garlic Cheesy Bread",
+          "price": 8.25,
+          "snackCredit": null
+        },
+        {
+          "item": "Simple Salad - Side",
+          "price": 6.95,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-09-26",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/blaze-fast-fired-pizza",
+        "https://www.disneysprings.com/dining/blaze-fast-fired-pizza/",
+        "https://www.disneyfoodblog.com/downtown-disney-restaurants/",
+        "https://wdwnt.com/?p=1350303"
+      ],
+      "notes": "No kids' menu listed. Fountain 16oz $3.55 / 24oz $3.95."
+    },
+    {
+      "id": "b-b-wolf-s-sausage-co",
+      "name": "B.B. Wolf's Sausage Co.",
+      "short_name": "B.B. Wolf's",
+      "park": "Disney Springs",
+      "area": "Marketplace",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "All-Beef Plain Hot Dog",
+          "price": 11.79,
+          "note": ""
+        },
+        {
+          "item": "Bacon Mac & Cheese Dog",
+          "price": 12.99,
+          "note": ""
+        },
+        {
+          "item": "Texas Chili-Cheese Dog",
+          "price": 13.49,
+          "note": ""
+        },
+        {
+          "item": "New York Pastrami Reuben",
+          "price": 13.99,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Chips",
+          "price": 3.29,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-03",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/bb-wolfs-sausage-co",
+        "https://www.disneyfoodblog.com/downtown-disney-restaurants/",
+        "https://www.resortsgal.com/blog/disney-dining-plan-restaurant-list-2026/",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "disneysprings.com page URL tried returned 404 so not confirmed there. Not in WDWNT Jan 2026 'returned' list (Disney-operated, so presumably always on plan); No kids' menu. Fountain $4.79."
+    },
+    {
+      "id": "yesake",
+      "name": "YeSake",
+      "short_name": "YeSake",
+      "park": "Disney Springs",
+      "area": "West Side",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Chicken Breast (wrap/bowl)",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Sliced Beef",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Fresh Salmon",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Fresh Ahi Tuna",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Organic Tofu",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Ahi Tuna Poke",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "YeSake's Favorite",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Tofu Power Bowl",
+          "price": 14.0,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Chicken Bun",
+          "price": 6.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Karaage",
+          "price": 7.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Taiyaki",
+          "price": 6.75,
+          "snackCredit": null
+        },
+        {
+          "item": "Fresh Shaved Ice",
+          "price": null,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-13",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/yesake-kiosk",
+        "https://www.disneysprings.com/dining/yesake/",
+        "https://wdwnt.com/?p=1350303",
+        "https://www.disneyfoodblog.com/downtown-disney-restaurants/"
+      ],
+      "notes": "Area West Side confirmed by disneysprings.com ('located at West Side', 11am-11pm, QS plan accepted). Avocado / seaweed salad add-ons $1. Boba tea $8.00, bottled $4.50."
+    },
+    {
+      "id": "the-polite-pig",
+      "name": "The Polite Pig",
+      "short_name": "Polite Pig",
+      "park": "Disney Springs",
+      "area": "Town Center",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Southern Pig",
+          "price": 14.0,
+          "note": ""
+        },
+        {
+          "item": "Smoked Chicken Salad Wrap",
+          "price": 14.0,
+          "note": ""
+        },
+        {
+          "item": "Fried Chicken",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Smoked Turkey BLT",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Low & Slow Brisket",
+          "price": 16.0,
+          "note": ""
+        },
+        {
+          "item": "Jalapeno Cheddar Sausage",
+          "price": 18.0,
+          "note": ""
+        },
+        {
+          "item": "Polite Pork Shoulder",
+          "price": 18.0,
+          "note": ""
+        },
+        {
+          "item": "Half Chicken",
+          "price": 19.0,
+          "note": ""
+        },
+        {
+          "item": "Smoked Turkey Breast",
+          "price": 19.0,
+          "note": ""
+        },
+        {
+          "item": "USDA Prime Brisket",
+          "price": 23.0,
+          "note": ""
+        },
+        {
+          "item": "Cedar Plank Salmon",
+          "price": 28.0,
+          "note": ""
+        },
+        {
+          "item": "Layla's Ribs",
+          "price": 28.0,
+          "note": ""
+        },
+        {
+          "item": "Butcher Board (For 2)",
+          "price": 48.0,
+          "note": "Shareable — plan eligibility not confirmed"
+        },
+        {
+          "item": "Chef's Special",
+          "price": null,
+          "note": "Market price"
+        },
+        {
+          "item": "Chipotle Cobb Salad",
+          "price": 13.0,
+          "note": "Listed under Side"
+        },
+        {
+          "item": "Polite Caesar Salad",
+          "price": 12.0,
+          "note": "Listed under Side"
+        },
+        {
+          "item": "Slider Trio",
+          "price": 19.0,
+          "note": "Appetizer"
+        },
+        {
+          "item": "Glazed Chicken Wings",
+          "price": 16.0,
+          "note": "Appetizer"
+        },
+        {
+          "item": "BBQ Meatballs",
+          "price": 13.0,
+          "note": "Appetizer"
+        },
+        {
+          "item": "Hop Salt Pretzel",
+          "price": 11.0,
+          "note": "Appetizer"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Chicken Tenders",
+          "price": 11.0
+        },
+        {
+          "item": "Mac and Cheese",
+          "price": 11.0
+        },
+        {
+          "item": "BBQ Meatballs",
+          "price": 11.0
+        },
+        {
+          "item": "Sliced Smoked Turkey Breast",
+          "price": 11.0
+        },
+        {
+          "item": "Smoked Pork Slider",
+          "price": 11.0
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Bourbon Chocolate Chip Cookie",
+          "price": 5.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Seasonal Dessert",
+          "price": 8.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Sides (waffle fries, mac & cheese, street corn, brussels, tots, beans, etc.)",
+          "price": 6.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-18",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/the-polite-pig",
+        "https://touringplans.com/disney-springs/dining/polite-pig",
+        "https://www.disneyfoodblog.com/downtown-disney-restaurants/",
+        "https://wdwnt.com/?p=1350303"
+      ],
+      "notes": "TouringPlans (updated 17 Oct 2026): 1 QS credit. Which entrées are covered (e.g. Sodas $4.00."
+    },
+    {
+      "id": "morimoto-asia-street-food",
+      "name": "Morimoto Asia Street Food",
+      "short_name": "Morimoto",
+      "park": "Disney Springs",
+      "area": "The Landing",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Bulkogi Kimuchi Ramen",
+          "price": 18.0,
+          "note": ""
+        },
+        {
+          "item": "Shrimp tempura (roll)",
+          "price": 11.75,
+          "note": ""
+        },
+        {
+          "item": "Kanikama (roll)",
+          "price": 10.75,
+          "note": ""
+        },
+        {
+          "item": "Vegetable (roll)",
+          "price": 9.75,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Lemongrass Chicken dumplings",
+          "price": 3.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Onigiri (Spam Teriyaki Mayo)",
+          "price": 5.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Onigiri (Teriyaki Salmon)",
+          "price": 5.0,
+          "snackCredit": null
+        },
+        {
+          "item": "BBQ Pork Bao",
+          "price": 6.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Egg Roll",
+          "price": 6.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Asian Spice Karaage Skewers",
+          "price": 8.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Japanese Curry Naan Panini",
+          "price": 8.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Crunchy Spare Rib",
+          "price": 15.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Dandan Nachos",
+          "price": 15.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-15",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/morimoto-asia-street-food",
+        "https://wdwnt.com/?p=1350303",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "Walk-up window of Morimoto Asia (The Landing). No kids' menu. Soda $5.50, boba $7.00."
+    },
+    {
+      "id": "pizza-ponte",
+      "name": "Pizza Ponte",
+      "short_name": "Pizza Ponte",
+      "park": "Disney Springs",
+      "area": "The Landing",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Big Roman",
+          "price": 8.0,
+          "note": ""
+        },
+        {
+          "item": "Pepperoni",
+          "price": 8.5,
+          "note": ""
+        },
+        {
+          "item": "Bun Giorno",
+          "price": 8.5,
+          "note": ""
+        },
+        {
+          "item": "Four Cheese",
+          "price": 8.75,
+          "note": ""
+        },
+        {
+          "item": "Funghi",
+          "price": 8.75,
+          "note": ""
+        },
+        {
+          "item": "Il Gladiatore",
+          "price": 8.95,
+          "note": ""
+        },
+        {
+          "item": "Ortolana",
+          "price": 8.95,
+          "note": ""
+        },
+        {
+          "item": "Parma Cotto",
+          "price": 8.95,
+          "note": ""
+        },
+        {
+          "item": "Caesar",
+          "price": 10.0,
+          "note": ""
+        },
+        {
+          "item": "Misticanza",
+          "price": 10.0,
+          "note": ""
+        },
+        {
+          "item": "Mozzarella & Tomato",
+          "price": 10.0,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Chocolate Chip Cookies",
+          "price": 5.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Traditional Cannoli",
+          "price": 8.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Chocolate Cannoli",
+          "price": 8.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Black & White Cannoli",
+          "price": 8.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Tiramisu",
+          "price": 8.5,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-09-26",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/pizza-ponte",
+        "https://wdwnt.com/?p=1350303",
+        "https://www.disneyfoodblog.com/downtown-disney-restaurants/"
+      ],
+      "notes": "Pizza slices/sandwiches. No kids' menu. Bottled soda $5.50."
+    },
+    {
+      "id": "cookes-of-dublin",
+      "name": "Cookes of Dublin",
+      "short_name": "Cookes of Dublin",
+      "park": "Disney Springs",
+      "area": "The Landing",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Our Famous Fish 'n' Chips",
+          "price": 17.49,
+          "note": ""
+        },
+        {
+          "item": "Chicken Tenders & Chips",
+          "price": 17.49,
+          "note": ""
+        },
+        {
+          "item": "Chicken & Mushroom Pie with Chips",
+          "price": 17.49,
+          "note": ""
+        },
+        {
+          "item": "BBQ Burger",
+          "price": 17.49,
+          "note": ""
+        },
+        {
+          "item": "Dubliner Burger",
+          "price": 17.49,
+          "note": ""
+        },
+        {
+          "item": "Buttermilk Fried Chicken Sandwich",
+          "price": 17.49,
+          "note": ""
+        },
+        {
+          "item": "Grilled Chicken Sandwich",
+          "price": 15.99,
+          "note": ""
+        },
+        {
+          "item": "Cookes Chicken Salad",
+          "price": 17.49,
+          "note": ""
+        },
+        {
+          "item": "Spice Bag in a Box",
+          "price": 17.49,
+          "note": ""
+        },
+        {
+          "item": "Hog in a Box",
+          "price": 17.99,
+          "note": ""
+        },
+        {
+          "item": "Combo Box with Soda",
+          "price": 22.49,
+          "note": "Plan eligibility not confirmed"
+        }
+      ],
+      "kids": [
+        {
+          "item": "Fish and Chips",
+          "price": 10.49
+        },
+        {
+          "item": "Chicken and Chips",
+          "price": 10.49
+        },
+        {
+          "item": "Cheeseburger and Chips",
+          "price": 10.49
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Side Chips",
+          "price": 8.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Double Dipped Onion Rings",
+          "price": 9.99,
+          "snackCredit": null
+        },
+        {
+          "item": "Crushed Garden Peas",
+          "price": 8.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Dubliner Irish Cheese & Bacon Dip",
+          "price": 8.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Chip Shop Curry Sauce",
+          "price": 7.49,
+          "snackCredit": null
+        },
+        {
+          "item": "Side Salad",
+          "price": 5.99,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-09-26",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/cookes-of-dublin",
+        "https://wdwnt.com/?p=1350303",
+        "https://www.disneyfoodblog.com/downtown-disney-restaurants/"
+      ],
+      "notes": "Next to Raglan Road. No desserts listed. Fountain $4.50."
+    },
+    {
+      "id": "amorette-s-patisserie",
+      "name": "Amorette's Patisserie",
+      "short_name": "Amorette's",
+      "park": "Disney Springs",
+      "area": "Town Center",
+      "credit": "snack",
+      "meals": [
+        "snack"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Amorette's Rose",
+          "price": 9.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Apple Cheesecake",
+          "price": 9.75,
+          "snackCredit": null
+        },
+        {
+          "item": "Cherry Pie Éclair",
+          "price": 8.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Peanut Butter Éclair",
+          "price": 8.0,
+          "snackCredit": null
+        },
+        {
+          "item": "S'mores Éclair",
+          "price": 8.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Key Lime-Grapefruit Tart",
+          "price": 8.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Pumpkin-Spiced Creme Brûlee",
+          "price": 8.75,
+          "snackCredit": null
+        },
+        {
+          "item": "Toasted Coconut Flan Cake",
+          "price": 9.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Halloween Brownie",
+          "price": 6.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Halloween Cookie",
+          "price": 5.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Petite Mickey Mouse Dome",
+          "price": 11.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Petite Minnie Mouse Dome",
+          "price": 11.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Macarons - Six Count",
+          "price": 14.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Candle Petit Cake",
+          "price": 22.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-07",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/amorettes-patisserie",
+        "https://www.disneysprings.com/dining/amorettes-patisserie/",
+        "https://www.disneyfoodblog.com/amorettes-patisserie/",
+        "https://touringplans.com/walt-disney-world/dining/amorettes"
+      ],
+      "notes": "TouringPlans (15 Oct 2026) shows '1 QS credit' — conflicting; it has no entrées, so treat as snack-credit location. Per-item snack eligibility not stated; larger cakes likely excluded but unconfirmed. Hours 11am-11pm."
+    },
+    {
+      "id": "six-ravens",
+      "name": "Six Ravens",
+      "short_name": "Six Ravens",
+      "park": "Disney Springs",
+      "area": "The Landing",
+      "credit": "none",
+      "meals": [
+        "all day"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "The Villain of Valentina (coffyn)",
+          "price": 10.96,
+          "note": ""
+        },
+        {
+          "item": "The Imperial Idol (coffyn)",
+          "price": 10.96,
+          "note": ""
+        },
+        {
+          "item": "The Foragers Find (coffyn)",
+          "price": 10.96,
+          "note": ""
+        },
+        {
+          "item": "The Peasant's Patty (coffyn)",
+          "price": 10.96,
+          "note": ""
+        },
+        {
+          "item": "The Wizard's Wonder (coffyn)",
+          "price": 10.96,
+          "note": ""
+        },
+        {
+          "item": "The Moreish Monk (coffyn)",
+          "price": 10.96,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Tale Teller Tatties",
+          "price": 8.66,
+          "snackCredit": false
+        },
+        {
+          "item": "The Tart's Tempest",
+          "price": 7.66,
+          "snackCredit": false
+        }
+      ],
+      "menu_as_of": "2026-10-18",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/six-ravens-new",
+        "https://www.disneyfoodblog.com/six-ravens-disney-springs/",
+        "https://touringplans.com/disney-springs/dining/six-ravens",
+        "https://mickeyvisit.com/new-disney-world-dining-location-opening-august-3-2026/"
+      ],
+      "notes": "TouringPlans 15 Oct 2026: 'No'). MickeyVisit says Town Center (former Art of Shaving, between STK and OluKai). Limit 2 coffyns per paying guest; virtual queue at times. Breakfast coffyn (Rooster's Roar) 9am-sell-out but not yet available. Root beer $6.96."
+    },
+    {
+      "id": "gideon-s-bakehouse",
+      "name": "Gideon's Bakehouse",
+      "short_name": "Gideon's",
+      "park": "Disney Springs",
+      "area": "The Landing",
+      "credit": "none",
+      "meals": [
+        "snack"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Original Chocolate Chip Cookie",
+          "price": 7.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Cookies & Cream",
+          "price": 7.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Peanut Butter Crunch",
+          "price": 7.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Pistachio Toffee Chocolate Chip",
+          "price": 7.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Triple Chocolate Chip",
+          "price": 7.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Coffee Cake Cookie (Disney Springs exclusive)",
+          "price": 7.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Dark Coffee Cake Cookie (evening)",
+          "price": 7.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Monthly Limited Edition Flavor",
+          "price": 7.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Gideon's Bites",
+          "price": 14.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Cake slices (vanilla/chocolate/double frosted)",
+          "price": 12.0,
+          "snackCredit": false
+        },
+        {
+          "item": "Hot Cookie Hour",
+          "price": null,
+          "snackCredit": false
+        }
+      ],
+      "menu_as_of": "2026-10-17",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/gideons-bakehouse",
+        "https://www.disneyfoodblog.com/gideons-bakehouse/",
+        "https://wdwnt.com/2024/01/gideons-bakehouse-not-accept-disney-dining-plan"
+      ],
+      "notes": "WDWNT Jan 2024). Hot Cookie Hour 2-3pm and 7-8pm, $6-$10. Cold brews $6.50."
+    },
+    {
+      "id": "pepe-by-jos-andr-s",
+      "name": "Pepe by José Andrés",
+      "short_name": "Pepe",
+      "park": "Disney Springs",
+      "area": "West Side",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Three Cheese Bikini",
+          "price": 10.0,
+          "note": ""
+        },
+        {
+          "item": "Ham and Cheese Bikini",
+          "price": 12.0,
+          "note": ""
+        },
+        {
+          "item": "Bikini Menorquîn",
+          "price": 12.0,
+          "note": ""
+        },
+        {
+          "item": "Bikini Pisto Manchego",
+          "price": 12.0,
+          "note": ""
+        },
+        {
+          "item": "Beef Hot Dog",
+          "price": 9.0,
+          "note": ""
+        },
+        {
+          "item": "Chistorra Hot Dog",
+          "price": 12.0,
+          "note": ""
+        },
+        {
+          "item": "Futbol Club",
+          "price": 14.0,
+          "note": ""
+        },
+        {
+          "item": "Spanish Tuna Sandwich",
+          "price": 14.0,
+          "note": ""
+        },
+        {
+          "item": "Spanish Omelette",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Manchego Cheese",
+          "price": 16.0,
+          "note": ""
+        },
+        {
+          "item": "Chorizo",
+          "price": 17.0,
+          "note": ""
+        },
+        {
+          "item": "Jamon",
+          "price": 18.0,
+          "note": ""
+        },
+        {
+          "item": "Pepito de Ternera",
+          "price": 18.0,
+          "note": ""
+        },
+        {
+          "item": "Iberico Pork Burger",
+          "price": 18.0,
+          "note": ""
+        },
+        {
+          "item": "Txuleburguer",
+          "price": 18.0,
+          "note": ""
+        },
+        {
+          "item": "Add Avocado to any Sandwich",
+          "price": 3.0,
+          "note": "Add-on"
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Churros",
+          "price": 7.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Churros & Ice Cream",
+          "price": 8.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Ice cream",
+          "price": 6.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Spanish Flan",
+          "price": 6.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Jose's Chips - Regular",
+          "price": 4.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Jose's Chips - Large",
+          "price": 7.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Patatas Bravas",
+          "price": 6.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Chicken Fritters",
+          "price": 6.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Ham Fritters",
+          "price": 6.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Gazpacho",
+          "price": 5.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Green Salad",
+          "price": 6.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-14",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/pepe-by-jose-andres",
+        "https://touringplans.com/disney-springs/dining/pepe-by-jose-andres",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "TouringPlans (17 Oct 2026): 1 QS credit. Counter-service side of Jaleo. No kids' menu (Kid's Juice $5). Soda $8.00."
+    },
+    {
+      "id": "the-smokehouse-at-house-of-blues",
+      "name": "The Smokehouse at House of Blues",
+      "short_name": "Smokehouse (HOB)",
+      "park": "Disney Springs",
+      "area": "West Side",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "BBQ Brisket Sandwich",
+          "price": 16.0,
+          "note": ""
+        },
+        {
+          "item": "Pulled Pork Sandwich",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Jambalaya",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Smoked Turkey Leg",
+          "price": 14.0,
+          "note": ""
+        },
+        {
+          "item": "BBQ Chicken Salad",
+          "price": 14.0,
+          "note": ""
+        },
+        {
+          "item": "BBQ Nacho Corn Dog",
+          "price": 14.0,
+          "note": ""
+        },
+        {
+          "item": "Street Corn Dog",
+          "price": 14.0,
+          "note": ""
+        },
+        {
+          "item": "Smokehouse Nachos",
+          "price": 13.0,
+          "note": ""
+        },
+        {
+          "item": "Classic Corn Dog",
+          "price": 12.0,
+          "note": ""
+        },
+        {
+          "item": "Jumbo Footlong Hot Dog",
+          "price": 12.0,
+          "note": ""
+        },
+        {
+          "item": "Mac & Cheese",
+          "price": 11.0,
+          "note": ""
+        },
+        {
+          "item": "Giant Pretzel",
+          "price": 10.0,
+          "note": ""
+        }
+      ],
+      "kids": [
+        {
+          "item": "Chicken Tenders",
+          "price": 8.0
+        },
+        {
+          "item": "Hot Dog",
+          "price": 8.0
+        }
+      ],
+      "snacks": [
+        {
+          "item": "Brownie",
+          "price": 3.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Cookies",
+          "price": 3.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Candy",
+          "price": 3.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Chips",
+          "price": 3.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Baked Beans",
+          "price": 4.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Coleslaw",
+          "price": 4.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-10-13",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/the-smokehouse-at-house-of-blues",
+        "https://wdwnt.com/?p=1350303",
+        "https://www.disneyfoodblog.com/downtown-disney-restaurants/"
+      ],
+      "notes": "Returned to QS plan Jan 2026 (WDWNT). Coca-Cola fountain $5.00."
+    },
+    {
+      "id": "everglazed-donuts-cold-brew",
+      "name": "Everglazed Donuts & Cold Brew",
+      "short_name": "Everglazed",
+      "park": "Disney Springs",
+      "area": "West Side",
+      "credit": "quick_service",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Egg & Cheese (donut sandwich)",
+          "price": 8.0,
+          "note": ""
+        },
+        {
+          "item": "Egg, Cheese, & Protein",
+          "price": 10.0,
+          "note": ""
+        },
+        {
+          "item": "Chicken & Donut",
+          "price": 9.0,
+          "note": ""
+        },
+        {
+          "item": "The Funky Chicken",
+          "price": 15.0,
+          "note": ""
+        },
+        {
+          "item": "Chicken Little Combo",
+          "price": 13.0,
+          "note": ""
+        },
+        {
+          "item": "Big Chicken Combo",
+          "price": 18.0,
+          "note": ""
+        },
+        {
+          "item": "Hot Honey Chicken Combo",
+          "price": 18.0,
+          "note": ""
+        },
+        {
+          "item": "Chicken Tenders with Florida Habanero Mango Sauce",
+          "price": null,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [
+        {
+          "item": "Classic Donuts - Single",
+          "price": 4.95,
+          "snackCredit": null
+        },
+        {
+          "item": "The Funky Bunch - Single",
+          "price": 6.5,
+          "snackCredit": null
+        },
+        {
+          "item": "Super Funky - Single",
+          "price": 6.95,
+          "snackCredit": null
+        },
+        {
+          "item": "Assorted Donut Holes",
+          "price": 5.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Classic Fries",
+          "price": 7.0,
+          "snackCredit": null
+        },
+        {
+          "item": "Spicy Fries",
+          "price": 9.0,
+          "snackCredit": null
+        }
+      ],
+      "menu_as_of": "2026-09-26",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/everglazed-donuts-cold-brew",
+        "https://touringplans.com/disney-springs/dining/everglazed-donuts-cold-brew",
+        "https://www.disneyfoodblog.com/2026-disney-dining-plan-restaurants-walt-disney-world/"
+      ],
+      "notes": "TouringPlans (18 Aug 2026): 1 QS credit. Menu labels everything 'Lunch and Dinner'; breakfast sandwiches present, so meal periods partly inferred. Most individual donut flavours priced TBD. No kids' menu. Cold brew $4.50, soda $4.00."
+    },
+    {
+      "id": "the-daily-poutine",
+      "name": "The Daily Poutine",
+      "short_name": "Daily Poutine",
+      "park": "Disney Springs",
+      "area": "Town Center",
+      "credit": "quick_service",
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "lat": null,
+      "lng": null,
+      "entrees": [
+        {
+          "item": "Canadian Poutine",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Buffalo Chicken Poutine",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Butter Chicken Poutine",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Korean Barbecue",
+          "price": 11.99,
+          "note": ""
+        },
+        {
+          "item": "Loaded Frites",
+          "price": 11.99,
+          "note": ""
+        }
+      ],
+      "kids": [],
+      "snacks": [],
+      "menu_as_of": "2026-09-26",
+      "sources": [
+        "https://www.thrill-data.com/disney-menus/wdw/the-daily-poutine",
+        "https://www.disneysprings.com/dining/the-daily-poutine/",
+        "https://www.disneyfoodblog.com/downtown-disney-restaurants/",
+        "https://www.resortsgal.com/blog/disney-dining-plan-restaurant-list-2026/"
+      ],
+      "notes": "Hours 11am-11:30pm. QS plan accepted. Fountain $4.79."
+    }
+  ]
+}

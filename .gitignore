@@ -1,0 +1,33 @@
+# Environment — never commit real values
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+*.local
+
+# Map tiles (large, generated locally — see TRD §2)
+public/tiles/*.pmtiles
+
+# Private assets (Disney logos/photos live in the Supabase bucket, see PRD §8)
+public/assets/private/
+
+# Test / tooling output
+coverage/
+playwright-report/
+test-results/
+.vite/
+.vitest/
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.swp
