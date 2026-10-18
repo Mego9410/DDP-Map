@@ -21,12 +21,22 @@ export async function warmImages(locations: Location[]): Promise<void> {
   if (!('caches' in window) || !navigator.serviceWorker?.controller || !navigator.onLine || conn?.saveData) return;
   for (const path of pathsOf(locations)) {
     if (done.has(path)) continue;
-    const cacheName = path.startsWith('/photos/') ? 'photos' : path.startsWith('/api/media/') ? 'media' : null;
+    const remote = path.startsWith('https://upload.wikimedia.org/');
+    const cacheName = path.startsWith('/photos/') || remote ? 'photos' : path.startsWith('/api/media/') ? 'media' : null;
     if (!cacheName) continue;
     const cache = await caches.open(cacheName);
     if (!(await cache.match(path))) {
       try {
-        await cache.add(new Request(path, { credentials: 'same-origin' }));
+        if (remote) {
+          // Commons sends CORS headers; fall back to an opaque copy if not.
+          const res = await fetch(path, { mode: 'cors', credentials: 'omit', referrerPolicy: 'no-referrer' }).catch(() =>
+            fetch(path, { mode: 'no-cors', credentials: 'omit', referrerPolicy: 'no-referrer' }),
+          );
+          if (!res.ok && res.type !== 'opaque') throw new Error(String(res.status));
+          await cache.put(path, res);
+        } else {
+          await cache.add(new Request(path, { credentials: 'same-origin' }));
+        }
       } catch {
         // offline again or not found; try next launch
         return;

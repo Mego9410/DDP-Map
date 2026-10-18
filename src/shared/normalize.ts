@@ -40,7 +40,12 @@ export interface SeedFile {
 }
 
 /** seed/photos.json: per location, the chosen photos and where each was stored. */
-export type PhotoManifest = Record<string, { attribution: string; license: string; source_url: string; media_path?: string }[]>;
+export type PhotoManifest = Record<string, { attribution: string; license: string; source_url: string; image_url?: string; media_path?: string }[]>;
+
+/** Commons thumbnails come from thumb.wikimedia.org; upload.wikimedia.org serves the same paths. */
+export function commonsImageUrl(url: string): string {
+  return url.replace(/^https:\/\/thumb\.wikimedia\.org\//, 'https://upload.wikimedia.org/').replace(/\?.*$/, '');
+}
 
 export type CoordFile = Record<string, { lat: number; lng: number; source: CoordSource; place_id?: string; osm_id?: string } | string>;
 
@@ -120,11 +125,13 @@ export function normalizeSeed(seed: SeedFile, coords: CoordFile, refills: Refill
 
     const c = coords[s.id];
     const coord = typeof c === 'object' ? c : null;
-    // Only photos shipped with the app (/photos/...) belong in seed data;
-    // database uploads are attached by scripts/photos.ts --upload instead.
+    // Photos shipped with the app (/photos/...) or, until downloaded, loaded
+    // straight from Commons. Database uploads are attached by
+    // scripts/photos.ts --upload instead, so they're skipped here.
     const photos = (photoManifest[s.id] ?? [])
-      .filter((p) => p.media_path?.startsWith('/photos/'))
-      .map((p) => ({ path: p.media_path!, attribution: p.attribution, license: p.license, source_url: p.source_url }));
+      .map((p) => ({ ...p, path: p.media_path ?? (p.image_url ? commonsImageUrl(p.image_url) : null) }))
+      .filter((p): p is typeof p & { path: string } => !!p.path && !p.path.startsWith('/api/media/'))
+      .map((p) => ({ path: p.path, attribution: p.attribution, license: p.license, source_url: p.source_url }));
 
     locations.push({
       id: s.id,

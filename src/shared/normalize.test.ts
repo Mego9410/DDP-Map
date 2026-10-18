@@ -73,6 +73,22 @@ describe('normalizeSeed', () => {
     expect(d2.locations.find((l) => l.id === 'casey-s-corner')!.photos).toEqual([]);
   });
 
+  it('falls back to loading the Commons file when a photo is not downloaded yet', () => {
+    const d3 = normalizeSeed(seed as SeedFile, coords as CoordFile, [], {
+      'gaston-s-tavern': [{
+        attribution: 'Photo: X, CC BY 2.0, via Wikimedia Commons', license: 'CC BY 2.0', source_url: 'https://commons.wikimedia.org/wiki/File:G.jpg',
+        image_url: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/G.jpg/1280px-G.jpg?utm_source=commons.wikimedia.org',
+      }],
+    });
+    const g = d3.locations.find((l) => l.id === 'gaston-s-tavern')!;
+    expect(g.hero_path).toBe('https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/G.jpg/1280px-G.jpg');
+    expect(validateLocationPatch({ photos: g.photos })).toBeNull();
+  });
+
+  it('every photo in seed/photos.json resolves to an allowed image path', () => {
+    for (const l of seedData().locations) expect(validateLocationPatch({ photos: l.photos }), l.id).toBeNull();
+  });
+
   it('accepts shipped and uploaded image paths, nothing else', () => {
     expect(validateLocationPatch({ hero_path: '/photos/pizzafari-1.jpg' })).toBeNull();
     expect(validateLocationPatch({ hero_path: '/api/media/00000000-0000-4000-8000-000000000001' })).toBeNull();

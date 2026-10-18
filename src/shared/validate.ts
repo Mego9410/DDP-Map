@@ -11,8 +11,12 @@ const SECTIONS = new Set(['entree', 'kids', 'snack', 'drink']);
 const CREDITS = new Set(['quick_service', 'snack', 'none']);
 const KINDS = new Set(['bottle_filler', 'fountain', 'qs_counter_cup']);
 const MEALS = new Set(['breakfast', 'lunch', 'dinner']);
-/** Stored images: uploads served by the API, or freely licensed photos shipped in /public/photos. */
-export const IMAGE_PATH = /^(\/api\/media\/[0-9a-f-]{36}|\/photos\/[a-z0-9-]+\.(jpg|jpeg|png|webp))$/;
+/**
+ * Stored images: uploads served by the API, freely licensed photos shipped in
+ * /public/photos, or freely licensed Wikimedia Commons files loaded from Commons.
+ */
+export const IMAGE_PATH =
+  /^(\/api\/media\/[0-9a-f-]{36}|\/photos\/[a-z0-9-]+\.(jpg|jpeg|png|webp)|https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/[A-Za-z0-9%._()\/'-]+)$/;
 const COORD = new Set(['approx', 'places', 'osm', 'manual']);
 
 const isStr = (v: unknown, max = 500): v is string => typeof v === 'string' && v.length <= max;

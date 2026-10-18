@@ -18,7 +18,7 @@ import './_env.js';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { need } from './_env.js';
 import { pickCandidates, type Candidate, type CommonsPage } from './_commons.js';
-import type { SeedFile } from '../src/shared/normalize.js';
+import { commonsImageUrl, type SeedFile } from '../src/shared/normalize.js';
 import type { LocationPhoto } from '../src/shared/types.js';
 
 const MANIFEST = process.env.PHOTOS_MANIFEST ?? 'seed/photos.json';
@@ -91,7 +91,7 @@ if (toRepo) {
     let n = entries.filter((e) => e.media_path?.startsWith('/photos/')).length;
     for (const e of entries) {
       if (e.media_path) continue;
-      const res = await politeFetch(e.image_url).catch(() => new Response(null, { status: 599 }));
+      const res = await politeFetch(commonsImageUrl(e.image_url)).catch(() => new Response(null, { status: 599 }));
       const type = (res.headers.get('content-type') ?? '').split(';')[0];
       const ext = type === 'image/png' ? 'png' : type === 'image/webp' ? 'webp' : type === 'image/jpeg' ? 'jpg' : null;
       if (!res.ok || !ext) {
@@ -120,7 +120,7 @@ for (const loc of targets) {
   const entries = manifest[loc.id] ?? [];
   for (const e of entries) {
     if (e.media_path) continue;
-    const res = await politeFetch(e.image_url).catch(() => new Response(null, { status: 599 }));
+    const res = await politeFetch(commonsImageUrl(e.image_url)).catch(() => new Response(null, { status: 599 }));
     const type = (res.headers.get('content-type') ?? '').split(';')[0];
     if (!res.ok || !/^image\/(jpeg|png|webp)$/.test(type)) {
       console.warn(`  ! ${loc.name}: could not download ${e.title} (${res.status} ${type})`);

@@ -108,6 +108,8 @@ three sources, in this order:
    npm run photos -- --to-repo   # or: save them in public/photos/ to ship with the app (no database needed)
    ```
 
+   Until a photo is downloaded, the app loads it straight from Wikimedia
+   Commons (credited, and allowed by Commons) and keeps a copy for offline use.
    Photos shipped in `public/photos/` are attached from `seed/photos.json` by
    `db:seed` and in local mode. The app downloads every stored photo in the
    background after launch, so they all work offline, not just the ones

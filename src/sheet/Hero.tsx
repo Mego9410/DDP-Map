@@ -48,7 +48,7 @@ type Slide = StoredSlide | GoogleSlide;
 
 function StoredImage({ slide, alt }: { slide: StoredSlide; alt: string }) {
   const src = useMediaUrl(slide.path);
-  return src ? <img src={src} alt={alt} loading="lazy" /> : null;
+  return src ? <img src={src} alt={alt} loading="lazy" referrerPolicy="no-referrer" /> : null;
 }
 
 function Credit({ slide }: { slide: Slide }) {
