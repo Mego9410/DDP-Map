@@ -12,8 +12,8 @@ dist-ssr/
 build/
 *.local
 
-# Map tiles (large, generated locally — see TRD §2)
-public/tiles/*.pmtiles
+# Map tiles: generated locally with scripts/tiles.sh (TRD §2).
+# public/tiles/wdw.pmtiles is committed so Vercel deploys it (a few MB of OSM data).
 
 # Private assets (Disney logos/photos live in the Supabase bucket, see PRD §8)
 public/assets/private/
@@ -31,3 +31,10 @@ test-results/
 .idea/
 .DS_Store
 *.swp
+
+# Vercel
+.vercel/
+
+# Playwright / scratch
+/blob-report/
+*.tmp.mjs

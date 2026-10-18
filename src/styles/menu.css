@@ -1,0 +1,86 @@
+/* Themed menus (TRD §7). Every theme sets --m-* custom properties on .menu;
+   the four layouts and three price styles are combined freely. Credit badges
+   keep fixed colours so they read the same on every theme. */
+
+.menu {
+  --m-pad: 18px;
+  margin: 14px 12px 6px;
+  padding: var(--m-pad);
+  color: var(--m-ink);
+  background-color: var(--m-bg);
+  background-image: var(--m-texture);
+  font-family: var(--m-body);
+  border-radius: 14px;
+  position: relative;
+}
+.menu-head { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.menu-logo { flex: none; width: 56px; height: 56px; border-radius: 12px; object-fit: contain; background: rgb(255 255 255 / 0.9); padding: 4px; }
+.menu-logo--mark {
+  display: grid; place-items: center; padding: 0; font-size: 22px; letter-spacing: 0.02em;
+  background: var(--m-accent); color: var(--m-bg); border: 2px solid var(--m-rule);
+}
+.menu-title { margin: 0; font-family: var(--m-display); font-size: 1.5rem; line-height: 1.1; color: var(--m-ink); font-weight: 700; }
+.menu-sub { margin: 2px 0 0; font-size: 13px; color: var(--m-muted); }
+.menu-section { margin-top: 14px; }
+.menu-h {
+  margin: 0 0 6px; padding-bottom: 4px;
+  font-family: var(--m-display); font-size: 1.1rem; font-weight: 700; color: var(--m-accent);
+  border-bottom: 2px solid var(--m-rule); letter-spacing: 0.02em;
+}
+.menu ul { list-style: none; margin: 0; padding: 0; }
+.mi { padding: 8px 0; border-bottom: 1px solid color-mix(in srgb, var(--m-rule) 55%, transparent); }
+.mi:last-child { border-bottom: 0; }
+.mi-edit { display: block; width: 100%; padding: 0; border: 0; background: none; text-align: left; color: inherit; font: inherit; }
+.mi-edit:hover .mi-name { text-decoration: underline; }
+.mi-line { display: flex; align-items: baseline; gap: 6px; }
+.mi-name { font-weight: 700; font-size: 16px; }
+.mi-leader { flex: 1; min-width: 12px; }
+.mi-price { flex: none; font-weight: 700; font-variant-numeric: tabular-nums; }
+.mi-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 4px; }
+.mi-note { font-size: 13px; color: var(--m-muted); font-style: italic; }
+.mi-tag { font-size: 12px; padding: 1px 6px; border-radius: 6px; border: 1px solid var(--m-rule); color: var(--m-muted); }
+.menu-add { margin-top: 6px; min-height: 40px; border: 2px dashed var(--m-rule); background: transparent; color: var(--m-ink); border-radius: 10px; width: 100%; font-weight: 700; }
+.menu-empty { color: var(--m-muted); }
+
+/* price styles */
+.price--dots .mi-leader { border-bottom: 2px dotted var(--m-rule); transform: translateY(-4px); }
+.price--tag .mi-price { padding: 1px 8px; border-radius: 8px; background: var(--m-accent); color: var(--m-bg); }
+
+/* credit badges: same everywhere */
+.badge {
+  display: inline-flex; align-items: center; min-height: 24px; padding: 2px 9px; border-radius: 999px;
+  font-family: 'Inter', system-ui, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.01em;
+  border: 2px solid transparent;
+}
+.badge--qs { background: #1557b0; color: #fff; }
+.badge--qs-kids { background: #fff; color: #0f4189; border-color: #1557b0; }
+.badge--snack { background: #a34f00; color: #fff; }
+.badge--check { background: #fff; color: #4f5663; border: 2px dashed #8a919c; }
+.badge--cash { background: #eceef1; color: #3b414c; border-color: #c8cdd4; }
+
+/* layout: board (chalk/menu board) */
+.menu--board { border: 4px solid var(--m-rule); box-shadow: inset 0 0 0 3px var(--m-bg), inset 0 0 0 5px var(--m-rule), 0 4px 14px rgb(0 0 0 / 0.25); }
+.menu--board .menu-h { text-transform: uppercase; letter-spacing: 0.08em; text-align: center; border-bottom-style: double; border-bottom-width: 4px; }
+
+/* layout: card (paper menu) */
+.menu--card { border: 1px solid var(--m-rule); box-shadow: 0 2px 0 var(--m-rule), 0 6px 18px rgb(0 0 0 / 0.12); }
+.menu--card .menu-head { padding-bottom: 10px; border-bottom: 3px solid var(--m-accent); }
+
+/* layout: scroll (parchment, Fantasyland) */
+.menu--scroll { border-radius: 6px; margin-top: 24px; margin-bottom: 20px; box-shadow: 0 4px 14px rgb(0 0 0 / 0.15); }
+.menu--scroll::before, .menu--scroll::after {
+  content: ''; position: absolute; left: -6px; right: -6px; height: 16px; border-radius: 8px;
+  background: linear-gradient(var(--m-rule), color-mix(in srgb, var(--m-rule) 60%, #000 10%), var(--m-rule));
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.25);
+}
+.menu--scroll::before { top: -10px; }
+.menu--scroll::after { bottom: -10px; }
+.menu--scroll .menu-h { text-align: center; border-bottom: 0; }
+.menu--scroll .menu-h::after { content: '\2766'; display: block; font-size: 14px; color: var(--m-rule); }
+
+/* layout: neon (Tomorrowland, Galaxy's Edge, Pandora) */
+.menu--neon { border: 2px solid var(--m-accent); box-shadow: 0 0 0 1px var(--m-bg), 0 0 18px color-mix(in srgb, var(--m-accent) 45%, transparent); }
+.menu--neon .menu-title, .menu--neon .menu-h { text-shadow: 0 0 8px color-mix(in srgb, var(--m-accent) 70%, transparent); }
+.menu--neon .menu-h { text-transform: uppercase; letter-spacing: 0.12em; border-bottom-color: var(--m-accent); }
+
+@media (prefers-reduced-transparency: reduce) { .menu { background-image: none; } }
