@@ -138,6 +138,7 @@ export function normalizeSeed(seed: SeedFile, coords: CoordFile, refills: Refill
       logo_path: null,
       hero_path: null,
       hero_attribution: null,
+      photos: [],
       theme_id: defaultThemeId({ id: s.id, park_id, area_label: s.area }),
       menu_as_of: s.menu_as_of || null,
       sources: s.sources ?? [],

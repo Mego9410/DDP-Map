@@ -60,6 +60,11 @@ export class MockApi {
         return this.json(route, 200, { ok: true });
     }
     if (!user) return this.json(route, 401, { error: 'Please sign in.' });
+    if (url.pathname.startsWith('/api/media/')) {
+      // A tiny test image (stands in for stored photos).
+      const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==', 'base64');
+      return route.fulfill({ status: 200, contentType: 'image/png', body: png });
+    }
     switch (url.pathname) {
       case '/api/me':
         return this.json(route, 200, { user });

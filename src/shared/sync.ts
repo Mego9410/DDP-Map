@@ -4,7 +4,7 @@ import type { Favourite, Location, MenuItem, RefillStation } from './types.js';
 
 export const EDITABLE_LOCATION_FIELDS = [
   'name', 'short_name', 'credit', 'credit_note', 'meals', 'hours', 'mobile_order', 'seasonal',
-  'lng', 'lat', 'coord_source', 'google_place_id', 'logo_path', 'hero_path', 'hero_attribution',
+  'lng', 'lat', 'coord_source', 'google_place_id', 'logo_path', 'hero_path', 'hero_attribution', 'photos',
   'theme_id', 'menu_as_of', 'notes',
 ] as const;
 

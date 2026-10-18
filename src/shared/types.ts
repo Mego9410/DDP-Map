@@ -24,6 +24,15 @@ export interface Land {
   name: string;
 }
 
+export interface LocationPhoto {
+  /** /api/media/<uuid> */
+  path: string;
+  /** Credit line shown on the photo, e.g. "Photo: Jane Doe, CC BY-SA 4.0, via Wikimedia Commons". */
+  attribution: string | null;
+  license: string | null;
+  source_url: string | null;
+}
+
 export interface Location {
   id: string;
   park_id: string;
@@ -44,6 +53,7 @@ export interface Location {
   logo_path: string | null;
   hero_path: string | null;
   hero_attribution: string | null;
+  photos: LocationPhoto[];
   theme_id: string | null;
   menu_as_of: string | null;
   sources: string[];

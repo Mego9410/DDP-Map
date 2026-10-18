@@ -2,8 +2,8 @@
 // Run with a disposable database:
 //   TEST_DATABASE_URL=postgresql://postgres@localhost:54329/parkplate_test npm test
 // The suite resets that database, so never point it at Neon production.
-import { readFileSync } from 'node:fs';
-import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { readFileSync, readdirSync } from 'node:fs';
+import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 import { getDb, setDbForTests, type Db } from './_lib/db.js';
 import { createToken } from './_lib/session.js';
 import { POST as login } from './login.js';
@@ -14,6 +14,7 @@ import { POST as sync } from './sync.js';
 import { GET as edits } from './edits.js';
 import { POST as upload } from './media/index.js';
 import { GET as media } from './media/[id].js';
+import { GET as placesPhoto } from './places-photo.js';
 import { normalizeSeed, type CoordFile, type SeedFile } from '../src/shared/normalize.js';
 import { insertRows } from '../scripts/_sql.js';
 import type { DataSnapshot } from '../src/shared/types.js';
@@ -46,7 +47,9 @@ describe.skipIf(!url)('API (Postgres)', () => {
     const { default: pg } = await import('pg');
     const c = new pg.Client({ connectionString: url });
     await c.connect();
-    await c.query(readFileSync('db/migrations/0001_init.sql', 'utf8'));
+    for (const f of readdirSync('db/migrations').filter((x) => x.endsWith('.sql')).sort()) {
+      await c.query(readFileSync(`db/migrations/${f}`, 'utf8'));
+    }
     await c.end();
     const seed = normalizeSeed(
       JSON.parse(readFileSync('seed/locations.json', 'utf8')) as SeedFile,
@@ -177,6 +180,56 @@ describe.skipIf(!url)('API (Postgres)', () => {
     expect(bad.status).toBe(415);
     const member = await upload(req('/api/media', { method: 'POST', body: png, as: MEMBER, headers: { 'content-type': 'image/png' } }));
     expect(member.status).toBe(403);
+  });
+
+  it('saves a photo gallery with credits and rejects bad entries', async () => {
+    const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==', 'base64');
+    const { path } = await (await upload(req('/api/media', { method: 'POST', body: png, as: ADMIN, headers: { 'content-type': 'image/png' } }))).json();
+    const photos = [{ path, attribution: 'Photo: Jane Doe, CC BY-SA 4.0, via Wikimedia Commons', license: 'CC BY-SA 4.0', source_url: 'https://commons.wikimedia.org/wiki/File:X.jpg' }];
+    const ts = new Date().toISOString();
+    const res = await (await sync(post('/api/sync', {
+      ops: [
+        { op_id: 'ph1', kind: 'location', id: 'pizzafari', updated_at: ts, patch: { photos, hero_path: path, hero_attribution: photos[0].attribution } },
+        { op_id: 'ph2', kind: 'location', id: 'pizzafari', updated_at: ts, patch: { photos: [{ path: 'https://evil.example/x.jpg', attribution: null, license: null, source_url: null }] } },
+      ],
+    }, ADMIN))).json();
+    expect(res.results.map((r: { status: string }) => r.status)).toEqual(['applied', 'rejected']);
+    const s = (await (await data(req('/api/data', { as: MEMBER }))).json()) as DataSnapshot;
+    const loc = s.locations.find((l) => l.id === 'pizzafari')!;
+    expect(loc.photos).toEqual(photos);
+    expect(loc.hero_path).toBe(path);
+  });
+
+  it('places-photo returns a gallery with attributions and never stores Google images', async () => {
+    process.env.GOOGLE_PLACES_API_KEY = 'test-key';
+    await db.query("update locations set google_place_id = 'ChIJtest' where id = 'casey-s-corner'");
+    const calls: string[] = [];
+    const fake = vi.fn(async (input: string | URL | Request) => {
+      const u = String(input);
+      calls.push(u);
+      if (u.endsWith('/places/ChIJtest')) {
+        return new Response(JSON.stringify({ photos: [
+          { name: 'places/ChIJtest/photos/a', widthPx: 800, heightPx: 1200, authorAttributions: [{ displayName: 'Tall Pic', uri: 'https://maps.google.com/a' }] },
+          { name: 'places/ChIJtest/photos/b', widthPx: 1600, heightPx: 900, authorAttributions: [{ displayName: 'Wide Pic' }] },
+        ] }));
+      }
+      if (u.includes('/media?')) return new Response(JSON.stringify({ photoUri: `https://lh3.googleusercontent.com/${u.includes('/a/') ? 'a' : 'b'}` }));
+      return new Response('nope', { status: 404 });
+    });
+    vi.stubGlobal('fetch', fake);
+    try {
+      const r = await placesPhoto(req('/api/places-photo?location_id=casey-s-corner', { as: MEMBER }));
+      expect(r.status).toBe(200);
+      const body = await r.json();
+      expect(body.photos.map((p: { photoUri: string }) => p.photoUri)).toEqual(['https://lh3.googleusercontent.com/b', 'https://lh3.googleusercontent.com/a']);
+      expect(body.photos[0].attributions).toEqual([{ name: 'Wide Pic', uri: null }]);
+      expect(calls.every((c) => c.startsWith('https://places.googleapis.com/'))).toBe(true);
+      const stored = await db.query<{ n: number }>("select count(*)::int as n from media where content_type <> 'image/png'");
+      expect(stored[0].n).toBe(0);
+      expect((await placesPhoto(req('/api/places-photo?location_id=pizzafari', { as: MEMBER }))).status).toBe(404);
+    } finally {
+      vi.unstubAllGlobals();
+    }
   });
 
   it('requires the app header on mutations', async () => {

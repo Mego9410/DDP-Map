@@ -50,8 +50,8 @@ export const api = {
   edits: () => call<{ edits: EditLogRow[] }>('/api/edits'),
   upload: (blob: Blob) =>
     call<{ id: string; path: string }>('/api/media', { method: 'POST', body: blob, headers: { 'content-type': blob.type } }),
-  placesPhoto: (locationId: string) =>
-    call<{ photoUri: string; attributions: { name: string; uri: string | null }[] }>(
+  placesPhotos: (locationId: string) =>
+    call<{ photos: { photoUri: string; attributions: { name: string; uri: string | null }[] }[] }>(
       `/api/places-photo?location_id=${encodeURIComponent(locationId)}`,
     ),
 };

@@ -91,16 +91,37 @@ offline.
 
 ### 4. Real coordinates and photos (before the trip)
 
-Pins start from hand-placed estimates in `seed/coordinates.json` (marked
-`approx`). To snap them to Google's positions and link places for photos:
+Each restaurant's cover can be a swipeable gallery of real photos, from
+three sources, in this order:
 
-```bash
-npm run geocode -- --db     # needs GOOGLE_PLACES_API_KEY; leaves manually moved pins alone
-```
+1. **Your own trip photos.** In edit mode, use **Replace cover** or **Add
+   photo**. They're resized to 1600px WebP, stored privately, and work
+   offline.
+2. **Wikimedia Commons.** These are freely licensed (CC BY / BY-SA / CC0 /
+   public domain) photos of the restaurants. They're stored privately with
+   their credit line and work offline.
 
-Then in the app (as admin), switch on **Menu → Edit mode**, open any place
-whose pin is off and use **Move pin**. On the trip, **Replace photo** uploads
-your own shot (resized to 1600px WebP) and replaces the Google photo.
+   ```bash
+   npm run photos                # search Commons, write seed/photos.json (links and credits only)
+   # open seed/photos.json and delete any wrong matches
+   npm run photos -- --upload    # download the listed photos into Postgres and attach them
+   ```
+
+3. **Google Places.** Up to five photos per place, shown live with the
+   photographer's name. Google doesn't allow storing them, so they only
+   appear online. This step also replaces the hand-placed pin estimates
+   with Google's positions:
+
+   ```bash
+   npm run geocode -- --db       # needs GOOGLE_PLACES_API_KEY; leaves manually moved pins alone
+   ```
+
+Disney's own photos and logos, and food-blog photos, are copyrighted. They
+are deliberately not scraped. Add your own logo shots with **Upload logo**.
+
+Then, in the app as admin, switch on **Menu → Edit mode**, open any place
+whose pin is off, and use **Move pin**. **Manage photos** removes any
+picture you don't want.
 
 ### 5. Refill stations
 
@@ -175,7 +196,8 @@ The Playwright suite covers the PRD user stories:
 - No Disney logos, artwork or storefront photos in this repository. Uploaded
   images are stored in Postgres and served only to signed-in family members.
 - Google Places photos are shown with their author attribution and are never
-  stored or cached long-term.
+  stored or cached long-term. Wikimedia Commons photos are used only under
+  free licences, with their credit line on the photo.
 - No automated scraping of Disney or third-party menu sites. The seed was
   gathered by hand. Maintain it in-app.
 - Never commit `.env*` files (`.env.example` excepted).

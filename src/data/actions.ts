@@ -104,16 +104,47 @@ export async function prepareImage(file: File, max = 1600): Promise<Blob> {
   return blob;
 }
 
-/** Uploads an image and points the location's hero or logo at it. Needs signal in API mode. */
-export async function replaceImage(locationId: string, field: 'hero_path' | 'logo_path', file: File): Promise<void> {
-  const blob = await prepareImage(file, field === 'logo_path' ? 600 : 1600);
-  let path: string;
+async function storeImage(blob: Blob): Promise<string> {
   if (LOCAL_ONLY) {
     const id = randomUuid();
     await db.media.put({ id, blob });
-    path = `/api/media/${id}`;
-  } else {
-    path = (await api.upload(blob)).path;
+    return `/api/media/${id}`;
   }
-  await updateLocation(locationId, field === 'hero_path' ? { hero_path: path, hero_attribution: null } : { logo_path: path });
+  return (await api.upload(blob)).path;
+}
+
+/**
+ * Uploads an image and makes it the cover photo or logo. A replaced cover
+ * moves into the gallery rather than disappearing. Needs signal in API mode.
+ */
+export async function replaceImage(locationId: string, field: 'hero_path' | 'logo_path', file: File): Promise<void> {
+  const path = await storeImage(await prepareImage(file, field === 'logo_path' ? 600 : 1600));
+  if (field === 'logo_path') return updateLocation(locationId, { logo_path: path });
+  const loc = await db.locations.get(locationId);
+  const photos = [...(loc?.photos ?? [])];
+  if (loc?.hero_path && !photos.some((p) => p.path === loc.hero_path)) {
+    photos.unshift({ path: loc.hero_path, attribution: loc.hero_attribution, license: null, source_url: null });
+  }
+  await updateLocation(locationId, { hero_path: path, hero_attribution: null, photos: photos.slice(0, 12) });
+}
+
+/** Adds a photo to the place's gallery (after the cover). */
+export async function addPhoto(locationId: string, file: File): Promise<void> {
+  const path = await storeImage(await prepareImage(file, 1600));
+  const loc = await db.locations.get(locationId);
+  const photos = [...(loc?.photos ?? []), { path, attribution: null, license: null, source_url: null }].slice(-12);
+  await updateLocation(locationId, loc?.hero_path ? { photos } : { hero_path: path, photos });
+}
+
+/** Removes a photo from the gallery, or clears the cover if it is the cover. */
+export async function removePhoto(locationId: string, path: string): Promise<void> {
+  const loc = await db.locations.get(locationId);
+  if (!loc) return;
+  const photos = (loc.photos ?? []).filter((p) => p.path !== path);
+  if (loc.hero_path === path) {
+    const next = photos[0] ?? null;
+    await updateLocation(locationId, { hero_path: next?.path ?? null, hero_attribution: next?.attribution ?? null, photos });
+  } else {
+    await updateLocation(locationId, { photos });
+  }
 }

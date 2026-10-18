@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { LOCAL_ONLY } from '../config';
-import { replaceImage, updateLocation } from '../data/actions';
+import { addPhoto, removePhoto, replaceImage, updateLocation } from '../data/actions';
 import { useSync } from '../data/syncState';
 import { THEMES } from '../shared/themes';
 import type { LocationPatch } from '../shared/sync';
@@ -151,26 +151,48 @@ export function EditLocation({ location, onClose }: { location: Location; onClos
 export function ImageButtons({ location }: { location: Location }) {
   const online = useSync((s) => s.online);
   const [msg, setMsg] = useState<{ kind: 'error' | 'ok' | 'info'; text: string } | null>(null);
-  const pick = (field: 'hero_path' | 'logo_path') => (e: React.ChangeEvent<HTMLInputElement>) => {
+  const pick = (what: 'hero_path' | 'logo_path' | 'gallery') => (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     e.target.value = '';
     if (!file) return;
     setMsg({ kind: 'info', text: 'Uploading…' });
-    replaceImage(location.id, field, file)
-      .then(() => setMsg({ kind: 'ok', text: field === 'hero_path' ? 'Photo replaced.' : 'Logo updated.' }))
+    const job = what === 'gallery' ? addPhoto(location.id, file) : replaceImage(location.id, what, file);
+    job
+      .then(() => setMsg({ kind: 'ok', text: what === 'hero_path' ? 'Cover photo replaced.' : what === 'gallery' ? 'Photo added.' : 'Logo updated.' }))
       .catch((err: unknown) => setMsg({ kind: 'error', text: err instanceof Error ? err.message : 'Upload failed.' }));
   };
+  const stored = [location.hero_path, ...(location.photos ?? []).map((p) => p.path)].filter((p, i, a): p is string => !!p && a.indexOf(p) === i);
   const disabled = !LOCAL_ONLY && !online;
   return (
     <div className="admin-row">
       <label className={`btn btn--small${disabled ? ' is-disabled' : ''}`}>
-        Replace photo
+        Replace cover
         <input type="file" accept="image/*" capture="environment" hidden disabled={disabled} onChange={pick('hero_path')} />
+      </label>
+      <label className={`btn btn--small${disabled ? ' is-disabled' : ''}`}>
+        Add photo
+        <input type="file" accept="image/*" capture="environment" hidden disabled={disabled} onChange={pick('gallery')} />
       </label>
       <label className={`btn btn--small${disabled ? ' is-disabled' : ''}`}>
         Upload logo
         <input type="file" accept="image/png,image/svg+xml,image/webp,image/jpeg" hidden disabled={disabled} onChange={pick('logo_path')} />
       </label>
+      {stored.length > 0 && (
+        <details className="photo-admin">
+          <summary>Manage photos ({stored.length})</summary>
+          <ul>
+            {stored.map((p, i) => (
+              <li key={p}>
+                <span>{i === 0 && location.hero_path === p ? 'Cover' : `Photo ${i + 1}`}</span>
+                <span className="photo-admin-credit">{p === location.hero_path ? location.hero_attribution : (location.photos ?? []).find((x) => x.path === p)?.attribution}</span>
+                <button type="button" className="btn btn--small btn--ghost" onClick={() => void removePhoto(location.id, p)}>
+                  Remove
+                </button>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
       {disabled && <InlineMsg>Photos upload once you have signal.</InlineMsg>}
       {msg && <InlineMsg kind={msg.kind}>{msg.text}</InlineMsg>}
     </div>

@@ -158,6 +158,24 @@ test('US7 (admin): edit a price inline and it is queued for the family', async (
   await expect.poll(() => api.ops.some((o) => o.kind === 'item_upsert' && o.item.price_usd === 15.99)).toBe(true);
 });
 
+test('photo gallery: cover first, swipeable, each photo credited', async ({ page }) => {
+  const loc = api.snapshot.locations.find((l) => l.id === 'pecos-bill-tall-tale-inn-and-cafe')!;
+  const a = '/api/media/00000000-0000-4000-8000-000000000001';
+  const b = '/api/media/00000000-0000-4000-8000-000000000002';
+  loc.hero_path = a;
+  loc.hero_attribution = 'Photo: Our trip';
+  loc.photos = [{ path: b, attribution: 'Photo: Jane Doe, CC BY-SA 4.0, via Wikimedia Commons', license: 'CC BY-SA 4.0', source_url: 'https://commons.wikimedia.org/wiki/File:X.jpg' }];
+  await signIn(page);
+  await page.locator('[data-id="pecos-bill-tall-tale-inn-and-cafe"]').click();
+  const hero = page.getByTestId('detail').locator('.hero');
+  await expect(hero.locator('.hero-slide img')).toHaveCount(2);
+  await expect(hero.locator('.hero-credit')).toHaveText('Photo: Our trip');
+  await expect(hero.getByRole('img', { name: 'Photo 1 of 2' })).toBeVisible();
+  await hero.locator('.hero-track').evaluate((el) => el.scrollTo({ left: el.clientWidth }));
+  await expect(hero.locator('.hero-credit a')).toHaveText(/Jane Doe, CC BY-SA 4.0/);
+  await expect(hero.locator('.hero-credit a')).toHaveAttribute('href', 'https://commons.wikimedia.org/wiki/File:X.jpg');
+});
+
 test('members do not see edit mode', async ({ page }) => {
   await signIn(page, 'sam@example.com');
   await page.getByRole('button', { name: 'Menu' }).click();

@@ -11,7 +11,7 @@ const iso = (col: string) => `to_char((${col}) at time zone 'UTC', 'YYYY-MM-DD"T
 
 const LOCATION_COLS = `id, park_id, land_id, area_label, name, short_name, credit::text as credit, credit_note,
   meals, hours, mobile_order, seasonal, lng, lat, coord_source, google_place_id, logo_path, hero_path,
-  hero_attribution, theme_id, menu_as_of::text as menu_as_of, sources, notes, ${iso('updated_at')} as updated_at`;
+  hero_attribution, photos, theme_id, menu_as_of::text as menu_as_of, sources, notes, ${iso('updated_at')} as updated_at`;
 
 const ITEM_COLS = `id::text as id, location_id, section::text as section, name, price_usd::float8 as price_usd,
   qs_eligible::text as qs_eligible, snack_eligible::text as snack_eligible, seasonal, note, sort,
@@ -101,11 +101,11 @@ function statementFor(op: SyncOp, email: string, ts: string): Stmt {
       };
     case 'location': {
       const keys = Object.keys(op.patch) as (keyof typeof op.patch)[];
-      const sets = keys.map((k, i) => `${k} = $${i + 3}${k === 'credit' ? '::credit_type' : k === 'menu_as_of' ? '::date' : ''}`);
+      const sets = keys.map((k, i) => `${k} = $${i + 3}${k === 'credit' ? '::credit_type' : k === 'menu_as_of' ? '::date' : k === 'photos' ? '::jsonb' : ''}`);
       return {
         text: `update locations set ${sets.join(', ')}, updated_at = $2
                where id = $1 and updated_at <= $2 returning 1 as ok`,
-        params: [op.id, ts, ...keys.map((k) => op.patch[k])],
+        params: [op.id, ts, ...keys.map((k) => (k === 'photos' ? JSON.stringify(op.patch[k]) : op.patch[k]))],
       };
     }
     case 'item_upsert': {
