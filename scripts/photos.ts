@@ -49,7 +49,7 @@ async function commonsSearch(q: string): Promise<CommonsPage[]> {
 }
 
 /** Wikimedia rate-limits shared addresses: back off on 429/5xx and retry. */
-async function politeFetch(u: string | URL, tries = 6): Promise<Response> {
+async function politeFetch(u: string | URL, tries = 10): Promise<Response> {
   for (let i = 0; ; i++) {
     const res = await fetch(u, { headers: { 'User-Agent': UA, 'Api-User-Agent': UA } });
     if (res.ok) return res;
