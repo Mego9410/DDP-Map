@@ -81,14 +81,14 @@ export function validateLocationPatch(p: unknown): string | null {
         break;
       case 'logo_path':
       case 'hero_path':
-        if (v !== null && !(isStr(v, 200) && IMAGE_PATH.test(v))) return 'Image path is invalid.';
+        if (v !== null && !(isStr(v, 500) && IMAGE_PATH.test(v))) return 'Image path is invalid.';
         break;
       case 'photos': {
         if (!Array.isArray(v) || v.length > 12) return 'Up to 12 photos per place.';
         for (const ph of v as unknown[]) {
           const x = ph as Record<string, unknown>;
           if (!x || typeof x !== 'object') return 'Photo entry is invalid.';
-          if (!(isStr(x.path, 200) && IMAGE_PATH.test(x.path))) return 'Photo path is invalid.';
+          if (!(isStr(x.path, 500) && IMAGE_PATH.test(x.path))) return 'Photo path is invalid.';
           if (!optStr(x.attribution, 300) || !optStr(x.license, 60)) return 'Photo credit is too long.';
           if (!(x.source_url === null || (isStr(x.source_url, 500) && /^https:\/\//.test(x.source_url)))) return 'Photo source must be an https link.';
         }
