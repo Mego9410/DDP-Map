@@ -12,5 +12,21 @@
       "width": 3264,
       "height": 2448
     }
-  ]
+  ],
+  "pecos-bill-tall-tale-inn-and-cafe": [
+    {
+      "title": "File:Pecos Bill Tall Tale Inn & Café.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Pecos_Bill_Tall_Tale_Inn_%26_Caf%C3%A9.jpg/1280px-Pecos_Bill_Tall_Tale_Inn_%26_Caf%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pecos_Bill_Tall_Tale_Inn_%26_Caf%C3%A9.jpg",
+      "license": "CC BY 2.0",
+      "attribution": "Photo: HarshLight, CC BY 2.0, via Wikimedia Commons",
+      "score": 1,
+      "width": 2378,
+      "height": 3568
+    }
+  ],
+  "golden-oak-outpost": [],
+  "columbia-harbour-house": [],
+  "sleepy-hollow": [],
+  "liberty-square-market": []
 }
