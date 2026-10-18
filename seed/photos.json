@@ -1,1 +1,16 @@
-{}
+{
+  "casey-s-corner": [],
+  "main-street-bakery-starbucks": [],
+  "tortuga-tavern": [
+    {
+      "title": "File:Sorcerers of the Magic Kingdom in Tortuga Tavern.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Sorcerers_of_the_Magic_Kingdom_in_Tortuga_Tavern.jpg/1280px-Sorcerers_of_the_Magic_Kingdom_in_Tortuga_Tavern.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sorcerers_of_the_Magic_Kingdom_in_Tortuga_Tavern.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Photo: zannaland, CC BY-SA 2.0, via Wikimedia Commons",
+      "score": 1.1,
+      "width": 3264,
+      "height": 2448
+    }
+  ]
+}
