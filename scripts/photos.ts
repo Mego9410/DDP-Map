@@ -9,7 +9,8 @@
 //   npm run photos -- --to-repo       or: save them under public/photos/ so they ship with
 //                                     the app (no database needed); then commit them
 //
-// Options: --only=id1,id2   --per-place=3   --min-score=0.67
+// Options: --only=id1,id2   --per-place=3   --min-score=0.67   --fresh (search places already searched)
+// PHOTOS_MANIFEST=path writes the review file elsewhere (default seed/photos.json).
 // With --upload, images stay out of the repo (seed/photos.json holds links and
 // credits only). --to-repo is for freely licensed images only, which is all
 // this script ever selects; their credit lines travel with them.
@@ -20,7 +21,8 @@ import { pickCandidates, type Candidate, type CommonsPage } from './_commons.js'
 import type { SeedFile } from '../src/shared/normalize.js';
 import type { LocationPhoto } from '../src/shared/types.js';
 
-const MANIFEST = 'seed/photos.json';
+const MANIFEST = process.env.PHOTOS_MANIFEST ?? 'seed/photos.json';
+const fresh = process.argv.includes('--fresh');
 const UA = 'ParkPlate/0.1 (private family trip planner; https://github.com/Mego9410/DDP-Map)';
 const arg = (k: string) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('=')[1];
 const toRepo = process.argv.includes('--to-repo');
@@ -62,6 +64,7 @@ const targets = seed.locations.filter((l) => !only || only.includes(l.id));
 
 if (!upload) {
   for (const loc of targets) {
+    if (!fresh && loc.id in manifest) continue; // searched in an earlier run
     const names = [...new Set([loc.name, loc.short_name].filter(Boolean))];
     const pages = new Map<string, CommonsPage>();
     for (const q of [`"${loc.name}" Disney`, `${loc.short_name || loc.name} ${loc.park} Walt Disney World`]) {

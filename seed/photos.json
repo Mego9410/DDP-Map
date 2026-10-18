@@ -29,5 +29,29 @@
   "columbia-harbour-house": [],
   "sleepy-hollow": [],
   "liberty-square-market": [],
-  "pinocchio-village-haus": []
+  "pinocchio-village-haus": [],
+  "gaston-s-tavern": [
+    {
+      "title": "File:Gaston's Tavern (43309034491).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Gaston%27s_Tavern_%2843309034491%29.jpg/1280px-Gaston%27s_Tavern_%2843309034491%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gaston%27s_Tavern_(43309034491).jpg",
+      "license": "CC BY 2.0",
+      "attribution": "Photo: HarshLight from San Jose, CA, USA, CC BY 2.0, via Wikimedia Commons",
+      "score": 1.1,
+      "width": 5472,
+      "height": 3648
+    },
+    {
+      "title": "File:Gaston's Tavern (43309035021).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Gaston%27s_Tavern_%2843309035021%29.jpg/1280px-Gaston%27s_Tavern_%2843309035021%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gaston%27s_Tavern_(43309035021).jpg",
+      "license": "CC BY 2.0",
+      "attribution": "Photo: HarshLight from San Jose, CA, USA, CC BY 2.0, via Wikimedia Commons",
+      "score": 1.1,
+      "width": 5472,
+      "height": 3648
+    }
+  ],
+  "the-friar-s-nook": [],
+  "cosmic-ray-s-starlight-cafe": []
 }
